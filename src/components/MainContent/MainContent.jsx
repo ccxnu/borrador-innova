@@ -3,7 +3,7 @@ import { Box, Typography, Grid } from "@mui/material";
 const MainContent = () => {
   return (
     <Box sx={{ backgroundColor: "#5DADE2 ", padding: "200px" }}>
-      <Box sx={{ backgroundColor: "#2E4053", padding: "60px" }}>
+      <Box sx={{ backgroundColor: "#2E4053", padding: "100px" }}>
         <Grid container justifyContent="center">
           <Typography variant="h4" gutterBottom>
             Bienvenido a Innova
@@ -15,6 +15,7 @@ const MainContent = () => {
           eaque excepturi est odio ratione sapiente iure atque eos, provident
           fugiat.
         </Typography>
+
         <Grid container spacing={9}>
           <Grid item xs={12} md={6}>
             <Box backgroundColor="#8E44AD">
