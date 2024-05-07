@@ -1,8 +1,9 @@
-import { AppBar, Toolbar, Typography, Button, Box, Grid, } from "@mui/material";
+import { AppBar, Toolbar, Typography, Button, Box, Grid } from "@mui/material";
 const Header = () => {
   return (
     <AppBar position="">
-      <Toolbar sx={{ backgroundColor: "#3498DB",}}>
+      <Toolbar sx={{ backgroundColor: "#3498DB" }}>
+      <img src='/static/Logo2.png' width='50px' height='50px'/>
         <Box>
           <Typography variant="h6">INNOVA</Typography>
           <Typography variant="h6">COOP</Typography>
@@ -17,6 +18,12 @@ const Header = () => {
             </Button>
             <Button variant="contained" color="warning">
               Servicios
+            </Button>
+            <Button variant="contained" color="error">
+              Contacto
+            </Button>
+            <Button variant="contained" color="inherit">
+              Nosotros
             </Button>
           </Box>
         </Grid>

@@ -1,13 +1,12 @@
 import { Box, Typography, Grid } from "@mui/material";
-// Supports weights 100-900
-import '@fontsource-variable/inter';
 
 const MainContent = () => {
   return (
     <Box sx={{ backgroundColor: " #ffffff  ", padding: "200px" }}>
+      <img src='/static/Logo.png' width='250px' height='200px'/>
         <Grid container justifyContent="center" color=" #000000">
           <Typography variant="h2" gutterBottom>
-            Bienvenido a Innova
+            Bienvenido a INNOVA COOOP
           </Typography>
           <Typography variant="body1" sx={{ marginBottom: "60px" }}>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
