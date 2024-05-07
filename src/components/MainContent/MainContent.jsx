@@ -1,24 +1,24 @@
 import { Box, Typography, Grid } from "@mui/material";
+// Supports weights 100-900
+import '@fontsource-variable/inter';
 
 const MainContent = () => {
   return (
-    <Box sx={{ backgroundColor: "#5DADE2 ", padding: "200px" }}>
-      <Box sx={{ backgroundColor: "#2E4053", padding: "100px" }}>
-        <Grid container justifyContent="center">
-          <Typography variant="h4" gutterBottom>
+    <Box sx={{ backgroundColor: " #ffffff  ", padding: "200px" }}>
+        <Grid container justifyContent="center" color=" #000000">
+          <Typography variant="h2" gutterBottom>
             Bienvenido a Innova
           </Typography>
+          <Typography variant="body1" sx={{ marginBottom: "60px" }}>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
+            quaerat ab nesciunt numquam. Illum, repellat. Itaque omnis sequi rem
+            eaque excepturi est odio ratione sapiente iure atque eos, provident
+            fugiat.
+          </Typography>
         </Grid>
-        <Typography variant="body1" sx={{ marginBottom: "60px" }}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
-          quaerat ab nesciunt numquam. Illum, repellat. Itaque omnis sequi rem
-          eaque excepturi est odio ratione sapiente iure atque eos, provident
-          fugiat.
-        </Typography>
-
         <Grid container spacing={9}>
           <Grid item xs={12} md={6}>
-            <Box backgroundColor="#8E44AD">
+            <Box sx={{borderRadius:1,  width: 350, height: 150,bgcolor:' #8102b5 ', }}>
               <Typography variant="h6">Sección 1</Typography>
               <Typography variant="body2">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -29,7 +29,7 @@ const MainContent = () => {
             </Box>
           </Grid>
           <Grid item xs={12} md={6}>
-            <Box backgroundColor="#DC7633">
+            <Box sx={{borderRadius:1,  width: 350, height: 150,bgcolor:'#7aae5b', }}>
               <Typography variant="h6">Sección 2</Typography>
               <Typography variant="body2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
@@ -40,7 +40,7 @@ const MainContent = () => {
             </Box>
           </Grid>
           <Grid item xs={12} md={6}>
-            <Box backgroundColor="#28B463">
+            <Box sx={{borderRadius:1,  width: 350, height: 150,bgcolor:'#cb8f05', }}>
               <Typography variant="h6">Sección 3</Typography>
               <Typography variant="body2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
@@ -51,7 +51,7 @@ const MainContent = () => {
             </Box>
           </Grid>
           <Grid item xs={12} md={6}>
-            <Box backgroundColor="#922B21">
+            <Box sx={{borderRadius:1,  width: 350, height: 150,bgcolor:'#0021c8', }}>
               <Typography variant="h6">Sección 4</Typography>
               <Typography variant="body2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
@@ -62,7 +62,6 @@ const MainContent = () => {
             </Box>
           </Grid>
         </Grid>
-      </Box>
     </Box>
   );
 };

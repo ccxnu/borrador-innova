@@ -2,7 +2,7 @@ import { AppBar, Toolbar, Typography, Button, Box, Grid, } from "@mui/material";
 const Header = () => {
   return (
     <AppBar position="">
-      <Toolbar sx={{ backgroundColor: "#3498DB", width: "98%" }}>
+      <Toolbar sx={{ backgroundColor: "#3498DB",}}>
         <Box>
           <Typography variant="h6">INNOVA</Typography>
           <Typography variant="h6">COOP</Typography>

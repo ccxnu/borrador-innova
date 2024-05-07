@@ -5,7 +5,7 @@ const Navbar = () => {
       <navbar >
         <Grid container justifyContent='space-between'>
         <span>Síguenos en: in</span>
-        <Box backgroundColor='#186A3B'>
+        <Box backgroundColor=' #000c4a '>
         <span >Llamanos al ✆+593.......</span>
         </Box>
         </Grid> 
