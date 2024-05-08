@@ -7,13 +7,23 @@ const Footer = () => {
         backgroundColor: "#D7DBDD",
         padding: "20px",
         textAlign: "center",
-      }}>
+      }}
+    >
       <Box>
         <Grid container justifyContent="space-between">
-          <Typography variant="body2" color="#17202A">
+          <Typography
+            variant="body2"
+            color="#17202A"
+            sx={{ fontFamily: "Inter" }}
+          >
             ©INNOVA COOP, All Right Reserved.
           </Typography>
-          <Typography variant="body2" color="#17202A" letterSpacing="50%">
+          <Typography
+            variant="body2"
+            color="#17202A"
+            letterSpacing="50%"
+            sx={{ fontFamily: "Inter" }}
+          >
             Designed by INNOVA COOP 2024
           </Typography>
         </Grid>
