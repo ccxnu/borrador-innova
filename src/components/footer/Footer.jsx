@@ -16,7 +16,7 @@ const Footer = () => {
             color="#17202A"
             sx={{ fontFamily: "Inter" }}
           >
-            ©INNOVA COOP, All Right Reserved.
+            Terms & Conditions.
           </Typography>
           <Typography
             variant="body2"
@@ -24,7 +24,21 @@ const Footer = () => {
             letterSpacing="50%"
             sx={{ fontFamily: "Inter" }}
           >
-            Designed by INNOVA COOP 2024
+            PRIVACY POLICY
+          </Typography>
+          <Typography
+            variant="body2"
+            color="#17202A"
+            sx={{ fontFamily: "FJALA-ONE" }}
+          >
+            CONTACT US
+          </Typography>
+          <Typography
+            variant="body2"
+            color="#17202A"
+            sx={{ fontFamily: "fjala-one" }}
+          >
+            POWERED BY INNOVA COOP
           </Typography>
         </Grid>
       </Box>

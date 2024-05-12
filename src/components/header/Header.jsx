@@ -3,7 +3,7 @@ const Header = () => {
   return (
     <AppBar position="">
       <Toolbar sx={{ backgroundColor: "#4a5dff" }}>
-        <img src="/static/Logo.png" width="50px" height="50px" />
+        <img src="/static/Logo.png" width="55px" height="40px" />
         <Box>
           <Typography variant="h6" sx={{ fontFamily: "Inter" }}>
             INNOVA
@@ -15,35 +15,35 @@ const Header = () => {
         <Grid container justifyContent="end">
           <Box>
             <Button
-              variant="contained"
-              color="secondary"
+              variant="outlined"
+              color="inherit"
               sx={{ fontFamily: "Inter" }}
             >
               Inicio
             </Button>
             <Button
-              variant="contained"
-              color="success"
+              variant="outlined"
+              color="inherit"
               sx={{ fontFamily: "Inter" }}
             >
               Afiliación
             </Button>
             <Button
-              variant="contained"
-              color="warning"
+              variant="outlined"
+              color="inherit"
               sx={{ fontFamily: "Inter" }}
             >
               Servicios
             </Button>
             <Button
-              variant="contained"
-              color="error"
+              variant="outlined"
+              color="inherit"
               sx={{ fontFamily: "Inter" }}
             >
               Monetización
             </Button>
             <Button
-              variant="contained"
+              variant="outlined"
               color="inherit"
               sx={{ fontFamily: "Inter" }}
             >
