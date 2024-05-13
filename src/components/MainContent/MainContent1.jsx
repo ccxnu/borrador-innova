@@ -1,72 +1,102 @@
 import { Box, Typography, Grid } from "@mui/material";
-const MainContent0 = () => {
+const MainContent1 = () => {
   return (
-    <Box
-      sx={{
-        fontFamily: "Inter",
-        padding: "100px",
-      }}
-    >
-      <Grid
-        container
-        spacing={2}
-        justifyContent="center"
-        sx={{ marginBottom: "150px" }}
-      >
-        <Grid item xs={4}>
-          <img src="/static/ejemplo1.png" width="100%" alt="Imagen 1" />
-        </Grid>
-
-        <Grid item xs={4}>
-          <img src="/static/ejemplo2.png" width="100%" alt="Imagen 2" />
-        </Grid>
-
-        <Grid item xs={4}>
-          <img src="/static/ejemplo3.png" width="100%" alt="Imagen 3" />
-        </Grid>
+    <Box sx={{ padding: "100px" }}>
+      <Grid>
+        <Typography
+          textAlign="center"
+          variant="body1"
+          fontSize="50px"
+          marginBottom="50px"
+          color="secondary"
+        >
+          <strong>Beneficios de Pertenecer al Cluster:</strong>
+        </Typography>
       </Grid>
       <Grid container spacing={6}>
-        <Grid item xs={12} md={6}
-          container
-          justifyContent="center"
-          sx={{ marginBottom: "300px" }}
-        >
+        <Grid item xs={9} md={6} container justifyContent="center">
           <Box
             sx={{
               borderRadius: 2,
+
               width: 350,
-              height: 110,
-              bgcolor: "",
+              height: 260,
+              bgcolor: "#1d3d",
             }}
           >
             <Typography variant="body2" color="third" fontSize="20px">
-              Misión
+              Acceso a Recursos y Conocimientos
             </Typography>
             <Typography variant="body2" color="third" fontSize="20px">
-              Nuestra misión es impulsar la innovación y el crecimiento
-              sostenible de las cooperativas en Ecuador, fortaleciendo su
-              capacidad para enfrentar los desafíos del mercado y contribuir al
-              bienestar de sus miembros y comunidades.
+              Las cooperativas afiliadas tendrán acceso a una amplia gama de
+              recursos y conocimientos, incluyendo programas de capacitación,
+              herramientas de gestión, y asesoramiento experto en áreas clave
+              como tecnología, procesos, marketing, y finanzas.
             </Typography>
           </Box>
         </Grid>
         <Grid item xs={12} md={6} container justifyContent="center">
           <Box
             sx={{
-              borderRadius: 1,
+              borderRadius: 2,
               width: 350,
-              height: 150,
-              bgcolor: "",
+              height: 240,
+              bgcolor: "#1d3",
             }}
           >
             <Typography variant="body2" color="third" fontSize="20px">
-              Visión
+              Red de Colaboración
             </Typography>
             <Typography variant="body2" color="third" fontSize="20px">
-              Queremos ser el principal motor de cambio e innovación para las
-              cooperativas de ahorro y crédito en Ecuador, promoviendo una
-              cultura de colaboración, aprendizaje continuo y excelencia
-              empresarial.
+              Formar parte del cluster permitirá a las cooperativas conectarse
+              con otras organizaciones similares, facilitando el intercambio de
+              ideas, la colaboración en proyectos conjuntos y el establecimiento
+              de alianzas estratégicas.
+            </Typography>
+          </Box>
+        </Grid>
+        <Grid item xs={12} md={6} container justifyContent="center">
+          <Box
+            sx={{
+              borderRadius: 2,
+              width: 350,
+              height: 180,
+              bgcolor: "#1d3d",
+            }}
+          >
+            <Typography variant="body2" color="third" fontSize="20px">
+              Visibilidad y Promoción
+            </Typography>
+            <Typography variant="body2" color="third" fontSize="20px">
+              Ser parte del cluster aumentará la visibilidad de las cooperativas
+              ante potenciales socios, clientes y financiadores, ayudando a
+              fortalecer su marca y su posición en el mercado.
+            </Typography>
+          </Box>
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          md={6}
+          container
+          justifyContent="center"
+          sx={{ marginBottom: "200px" }}
+        >
+          <Box
+            sx={{
+              borderRadius: 2,
+              width: 350,
+              height: 180,
+              bgcolor: "#1d3d",
+            }}
+          >
+            <Typography variant="body2" color="third" fontSize="20px">
+              Asesoramiento y Mentoring
+            </Typography>
+            <Typography variant="body2" color="third" fontSize="20px">
+              Se ofrecerá asesoramiento personalizado y mentoring a las
+              cooperativas afiliadas, con el objetivo de apoyar su crecimiento y
+              desarrollo a largo plazo.
             </Typography>
           </Box>
         </Grid>
@@ -78,14 +108,11 @@ const MainContent0 = () => {
             marginBottom="50px"
             color="secondary"
           >
-            <strong>Politicas:</strong>
+            <strong>Servicios:</strong>
           </Typography>
         </Grid>
         <Grid container spacing={6}>
-          <Grid item container xs={12} md={6} justifyContent='flex-end' >
-            <img src="/static/politicas.jpg" width="500px" height="500px" />
-          </Grid>
-          <Grid item xs={12} md={6} container direction="column" spacing={2}>
+          <Grid item xs={12} md={6} container direction="column" spacing={2} alignContent='flex-end'>
             <Grid item>
               <Box
                 sx={{
@@ -141,10 +168,13 @@ const MainContent0 = () => {
               </Box>
             </Grid>
           </Grid>
+          <Grid item xs={12} md={6} container justifyContent="flex-start">
+            <img src="/static/servicios.jpg" width="500px" height="500px" />
+          </Grid>
         </Grid>
       </Grid>
     </Box>
   );
 };
 
-export default MainContent0;
+export default MainContent1;
