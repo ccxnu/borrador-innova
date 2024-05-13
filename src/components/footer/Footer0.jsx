@@ -15,28 +15,28 @@ const Footer = () => {
             <Typography
               variant="body1"
               color="#FBFCFC"
-              sx={{ fontFamily: "Inter" }}
+              
             >
               Nuestra Oficina:
             </Typography>
             <Typography
               variant="body2"
               color="#FBFCFC"
-              sx={{ fontFamily: "Inter" }}
+              
             >
               Mexico y curazaoo
             </Typography>
             <Typography
               variant="body2"
               color="#FBFCFC"
-              sx={{ fontFamily: "Inter" }}
+              
             >
               ✆+593..........
             </Typography>
             <Typography
               variant="body2"
               color="#FBFCFC"
-              sx={{ fontFamily: "Inter" }}
+              
             >
               ✉Info@INNOVA.coop
             </Typography>
@@ -46,7 +46,7 @@ const Footer = () => {
               variant="body1"
               color="#FBFCFC"
               letterSpacing="50%"
-              sx={{ fontFamily: "Inter" }}
+              
             >
               Links:
             </Typography>
@@ -68,7 +68,7 @@ const Footer = () => {
               variant="body1"
               color="#FBFCFC"
               letterSpacing="50%"
-              sx={{ fontFamily: "Inter" }}
+              
             >
               Horarios de Atención
             </Typography>
@@ -76,7 +76,7 @@ const Footer = () => {
               variant="body2"
               color="#FBFCFC"
               letterSpacing="50%"
-              sx={{ fontFamily: "Inter" }}
+              
             >
               Lunes-Viernes
             </Typography>
@@ -84,7 +84,7 @@ const Footer = () => {
               variant="body1"
               color="#FBFCFC"
               letterSpacing="50%"
-              sx={{ fontFamily: "Inter" }}
+              
             >
               08:00 - 18:00
             </Typography>

@@ -1,38 +1,63 @@
 import { Box, Typography, Grid } from "@mui/material";
-import '@fontsource-variable/aleo';
 const MainContent = () => {
   return (
-    <Box 
-      sx={{
-        fontFamily: "Inter",
-        backgroundColor: " #ffffff  ",
-        padding: "100px",
-      }}
+    <Box
+      sx={{padding: "100px"}}
     >
-      <Grid
-        container
-        direction="row"
-        alignItems="right"
-        justifyContent="right"
-      >
-        <img src="/static/Logo2.png" width="400px" height="400px" />
+      <Grid container>
+        <Grid item xs={12} md={6}>
+          <Typography
+            textAlign="center"
+            variant="h2"
+            fontWeight="700"
+            fontSize="60px"
+            color="primary"
+            justifyContent="left"
+            sx={{ marginTop: "50px" }}
+            gutterBottom
+          >
+            BIENVENIDO A CLUSTER DE INNOVACIÓN COOPERATIVO
+          </Typography>
+          <Typography
+            variant="body1"
+            fontSize="20px"
+            marginBottom="50px"
+            color="secondary"
+            paddingInline={22}
+          >
+            El Cluster de Innovación Cooperativo en Ecuador está diseñado para
+            fomentar el crecimiento, la innovación y la sostenibilidad de las
+            cooperativas en el país. Este cluster ofrece un entorno en el que
+            las cooperativas pueden colaborar, compartir conocimientos y
+            recursos, y aprovechar oportunidades para impulsar el desarrollo
+            económico y social.
+          </Typography>
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <img src="/static/Logo2.png" width="750px" height="750px" />
+        </Grid>
       </Grid>
-      <Grid container justifyContent="left">
-        <Typography variant="h2" fontWeight='700' color='primary' sx={{ fontFamily: "Aleo Variable",}} gutterBottom>
-          BIENVENIDO
-        </Typography>
-      </Grid>
-      <Grid container text-align='initial' color="#0285f1" xs={12} md={6}>
+      <Grid>
         <Typography
+          textAlign="center"
           variant="body1"
-          sx={{ fontFamily: "lexend", marginBottom: "50px" }}
+          fontSize="50px"
+          marginBottom="50px"
+          color="secondary"
         >
-          El Cluster de Innovación Cooperativo en Ecuador está diseñado para
-          fomentar el crecimiento, la innovación y la sostenibilidad de las
-          cooperativas en el país. Este cluster ofrece un entorno en el que las
-          cooperativas pueden colaborar, compartir conocimientos y recursos, y
-          aprovechar oportunidades para impulsar el desarrollo económico y
-          social.
+          <strong>Nuestros Objetivos:</strong>
+        </Typography>
+        <Typography
+          textAlign="justify"
+          variant="body2"
+          fontSize="25px"
+          marginBottom="50px"
+          color="third"
+          paddingInline={22}
+        >
+          Fomentar la innovación y la transformación en las cooperativas de
+          ahorro y crédito, mejorando su eficiencia operativa y su capacidad
+          para servir a sus miembros.
         </Typography>
       </Grid>
       <Grid container spacing={5}>
@@ -42,16 +67,12 @@ const MainContent = () => {
               borderRadius: 2,
               width: 350,
               height: 110,
-              bgcolor: " #ffff ",
+              bgcolor: "",
             }}
           >
-            <Typography variant="h4" color=' #000000 ' fontSize='33px' text=''  sx={{ fontFamily: "Aleo Variable"}}>
-            Algunas razones por las que nuestros clientes nos prefieren
-            </Typography>
-            <Typography variant="body2" sx={{ fontFamily: "Aleo Variable" }}>
-              Fomentar la innovación y la transformación en las cooperativas de
-              ahorro y crédito, mejorando su eficiencia operativa y su capacidad
-              para servir a sus miembros.
+            <Typography variant="body2" color="third" fontSize="20px">
+              Crear un ecosistema colaborativo donde las cooperativas compartan
+              conocimientos, recursos y soluciones tecnológicas.
             </Typography>
           </Box>
         </Grid>
@@ -61,17 +82,13 @@ const MainContent = () => {
               borderRadius: 1,
               width: 350,
               height: 150,
-              bgcolor: "#7aae5b",
+              bgcolor: "",
             }}
           >
-            <Typography variant="h6" sx={{ fontFamily: "Aleo Variable" }}>
-              Misión
-            </Typography>
-            <Typography variant="body2" sx={{ fontFamily: "Aleo Variable" }}>
-        ◦ Crear un ecosistema colaborativo donde las cooperativas compartan conocimientos, recursos y soluciones tecnológicas.
-        ◦ Facilitar la adopción de tecnologías emergentes, como la inteligencia artificial, la ciberseguridad y la automatización de procesos.
-        ◦ Capacitar a los miembros de las cooperativas en habilidades digitales y de gestión.
-        ◦ Fomentar la creación de productos y servicios financieros innovadores.
+            <Typography variant="body2" color="third" fontSize="20px">
+              Facilitar la adopción de tecnologías emergentes, como la
+              inteligencia artificial, la ciberseguridad y la automatización de
+              procesos.
             </Typography>
           </Box>
         </Grid>
@@ -81,17 +98,12 @@ const MainContent = () => {
               borderRadius: 1,
               width: 350,
               height: 150,
-              bgcolor: "#cb8f05",
+              bgcolor: "",
             }}
           >
-            <Typography variant="h6" sx={{ fontFamily: "Aleo Variable" }}>
-              Visión
-            </Typography>
-            <Typography variant="body2" sx={{ fontFamily: "Aleo Variable" }}>
-              Queremos ser el principal motor de cambio e innovación para las
-              cooperativas de ahorro y crédito en Ecuador, promoviendo una
-              cultura de colaboración, aprendizaje continuo y excelencia
-              empresarial.
+            <Typography variant="body2" color="third" fontSize="20px">
+              Capacitar a los miembros de las cooperativas en habilidades
+              digitales y de gestión.
             </Typography>
           </Box>
         </Grid>
@@ -101,17 +113,12 @@ const MainContent = () => {
               borderRadius: 1,
               width: 350,
               height: 150,
-              bgcolor: "#0021c8",
+              bgcolor: "",
             }}
           >
-            <Typography variant="h6" sx={{ fontFamily: "Aleo Variable" }}>
-              Sección 4
-            </Typography>
-            <Typography variant="body2" sx={{ fontFamily: "Aleo Variable" }}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-              quam earum cum. Assumenda non amet ipsam, nulla ab magni porro
-              incidunt rerum alias magnam et vero beatae sequi. Quibusdam,
-              harum.
+            <Typography variant="body2" color="third" fontSize="20px">
+              Fomentar la creación de productos y servicios financieros
+              innovadores.
             </Typography>
           </Box>
         </Grid>

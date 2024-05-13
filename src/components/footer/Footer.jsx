@@ -14,7 +14,7 @@ const Footer = () => {
           <Typography
             variant="body2"
             color="#17202A"
-            sx={{ fontFamily: "Inter" }}
+            
           >
             Terms & Conditions.
           </Typography>
@@ -22,21 +22,21 @@ const Footer = () => {
             variant="body2"
             color="#17202A"
             letterSpacing="50%"
-            sx={{ fontFamily: "Inter" }}
+            
           >
             PRIVACY POLICY
           </Typography>
           <Typography
             variant="body2"
             color="#17202A"
-            sx={{ fontFamily: "FJALA-ONE" }}
+            
           >
             CONTACT US
           </Typography>
           <Typography
             variant="body2"
             color="#17202A"
-            sx={{ fontFamily: "fjala-one" }}
+            
           >
             POWERED BY INNOVA COOP
           </Typography>

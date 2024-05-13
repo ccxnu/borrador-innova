@@ -1,13 +1,17 @@
 import { createTheme } from '@mui/material/styles';
+import "@fontsource-variable/aleo";
 
 // Define los colores, tipografías, espaciados y otros estilos del tema.
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#6200ea', // Color primario
+      main: '#67fbfd', // Color primario
     },
     secondary: {
-      main: '#03dac6', // Color secundario
+      main: '#5481ed', // Color secundario
+    },
+    third: {
+      main: '#000000', // Color secundario
     },
     background: {
       default: '#ffffff', // Color de fondo por defecto
@@ -19,7 +23,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: 'Roboto, Arial, sans-serif', // Fuente predeterminada
+    fontFamily: 'Aleo Variable', // Fuente predeterminada
     h1: {
       fontSize: '2rem',
       fontWeight: 'bold',

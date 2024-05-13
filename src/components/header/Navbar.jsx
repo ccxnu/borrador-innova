@@ -1,11 +1,11 @@
 import { AppBar, Box, Grid } from "@mui/material";
 const Navbar = () => {
   return (
-    <AppBar position="">
+    <AppBar position="static">
       <navbar>
-        <Grid container justifyContent="space-between" fontFamily="Inter" backgroundColor=' #35ddff '>
+        <Grid container justifyContent="space-between" color="secondary" >
           <span>Síguenos en: <strong>in</strong></span>
-          <Box backgroundColor=" #000c4a ">
+          <Box backgroundColor=" default ">
             <span>Llamanos al ✆+593.......</span>
           </Box>
         </Grid>

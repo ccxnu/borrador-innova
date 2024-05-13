@@ -2,7 +2,7 @@ import { AppBar, Toolbar, Typography, Button, Box, Grid } from "@mui/material";
 const Header = () => {
   return (
     <AppBar position="">
-      <Toolbar sx={{ backgroundColor: "#4a5dff" }}>
+      <Toolbar sx={{ backgroundColor: 'default' }}>
         <img src="/static/Logo.png" width="55px" height="40px" />
         <Box>
           <Typography variant="h6" sx={{ fontFamily: "Inter" }}>
@@ -17,35 +17,35 @@ const Header = () => {
             <Button
               variant="outlined"
               color="inherit"
-              sx={{ fontFamily: "Inter" }}
+              
             >
               Inicio
             </Button>
             <Button
               variant="outlined"
               color="inherit"
-              sx={{ fontFamily: "Inter" }}
+              
             >
               Afiliación
             </Button>
             <Button
               variant="outlined"
               color="inherit"
-              sx={{ fontFamily: "Inter" }}
+              
             >
               Servicios
             </Button>
             <Button
               variant="outlined"
               color="inherit"
-              sx={{ fontFamily: "Inter" }}
+              
             >
               Monetización
             </Button>
             <Button
               variant="outlined"
               color="inherit"
-              sx={{ fontFamily: "Inter" }}
+              
             >
               Nosotros
             </Button>
