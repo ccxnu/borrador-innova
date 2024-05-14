@@ -2,7 +2,7 @@ import { Box, Typography, Grid } from "@mui/material";
 const MainContent = () => {
   return (
     <Box
-      sx={{padding: "100px"}}
+        
     >
       <Grid container>
         <Grid item xs={12} md={6}>
@@ -33,8 +33,8 @@ const MainContent = () => {
             económico y social.
           </Typography>
         </Grid>
-        <Grid item xs={12} md={6}>
-          <img src="/static/Logo2.png" width="750px" height="750px" />
+        <Grid item container xs={12} md={6} justifyContent='flex-start'>
+          <img src="/static/Logo2.png" width="600px" height="600px"  />
         </Grid>
       </Grid>
       <Grid>
@@ -53,7 +53,7 @@ const MainContent = () => {
           fontSize="25px"
           marginBottom="50px"
           color="third"
-          paddingInline={22}
+          paddingInline={20}
         >
           Fomentar la innovación y la transformación en las cooperativas de
           ahorro y crédito, mejorando su eficiencia operativa y su capacidad
@@ -76,7 +76,7 @@ const MainContent = () => {
             </Typography>
           </Box>
         </Grid>
-        <Grid item xs={12} md={6} container justifyContent="center">
+        <Grid item container xs={12} md={6} justifyContent="center">
           <Box
             sx={{
               borderRadius: 1,
@@ -101,11 +101,11 @@ const MainContent = () => {
               bgcolor: "",
             }}
           >
-            <Typography variant="body2" color="third" fontSize="20px">
+            <Typography variant="body2" color="sixth" fontSize="20px">
               Capacitar a los miembros de las cooperativas en habilidades
               digitales y de gestión.
             </Typography>
-          </Box>
+          </Box >
         </Grid>
         <Grid item xs={12} md={6} container justifyContent="center">
           <Box
@@ -116,7 +116,7 @@ const MainContent = () => {
               bgcolor: "",
             }}
           >
-            <Typography variant="body2" color="third" fontSize="20px">
+            <Typography variant="body2" fontSize="20px">
               Fomentar la creación de productos y servicios financieros
               innovadores.
             </Typography>

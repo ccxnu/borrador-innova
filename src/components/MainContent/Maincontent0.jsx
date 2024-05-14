@@ -26,8 +26,10 @@ const MainContent0 = () => {
         </Grid>
       </Grid>
       <Grid container spacing={6}>
-        <Grid item xs={12} md={6}
-          container
+        <Grid container
+          item
+          xs={12}
+          md={6}
           justifyContent="center"
           sx={{ marginBottom: "300px" }}
         >
@@ -82,23 +84,23 @@ const MainContent0 = () => {
           </Typography>
         </Grid>
         <Grid container spacing={6}>
-          <Grid item container xs={12} md={6} justifyContent='flex-end' >
+          <Grid item container xs={12} md={6} justifyContent="flex-end">
             <img src="/static/politicas.jpg" width="500px" height="500px" />
           </Grid>
-          <Grid item xs={12} md={6} container direction="column" spacing={2}>
-            <Grid item>
+          <Grid item xs={12} md={6} container justifyContent='center'>
+            <Grid item container justifyContent='center'>
               <Box
                 sx={{
                   borderRadius: 2,
                   width: 350,
                   height: 150,
-                  bgcolor: "#388191",
+                  bgcolor: "",
                 }}
               >
-                <Typography variant="body2" color="third" fontSize="20px">
+                <Typography variant="body2" fontSize="20px">
                   Colaboración
                 </Typography>
-                <Typography variant="body2" color="third" fontSize="20px">
+                <Typography variant="body2" fontSize="20px">
                   Las cooperativas deben comprometerse a colaborar activamente,
                   compartiendo buenas prácticas y experiencias.
                 </Typography>
@@ -113,10 +115,10 @@ const MainContent0 = () => {
                   bgcolor: "#388191",
                 }}
               >
-                <Typography variant="body2" color="third" fontSize="20px">
+                <Typography variant="body2"  fontSize="20px">
                   Transparencia
                 </Typography>
-                <Typography variant="body2" color="third" fontSize="20px">
+                <Typography variant="body2"  fontSize="20px" >
                   La información y los avances deben ser transparentes para
                   todos los miembros del cluster.
                 </Typography>
@@ -128,7 +130,7 @@ const MainContent0 = () => {
                   borderRadius: 2,
                   width: 350,
                   height: 125,
-                  bgcolor: "#388191",
+                  
                 }}
               >
                 <Typography variant="body2" color="third" fontSize="20px">

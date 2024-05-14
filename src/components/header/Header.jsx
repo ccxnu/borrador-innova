@@ -1,14 +1,14 @@
 import { AppBar, Toolbar, Typography, Button, Box, Grid } from "@mui/material";
 const Header = () => {
   return (
-    <AppBar position="">
-      <Toolbar sx={{ backgroundColor: 'default' }}>
+    <AppBar position="relative" color="third">
+      <Toolbar>
         <img src="/static/Logo.png" width="55px" height="40px" />
         <Box>
-          <Typography variant="h6" sx={{ fontFamily: "Inter" }}>
+          <Typography variant="h6" color='primary'>
             INNOVA
           </Typography>
-          <Typography variant="h6" sx={{ fontFamily: "Inter" }}>
+          <Typography variant="h6" color='secondary'>
             COOP
           </Typography>
         </Box>
@@ -16,35 +16,35 @@ const Header = () => {
           <Box>
             <Button
               variant="outlined"
-              color="inherit"
+              color="fifth"
               
             >
               Inicio
             </Button>
             <Button
               variant="outlined"
-              color="inherit"
+              color="fifth"
               
             >
               Afiliación
             </Button>
             <Button
               variant="outlined"
-              color="inherit"
+              color="fifth"
               
             >
               Servicios
             </Button>
             <Button
               variant="outlined"
-              color="inherit"
+              color="fifth"
               
             >
               Monetización
             </Button>
             <Button
               variant="outlined"
-              color="inherit"
+              color="fifth"
               
             >
               Nosotros

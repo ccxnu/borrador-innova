@@ -1,7 +1,7 @@
 import { Box, Typography, Grid } from "@mui/material";
 const MainContent1 = () => {
   return (
-    <Box sx={{ padding: "100px" }}>
+    <Box >
       <Grid>
         <Typography
           textAlign="center"
@@ -112,7 +112,7 @@ const MainContent1 = () => {
           </Typography>
         </Grid>
         <Grid container spacing={6}>
-          <Grid item xs={12} md={6} container direction="column" spacing={2} alignContent='flex-end'>
+          <Grid item xs={12} md={6} container direction="column" spacing={2} alignContent='center'>
             <Grid item>
               <Box
                 sx={{
