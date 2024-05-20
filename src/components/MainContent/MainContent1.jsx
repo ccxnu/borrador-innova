@@ -1,5 +1,6 @@
-import { Box, Typography, Grid } from "@mui/material";
+import { Box, Typography, Grid, useTheme } from "@mui/material";
 const MainContent1 = () => {
+  const theme = useTheme();
   return (
     <Box >
       <Grid>
@@ -21,7 +22,7 @@ const MainContent1 = () => {
 
               width: 350,
               height: 260,
-              bgcolor: "#1d3d",
+              bgcolor: theme.palette.sixth.main,
             }}
           >
             <Typography variant="body2" color="third" fontSize="20px">
@@ -41,7 +42,7 @@ const MainContent1 = () => {
               borderRadius: 2,
               width: 350,
               height: 240,
-              bgcolor: "#1d3",
+              bgcolor: theme.palette.sixth.main,
             }}
           >
             <Typography variant="body2" color="third" fontSize="20px">
@@ -61,7 +62,7 @@ const MainContent1 = () => {
               borderRadius: 2,
               width: 350,
               height: 180,
-              bgcolor: "#1d3d",
+              bgcolor: theme.palette.sixth.main,
             }}
           >
             <Typography variant="body2" color="third" fontSize="20px">
@@ -87,7 +88,7 @@ const MainContent1 = () => {
               borderRadius: 2,
               width: 350,
               height: 180,
-              bgcolor: "#1d3d",
+              bgcolor: theme.palette.sixth.main,
             }}
           >
             <Typography variant="body2" color="third" fontSize="20px">
@@ -111,19 +112,19 @@ const MainContent1 = () => {
             <strong>Servicios:</strong>
           </Typography>
         </Grid>
-        <Grid container spacing={6}>
-          <Grid item xs={12} md={6} container direction="column" spacing={2} alignContent='center'>
+        <Grid container spacing={0}>
+          <Grid item xs={12} md={6} container  alignContent='center'>
             <Grid item>
               <Box
                 sx={{
                   borderRadius: 2,
                   width: 350,
                   height: 150,
-                  bgcolor: "#388191",
+                  bgcolor: theme.palette.sixth.main,
                 }}
               >
                 <Typography variant="body2" color="third" fontSize="20px">
-                  Colaboración
+                  <strong>Colaboración</strong>
                 </Typography>
                 <Typography variant="body2" color="third" fontSize="20px">
                   Las cooperativas deben comprometerse a colaborar activamente,
@@ -137,11 +138,11 @@ const MainContent1 = () => {
                   borderRadius: 2,
                   width: 350,
                   height: 125,
-                  bgcolor: "#388191",
+                  bgcolor: theme.palette.sixth.main,
                 }}
               >
                 <Typography variant="body2" color="third" fontSize="20px">
-                  Transparencia
+                  <strong>Transparencia</strong>
                 </Typography>
                 <Typography variant="body2" color="third" fontSize="20px">
                   La información y los avances deben ser transparentes para
@@ -155,11 +156,11 @@ const MainContent1 = () => {
                   borderRadius: 2,
                   width: 350,
                   height: 125,
-                  bgcolor: "#388191",
+                  bgcolor: theme.palette.sixth.main,
                 }}
               >
                 <Typography variant="body2" color="third" fontSize="20px">
-                  Inclusión
+                  <strong>Inclusión</strong>
                 </Typography>
                 <Typography variant="body2" color="third" fontSize="20px">
                   Todas las cooperativas, independientemente de su tamaño o

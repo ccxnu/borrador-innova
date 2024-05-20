@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <Box
       sx={{
-        backgroundColor: "#D7DBDD",
+        backgroundColor: "fifth",
         padding: "20px",
         textAlign: "center",
       }}
@@ -13,14 +13,14 @@ const Footer = () => {
         <Grid container justifyContent="space-between">
           <Typography
             variant="body2"
-            color="#17202A"
+            color="fifth"
             
           >
             Terms & Conditions.
           </Typography>
           <Typography
             variant="body2"
-            color="#17202A"
+            color="fifth"
             letterSpacing="50%"
             
           >
@@ -28,14 +28,14 @@ const Footer = () => {
           </Typography>
           <Typography
             variant="body2"
-            color="#17202A"
+            color="fifth"
             
           >
             CONTACT US
           </Typography>
           <Typography
             variant="body2"
-            color="#17202A"
+            color="#fith"
             
           >
             POWERED BY INNOVA COOP

@@ -1,12 +1,8 @@
-import { Box, Typography, Grid } from "@mui/material";
+import { Box, Typography, Grid, useTheme } from "@mui/material";
 const MainContent0 = () => {
+  const theme = useTheme();
   return (
-    <Box
-      sx={{
-        fontFamily: "Inter",
-        padding: "100px",
-      }}
-    >
+    <Box>
       <Grid
         container
         spacing={2}
@@ -26,19 +22,16 @@ const MainContent0 = () => {
         </Grid>
       </Grid>
       <Grid container spacing={6}>
-        <Grid container
-          item
-          xs={12}
-          md={6}
-          justifyContent="center"
-          sx={{ marginBottom: "300px" }}
+        <Grid item container xs={12} md={6} justifyContent="center"
+          sx={{ marginBottom: "200px" }}
         >
           <Box
             sx={{
               borderRadius: 2,
               width: 350,
-              height: 110,
-              bgcolor: "",
+              height: 230,
+              textAlign:'justify',
+              bgcolor: theme.palette.sixth.main,
             }}
           >
             <Typography variant="body2" color="third" fontSize="20px">
@@ -57,8 +50,9 @@ const MainContent0 = () => {
             sx={{
               borderRadius: 1,
               width: 350,
-              height: 150,
-              bgcolor: "",
+              height: 230,
+              textAlign:'justify',
+              bgcolor: theme.palette.sixth.main,
             }}
           >
             <Typography variant="body2" color="third" fontSize="20px">
@@ -75,7 +69,7 @@ const MainContent0 = () => {
         <Grid container justifyContent="center">
           <Typography
             textAlign="center"
-            variant="body1"
+            variant="body2"
             fontSize="50px"
             marginBottom="50px"
             color="secondary"
@@ -83,22 +77,22 @@ const MainContent0 = () => {
             <strong>Politicas:</strong>
           </Typography>
         </Grid>
-        <Grid container spacing={6}>
+        <Grid container spacing={12}>
           <Grid item container xs={12} md={6} justifyContent="flex-end">
-            <img src="/static/politicas.jpg" width="500px" height="500px" />
+            <img src="/static/politicas.png" width="500px" height="500px" />
           </Grid>
-          <Grid item xs={12} md={6} container justifyContent='center'>
-            <Grid item container justifyContent='center'>
+          <Grid item xs={12} md={6} container justifyContent='flex-end'>
+            <Grid item container justifyContent='center' >
               <Box
                 sx={{
                   borderRadius: 2,
                   width: 350,
                   height: 150,
-                  bgcolor: "",
+                  bgcolor: theme.palette.sixth.main,
                 }}
               >
                 <Typography variant="body2" fontSize="20px">
-                  Colaboración
+                  <strong>Colaboración</strong>
                 </Typography>
                 <Typography variant="body2" fontSize="20px">
                   Las cooperativas deben comprometerse a colaborar activamente,
@@ -106,17 +100,17 @@ const MainContent0 = () => {
                 </Typography>
               </Box>
             </Grid>
-            <Grid item>
+            <Grid item container justifyContent='center'>
               <Box
                 sx={{
                   borderRadius: 2,
                   width: 350,
                   height: 125,
-                  bgcolor: "#388191",
+                  bgcolor: theme.palette.sixth.main,
                 }}
               >
                 <Typography variant="body2"  fontSize="20px">
-                  Transparencia
+                  <strong>Transparencia</strong>
                 </Typography>
                 <Typography variant="body2"  fontSize="20px" >
                   La información y los avances deben ser transparentes para
@@ -124,17 +118,17 @@ const MainContent0 = () => {
                 </Typography>
               </Box>
             </Grid>
-            <Grid item>
+            <Grid item container justifyContent='center'>
               <Box
                 sx={{
                   borderRadius: 2,
                   width: 350,
                   height: 125,
-                  
+                  bgcolor: theme.palette.sixth.main,
                 }}
               >
                 <Typography variant="body2" color="third" fontSize="20px">
-                  Inclusión
+                  <strong>Inclusión</strong>
                 </Typography>
                 <Typography variant="body2" color="third" fontSize="20px">
                   Todas las cooperativas, independientemente de su tamaño o

@@ -1,18 +1,16 @@
-import { Box, Typography, Grid } from "@mui/material";
+import { Box, Typography, Grid, useTheme } from "@mui/material";
 const MainContent = () => {
+  const theme = useTheme();
   return (
-    <Box
-        
-    >
+    <Box>
       <Grid container>
         <Grid item xs={12} md={6}>
           <Typography
-            textAlign="center"
             variant="h2"
             fontWeight="700"
             fontSize="60px"
             color="primary"
-            justifyContent="left"
+            paddingInlineStart={22}
             sx={{ marginTop: "50px" }}
             gutterBottom
           >
@@ -21,6 +19,7 @@ const MainContent = () => {
           <Typography
             variant="body1"
             fontSize="20px"
+            textAlign='justify'
             marginBottom="50px"
             color="secondary"
             paddingInline={22}
@@ -33,6 +32,7 @@ const MainContent = () => {
             económico y social.
           </Typography>
         </Grid>
+        
         <Grid item container xs={12} md={6} justifyContent='flex-start'>
           <img src="/static/Logo2.png" width="600px" height="600px"  />
         </Grid>
@@ -47,33 +47,39 @@ const MainContent = () => {
         >
           <strong>Nuestros Objetivos:</strong>
         </Typography>
+        </Grid>
+        <Grid container spacing={6}>
+        <Box>
         <Typography
           textAlign="justify"
           variant="body2"
           fontSize="25px"
           marginBottom="50px"
           color="third"
-          paddingInline={20}
+          paddingInline={22}
         >
           Fomentar la innovación y la transformación en las cooperativas de
           ahorro y crédito, mejorando su eficiencia operativa y su capacidad
           para servir a sus miembros.
         </Typography>
+        </Box>
       </Grid>
-      <Grid container spacing={5}>
-        <Grid item xs={12} md={6} container justifyContent="center">
+      <Grid container spacing={6}>
+        <Grid item xs={12} md={6} container justifyContent="center" >
           <Box
             sx={{
               borderRadius: 2,
               width: 350,
-              height: 110,
-              bgcolor: "",
+              height: 150,
+              textAlign:'justify',
+              bgcolor: theme.palette.sixth.main,
             }}
           >
-            <Typography variant="body2" color="third" fontSize="20px">
+            <Typography variant="body2" fontSize="20px">
               Crear un ecosistema colaborativo donde las cooperativas compartan
               conocimientos, recursos y soluciones tecnológicas.
             </Typography>
+            
           </Box>
         </Grid>
         <Grid item container xs={12} md={6} justifyContent="center">
@@ -82,10 +88,11 @@ const MainContent = () => {
               borderRadius: 1,
               width: 350,
               height: 150,
-              bgcolor: "",
+              textAlign:'justify',
+              bgcolor: theme.palette.sixth.main,
             }}
           >
-            <Typography variant="body2" color="third" fontSize="20px">
+            <Typography variant="body2" fontSize="20px">
               Facilitar la adopción de tecnologías emergentes, como la
               inteligencia artificial, la ciberseguridad y la automatización de
               procesos.
@@ -98,10 +105,11 @@ const MainContent = () => {
               borderRadius: 1,
               width: 350,
               height: 150,
-              bgcolor: "",
+              textAlign:'justify',
+              bgcolor: theme.palette.sixth.main,
             }}
           >
-            <Typography variant="body2" color="sixth" fontSize="20px">
+            <Typography variant="body2" fontSize="20px">
               Capacitar a los miembros de las cooperativas en habilidades
               digitales y de gestión.
             </Typography>
@@ -113,7 +121,8 @@ const MainContent = () => {
               borderRadius: 1,
               width: 350,
               height: 150,
-              bgcolor: "",
+              textAlign:'justify',
+              bgcolor: theme.palette.sixth.main,
             }}
           >
             <Typography variant="body2" fontSize="20px">
