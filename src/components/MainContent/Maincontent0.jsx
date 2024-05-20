@@ -118,7 +118,7 @@ const MainContent0 = () => {
                 </Typography>
               </Box>
             </Grid>
-            <Grid item container justifyContent='center'>
+            <Grid item container justifyContent='center' sx={{ marginBottom: "300px" }}>
               <Box
                 sx={{
                   borderRadius: 2,
