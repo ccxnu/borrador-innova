@@ -1,10 +1,11 @@
 import Navbar from "./components/header/Navbar";
 import Header from "./components/header/Header";
-import Footer from "./components/footer/Footer";
 import Footer0 from "./components/footer/Footer0";
 import MainContent from "./components/MainContent/MainContent";
-import MainContent1 from "./components/MainContent/MainContent1";
 import MainContent0 from "./components/MainContent/Maincontent0";
+import MainContent1 from "./components/MainContent/MainContent1";
+import MainContent2 from "./components/MainContent/Maincontent2";
+
 
 const App = () => {
   return (
@@ -14,8 +15,9 @@ const App = () => {
       <MainContent />
       <MainContent0 />
       <MainContent1 />
+      <MainContent2 />
       <Footer0 />
-      <Footer />
+      
     </div>
   );
 };

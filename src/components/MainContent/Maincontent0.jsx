@@ -89,6 +89,7 @@ const MainContent0 = () => {
                   width: 350,
                   height: 150,
                   bgcolor: theme.palette.sixth.main,
+                  marginBottom: "50px",
                 }}
               >
                 <Typography variant="body2" fontSize="20px">
@@ -107,6 +108,7 @@ const MainContent0 = () => {
                   width: 350,
                   height: 125,
                   bgcolor: theme.palette.sixth.main,
+                  marginBottom: "50px",
                 }}
               >
                 <Typography variant="body2"  fontSize="20px">
@@ -125,6 +127,7 @@ const MainContent0 = () => {
                   width: 350,
                   height: 125,
                   bgcolor: theme.palette.sixth.main,
+                  marginBottom: "50px",
                 }}
               >
                 <Typography variant="body2" color="third" fontSize="20px">

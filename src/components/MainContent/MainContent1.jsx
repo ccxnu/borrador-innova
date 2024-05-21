@@ -3,39 +3,37 @@ import { Box, Typography, Grid, useTheme } from "@mui/material";
 const MainContent1 = () => {
   const theme = useTheme();
   return (
-    <Box >
-      <Grid container spacing={6} >
-      <Grid container justifyContent="center" >
+    <Box>
+      <Grid container spacing={6}>
+        <Grid container justifyContent="center">
           <Typography
             textAlign="center"
             variant="body2"
             fontSize="50px"
             marginBottom="50px"
             color="secondary"
-            
           >
-            <strong>Beneficios de pertenecer a</strong>
+            <strong>Beneficios de Pertenecer al Cluster</strong>
           </Typography>
         </Grid>
-        <Grid item container xs={12} md={6} justifyContent="center"   >
+        <Grid item container xs={12} md={6} justifyContent="center">
           <Box
             sx={{
               borderRadius: 2,
               width: 350,
               height: 230,
-              textAlign: 'justify',
+              textAlign: "justify",
               bgcolor: theme.palette.sixth.main,
             }}
           >
-            
             <Typography variant="body2" color="third" fontSize="20px">
-              <strong>Misión</strong>
+              <strong>Acceso a Recursos y Conocimientos:</strong>
             </Typography>
             <Typography variant="body2" color="third" fontSize="20px">
-              Nuestra misión es impulsar la innovación y el crecimiento
-              sostenible de las cooperativas en Ecuador, fortaleciendo su
-              capacidad para enfrentar los desafíos del mercado y contribuir al
-              bienestar de sus miembros y comunidades.
+              Las cooperativas afiliadas tendrán acceso a una amplia gama de
+              recursos y conocimientos, incluyendo programas de capacitación,
+              herramientas de gestión, y asesoramiento experto en áreas clave
+              como tecnología, procesos, marketing, y finanzas.
             </Typography>
           </Box>
         </Grid>
@@ -45,40 +43,38 @@ const MainContent1 = () => {
               borderRadius: 1,
               width: 350,
               height: 230,
-              textAlign: 'justify',
+              textAlign: "justify",
               bgcolor: theme.palette.sixth.main,
             }}
           >
             <Typography variant="body2" color="third" fontSize="20px">
-              <strong>Visión</strong>
+              <strong>Red de Colaboración:</strong>
             </Typography>
             <Typography variant="body2" color="third" fontSize="20px">
-              Queremos ser el principal motor de cambio e innovación para las
-              cooperativas de ahorro y crédito en Ecuador, promoviendo una
-              cultura de colaboración, aprendizaje continuo y excelencia
-              empresarial.
+              Formar parte del cluster permitirá a las cooperativas conectarse
+              con otras organizaciones similares, facilitando el intercambio de
+              ideas, la colaboración en proyectos conjuntos y el establecimiento
+              de alianzas estratégicas.
             </Typography>
           </Box>
         </Grid>
-        <Grid item container xs={12} md={6} justifyContent="center" >
+        <Grid item container xs={12} md={6} justifyContent="center">
           <Box
             sx={{
               borderRadius: 2,
               width: 350,
               height: 230,
-              textAlign: 'justify',
+              textAlign: "justify",
               bgcolor: theme.palette.sixth.main,
             }}
           >
-            
             <Typography variant="body2" color="third" fontSize="20px">
-              <strong>Misión</strong>
+              <strong>Visibilidad y Promoción:</strong>
             </Typography>
             <Typography variant="body2" color="third" fontSize="20px">
-              Nuestra misión es impulsar la innovación y el crecimiento
-              sostenible de las cooperativas en Ecuador, fortaleciendo su
-              capacidad para enfrentar los desafíos del mercado y contribuir al
-              bienestar de sus miembros y comunidades.
+              Ser parte del cluster aumentará la visibilidad de las cooperativas
+              ante potenciales socios, clientes y financiadores, ayudando a
+              fortalecer su marca y su posición en el mercado.
             </Typography>
           </Box>
         </Grid>
@@ -88,66 +84,127 @@ const MainContent1 = () => {
               borderRadius: 1,
               width: 350,
               height: 230,
-              textAlign: 'justify',
+              textAlign: "justify",
+              bgcolor: theme.palette.sixth.main,
+              marginBottom: "200px" 
+            }}
+          >
+            <Typography variant="body2" color="third" fontSize="20px">
+              <strong>Asesoramiento y Mentoring:</strong>
+            </Typography>
+            <Typography variant="body2" color="third" fontSize="20px">
+              Se ofrecerá asesoramiento personalizado y mentoring a las
+              cooperativas afiliadas, con el objetivo de apoyar su crecimiento y
+              desarrollo a largo plazo.
+            </Typography>
+          </Box>
+        </Grid>
+        <Grid container justifyContent="center">
+          <Typography
+            textAlign="center"
+            variant="body2"
+            fontSize="50px"
+            marginBottom="50px"
+            color="secondary"
+          >
+            <strong>Condiciones de Afiliación</strong>
+          </Typography>
+        </Grid>
+        <Grid item container xs={12} md={6} justifyContent="center">
+          <Box
+            sx={{
+              borderRadius: 2,
+              width: 350,
+              height: 230,
+              textAlign: "justify",
               bgcolor: theme.palette.sixth.main,
             }}
           >
             <Typography variant="body2" color="third" fontSize="20px">
-              <strong>Visión</strong>
-            </Typography>
-            <Typography variant="body2" color="third" fontSize="20px">
-              Queremos ser el principal motor de cambio e innovación para las
-              cooperativas de ahorro y crédito en Ecuador, promoviendo una
-              cultura de colaboración, aprendizaje continuo y excelencia
-              empresarial.
+              Ser una Cooperativa Registrada: Para ser elegible para unirse al
+              cluster, la organización debe estar legalmente constituida como
+              una cooperativa en Ecuador.
             </Typography>
           </Box>
         </Grid>
-        
         <Grid item xs={12} md={6} container justifyContent="center">
           <Box
             sx={{
               borderRadius: 1,
               width: 350,
               height: 230,
-              textAlign: 'justify',
+              textAlign: "justify",
               bgcolor: theme.palette.sixth.main,
             }}
           >
             <Typography variant="body2" color="third" fontSize="20px">
-              <strong>Visión</strong>
-            </Typography>
-            <Typography variant="body2" color="third" fontSize="20px">
-              Queremos ser el principal motor de cambio e innovación para las
-              cooperativas de ahorro y crédito en Ecuador, promoviendo una
-              cultura de colaboración, aprendizaje continuo y excelencia
-              empresarial.
+              Compromiso con la Innovación y el Desarrollo: Las cooperativas
+              interesadas en unirse al cluster deben demostrar un compromiso
+              genuino con la innovación, el desarrollo empresarial y la mejora
+              continua de sus operaciones.
             </Typography>
           </Box>
         </Grid>
-        <Grid item xs={12} md={6} container justifyContent="center" sx={{ marginBottom: "300px" }}>
+        <Grid item container xs={12} md={6} justifyContent="center">
+          <Box
+            sx={{
+              borderRadius: 2,
+              width: 350,
+              height: 230,
+              textAlign: "justify",
+              bgcolor: theme.palette.sixth.main,
+            }}
+          >
+            <Typography variant="body2" color="third" fontSize="20px">
+              Participación Activa: Se espera que las cooperativas afiliadas
+              participen activamente en las actividades y eventos del cluster,
+              contribuyendo con sus ideas, experiencias y recursos para
+              beneficio de la comunidad en su conjunto.
+            </Typography>
+          </Box>
+        </Grid>
+        <Grid item xs={12} md={6} container justifyContent="center">
           <Box
             sx={{
               borderRadius: 1,
               width: 350,
               height: 230,
-              textAlign: 'justify',
+              textAlign: "justify",
               bgcolor: theme.palette.sixth.main,
             }}
           >
             <Typography variant="body2" color="third" fontSize="20px">
-              <strong>Visión</strong>
-            </Typography>
-            <Typography variant="body2" color="third" fontSize="20px">
-              Queremos ser el principal motor de cambio e innovación para las
-              cooperativas de ahorro y crédito en Ecuador, promoviendo una
-              cultura de colaboración, aprendizaje continuo y excelencia
-              empresarial.
+              Cumplimiento de Normas y Ética Empresarial: Todas las cooperativas
+              afiliadas deberán cumplir con las normas éticas y empresariales
+              establecidas por el cluster, incluyendo el respeto a los derechos
+              laborales, ambientales y sociales.
             </Typography>
           </Box>
         </Grid>
-        
-        <Grid container justifyContent="center" >
+        <Grid
+          item
+          xs={12}
+          md={6}
+          container
+          justifyContent="center"
+          sx={{ marginBottom: "100px" }}
+        >
+          <Box
+            sx={{
+              borderRadius: 1,
+              width: 350,
+              height: 230,
+              textAlign: "justify",
+              bgcolor: theme.palette.sixth.main,
+            }}
+          >
+            <Typography variant="body2" color="third" fontSize="20px">
+              La membresía es gratuita, pero las cooperativas pueden contribuir
+              monetariamente para financiar proyectos conjuntos.
+            </Typography>
+          </Box>
+        </Grid>
+        <Grid item container justifyContent="center">
           <Typography
             textAlign="center"
             variant="body2"
@@ -158,36 +215,39 @@ const MainContent1 = () => {
             <strong>Servicios:</strong>
           </Typography>
         </Grid>
-        <Grid container spacing={12} >
-          <Grid item container xs={12} md={6} justifyContent="flex-end"  >
+        <Grid container spacing={12}>
+          <Grid item container xs={12} md={6} justifyContent="flex-end">
             <img src="/static/servicios.jpg" width="500px" height="500px" />
           </Grid>
-          <Grid item xs={12} md={6} container justifyContent='flex-start' >
-            <Grid item container justifyContent='center'>
+          <Grid item xs={12} md={6} container justifyContent="flex-start">
+            <Grid item container justifyContent="center">
               <Box
                 sx={{
                   borderRadius: 2,
                   width: 350,
                   height: 150,
                   bgcolor: theme.palette.sixth.main,
+                  marginBottom: "50px",
                 }}
               >
                 <Typography variant="body2" fontSize="20px">
-                  <strong>Colaboración</strong>
+                  <strong>Plataforma Digital Compartida:</strong>
                 </Typography>
                 <Typography variant="body2" fontSize="20px">
-                  Las cooperativas deben comprometerse a colaborar activamente,
-                  compartiendo buenas prácticas y experiencias.
+                  Crear una plataforma en línea
+                  donde las cooperativas puedan acceder a herramientas, recursos
+                  y soluciones tecnológicas.
                 </Typography>
               </Box>
             </Grid>
-            <Grid item container justifyContent='center'>
+            <Grid item container justifyContent="center">
               <Box
                 sx={{
                   borderRadius: 2,
                   width: 350,
                   height: 125,
                   bgcolor: theme.palette.sixth.main,
+                  marginBottom: "50px",
                 }}
               >
                 <Typography variant="body2" fontSize="20px">
@@ -199,13 +259,14 @@ const MainContent1 = () => {
                 </Typography>
               </Box>
             </Grid>
-            <Grid item container justifyContent='center'>
+            <Grid item container justifyContent="center">
               <Box
                 sx={{
                   borderRadius: 2,
                   width: 350,
                   height: 125,
                   bgcolor: theme.palette.sixth.main,
+                  marginBottom: "200px" 
                 }}
               >
                 <Typography variant="body2" color="third" fontSize="20px">

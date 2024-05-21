@@ -123,6 +123,7 @@ const MainContent = () => {
               height: 150,
               textAlign:'justify',
               bgcolor: theme.palette.sixth.main,
+              marginBottom: "200px" 
             }}
           >
             <Typography variant="body2" fontSize="20px">
