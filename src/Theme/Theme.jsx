@@ -4,16 +4,16 @@ import "@fontsource-variable/aleo";
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#67fbfd', // Color primario
+      main: '#71FCFC', // Color primario
     },
     secondary: {
       main: '#5481ed', // Color secundario
     },
     third: {
-      main: '#1c3b77', // Color secundario
+      main: '#13353C', // Color secundario
     },
     fourth: {
-      main: '#3163ba', // Color secundario
+      main: '#3165BB', // Color secundario
     },
     fifth: {
       main: '#ffffff', // Color secundario

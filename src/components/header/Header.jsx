@@ -1,53 +1,56 @@
-import { AppBar, Toolbar, Typography, Button, Box, Grid } from "@mui/material";
+import { AppBar, Toolbar, Typography, Button, Box, Grid, useTheme } from "@mui/material";
 const Header = () => {
+  const theme = useTheme();
   return (
-    <AppBar position="relative" color="third">
+    <AppBar position="relative" sx={{ backgroundImage: `linear-gradient(to right, ${theme.palette.third.main}, ${theme.palette.primary.main})`, padding:'15px'}}>
       <Toolbar>
-        <img src="/static/Logo.png" width="55px" height="40px" />
         <Box>
-          <Typography variant="h6" color='primary'>
+        <img src="/static/Logo.png" width="230px" height="150px"  />
+        </Box>
+        <Box>
+          <Typography variant="h6" color='primary' fontSize='30px'>
             INNOVA
           </Typography>
-          <Typography variant="h6" color='secondary'>
-            COOP
+          <Typography variant="h6" color='secondary' fontSize='20px' textAlign='center'>
+            C O O P
           </Typography>
         </Box>
-        <Grid container justifyContent="end">
+        <Grid container sx={{ justifyContent: 'space-around',}}>
           <Box>
             <Button
-              variant="outlined"
+              variant="text"
               color="fifth"
-              
+              sx={{fontSize: '23px',}}
             >
-              Inicio
+              INICIO
             </Button>
             <Button
-              variant="outlined"
+              variant="text"
               color="fifth"
-              
+              sx={{fontSize: '23px'}}              
             >
-              Afiliación
+              AFILICACIÓN
             </Button>
             <Button
-              variant="outlined"
+              variant="text"
               color="fifth"
-              
+              sx={{fontSize: '23px'}}
             >
-              Servicios
+              SERVICIOS
             </Button>
             <Button
-              variant="outlined"
+              variant="text"
               color="fifth"
-              
+              sx={{fontSize: '23px'}}
             >
-              Monetización
+              MONTEZACIÓN
             </Button>
             <Button
-              variant="outlined"
+              variant="text"
               color="fifth"
-              
+              sx={{fontSize: '23px'}}
             >
-              Nosotros
+              NOSOTROS
             </Button>
           </Box>
         </Grid>

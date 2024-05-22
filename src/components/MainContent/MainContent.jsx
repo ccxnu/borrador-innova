@@ -4,25 +4,33 @@ const MainContent = () => {
   return (
     <Box>
       <Grid container>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={8} container justifyContent="center" >
+          <Box 
+           sx={{
+            borderRadius: 2,
+            width: 1000,
+            height: 50,
+            paddingInlineStart: 7,
+            marginBottom: "30px",
+            bgcolor: theme.palette.primary.main,
+            marginTop: "50px"
+          }}>
           <Typography
             variant="h2"
             fontWeight="700"
-            fontSize="60px"
-            color="primary"
-            paddingInlineStart={22}
-            sx={{ marginTop: "50px" }}
-            gutterBottom
+            fontSize="30px"
+            color="secondary"
           >
-            BIENVENIDO A CLUSTER DE INNOVACIÓN COOPERATIVO
+            Bienvenido a Clúster De Innovación Cooperativa
           </Typography>
+          </Box>
+          <Box>
           <Typography
             variant="body1"
             fontSize="20px"
-            textAlign='justify'
-            marginBottom="50px"
             color="secondary"
-            paddingInline={22}
+            paddingInlineStart={7}
+            
           >
             El Cluster de Innovación Cooperativo en Ecuador está diseñado para
             fomentar el crecimiento, la innovación y la sostenibilidad de las
@@ -31,12 +39,14 @@ const MainContent = () => {
             recursos, y aprovechar oportunidades para impulsar el desarrollo
             económico y social.
           </Typography>
-        </Grid>
-        
-        <Grid item container xs={12} md={6} justifyContent='flex-start'>
-          <img src="/static/Logo2.png" width="600px" height="600px"  />
+          </Box>
         </Grid>
       </Grid>
+      <Box>
+        <Grid item container xs={12} md={4} alightContent='end'sx={{marginTop: "50px", marginBottom: "200px" }} >
+          <img src="/static/Logo2.png" width="100px" height="100px"  />
+        </Grid>
+        </Box>
       <Grid>
         <Typography
           textAlign="center"

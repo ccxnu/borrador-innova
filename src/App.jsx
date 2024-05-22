@@ -1,4 +1,3 @@
-import Navbar from "./components/header/Navbar";
 import Header from "./components/header/Header";
 import Footer0 from "./components/footer/Footer0";
 import MainContent from "./components/MainContent/MainContent";
@@ -10,7 +9,6 @@ import MainContent2 from "./components/MainContent/Maincontent2";
 const App = () => {
   return (
     <div>
-      <Navbar />
       <Header />
       <MainContent />
       <MainContent0 />
