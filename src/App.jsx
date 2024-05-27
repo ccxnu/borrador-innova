@@ -1,5 +1,5 @@
 import Header from "./components/header/Header";
-import Footer0 from "./components/footer/Footer0";
+import Footer from "./components/footer/Footer";
 import MainContent from "./components/MainContent/MainContent";
 import MainContent0 from "./components/MainContent/Maincontent0";
 import MainContent1 from "./components/MainContent/MainContent1";
@@ -14,8 +14,7 @@ const App = () => {
       <MainContent0 />
       <MainContent1 />
       <MainContent2 />
-      <Footer0 />
-      
+      <Footer />
     </div>
   );
 };

@@ -12,7 +12,7 @@ const Header = () => {
     >
       <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
-          <img src="/static/Logo.png" width="100" height="50" alt="Logo" />
+          <img src="/static/Logo.png" width="190" height="150" alt="Logo" />
           <Box sx={{ display: 'flex', flexDirection: 'column', marginLeft: '10px' }}>
             <Box component="span" sx={{ color: theme.palette.primary.main, fontSize: '30px', fontWeight: 'bold' }}>
               INNOVA

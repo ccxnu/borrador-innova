@@ -4,35 +4,38 @@ import "@fontsource-variable/aleo";
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#71FCFC', // Color primario
+      main: '#71FCFC', 
     },
     secondary: {
-      main: '#5481ed', // Color secundario
+      main: '#5481ed', 
     },
     third: {
-      main: '#13353C', // Color secundario
+      main: '#13353C', 
     },
     fourth: {
-      main: '#3165BB', // Color secundario
+      main: '#3165BB', 
     },
     fifth: {
-      main: '#ffffff', // Color secundario
+      main: '#ffffff', 
     },
     sixth: {
-      main: '#799FDF', // Color secundario
+      main: '#3165BB',
+    },
+    septh: {
+    main: '#162E55',
     },
     background: {
-      default: '#ffffff', // Color de fondo por defecto
-      paper: '#f5f5f5', // Color de fondo de papel
+      default: '#ffffff', 
+      paper: '#f5f5f5', 
     },
     text: {
-      primary: '#000000', // Color de texto primario
-      secondary: '#757575', // Color de texto secundario
+      primary: '#000000', 
+      secondary: '#757575', 
     },
     
   },
   typography: {
-    fontFamily: 'Aleo Variable', // Fuente predeterminada
+    fontFamily: 'Aleo Variable',
     h1: {
       fontSize: '2rem',
       fontWeight: 'bold',
@@ -41,16 +44,15 @@ const theme = createTheme({
       fontSize: '1rem',
     },
     button: {
-      textTransform: 'none', // No transformar texto a mayúsculas
+      textTransform: 'none', 
     },
   },
-  spacing: 8, // Valor base para el espaciado
+  spacing: 8, 
   shape: {
-    borderRadius: 4, // Redondeo de bordes
+    borderRadius: 4, 
 
   },
   
 });
 
-// Exporta el tema para usarlo en tu aplicación.
 export default theme;
