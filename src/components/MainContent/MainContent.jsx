@@ -18,7 +18,7 @@ const MainContent = () => {
                 marginBottom: "20px",
               }}
             >
-              <Typography
+               <Typography
                 variant="h2"
                 fontWeight="700"
                 fontSize="30px"
@@ -43,13 +43,16 @@ const MainContent = () => {
               económico y social.
             </Typography>
           </Grid>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={1}>
+            <Box
+            sx={{marginInlineStart:'140px'}}>
             <img
               src="/static/Logo2.png"
-              width="200px"
-              height="200px"
-              style={{ display: "block", marginBottom: "20px" }} // Ajuste de margen inferior aquí
+              width="250px"
+              height="250px"
+              style={{ display: "block", marginBottom: "60px" }} 
             />
+            </Box>
           </Grid>
         </Grid>
       </Box>
@@ -58,11 +61,11 @@ const MainContent = () => {
           <Grid item xs={12} md={6} container justifyContent="center" >
             <img
               src="/static/objetivos.png"
-              width="750px"
-              height="450px"
+              width="600px"
+              height="350px"
             />
           </Grid>
-          <Grid item xs={12} md={6} container textAlign="left">
+          <Grid item xs={12} md={6} container textAlign="left" justifyContent='center'>
             <Grid item xs={12} container>
               <Box
                 sx={{
@@ -76,6 +79,7 @@ const MainContent = () => {
                 <Typography
                   variant="h3"
                   fontSize="30px"
+                  padding='10px'
                   color={theme.palette.secondary.main}
                   fontWeight="700"
                 >
@@ -93,7 +97,7 @@ const MainContent = () => {
                 conocimientos, recursos y soluciones tecnológicas.
               </Typography>
             </Grid>
-            <Grid item container alignItems="center" mb={2}>
+            <Grid item container alignItems="right" mb={2}>
               <Typography
                 variant="body2"
                 fontSize="20px"

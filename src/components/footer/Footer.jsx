@@ -12,22 +12,19 @@ const Footer = () => {
       }}
     >
       <Box>
-        <Grid container justifyContent="space-around" >
+        <Grid container justifyContent="center" >
           <Box>
-            <Typography variant="body1" color={theme.palette.fifth.main} letterSpacing="50%">
-              Links:
+            <Typography variant="body1" color={theme.palette.fifth.main} fontSize='25px'>
+              <strong>2024 INNOVA COOP</strong>
             </Typography>
             <Box>
-              <Typography variant="body2" color={theme.palette.fifth.main} >Sobre Nosotros</Typography>
+              <Typography variant="body2" color={theme.palette.fifth.main} >Nuestra Oficina: Calle Mexico y Curazao | Tefl: 07 2200 259 Ext:110</Typography>
             </Box>
             <Box>
-              <Typography variant="body2" color={theme.palette.fifth.main}>Contáctenos</Typography>
+              <Typography variant="body2" color={theme.palette.fifth.main}>Email: innovacoop@outlook.com | Facebook: Innova Coop</Typography>
             </Box>
             <Box>
-              <Typography variant="body2" color={theme.palette.fifth.main}>Nuestros Servicios</Typography>
-            </Box>
-            <Box>
-              <Typography variant="body2" color={theme.palette.fifth.main}>Productos</Typography>
+              <Typography variant="body2" color={theme.palette.fifth.main}>Ecuador | Loja</Typography>
             </Box>
           </Box>
         </Grid>

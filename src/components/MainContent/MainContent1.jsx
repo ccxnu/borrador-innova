@@ -215,19 +215,18 @@ const MainContent1 = () => {
             <strong>Servicios:</strong>
           </Typography>
         </Grid>
-        <Grid container spacing={12}>
+        <Grid container spacing={5}>
           <Grid item container xs={12} md={6} justifyContent="flex-end">
-            <img src="/static/servicios.jpg" width="500px" height="500px" />
+            <img src="/static/servicios.png" width="550px" height="400px" />
           </Grid>
           <Grid item xs={12} md={6} container justifyContent="flex-start">
-            <Grid item container justifyContent="center">
+            <Grid item container >
               <Box
                 sx={{
                   borderRadius: 2,
                   width: 350,
                   height: 150,
-                  bgcolor: theme.palette.sixth.main,
-                  marginBottom: "50px",
+                  marginBottom: "10px",
                 }}
               >
                 <Typography variant="body2" fontSize="20px">
@@ -240,14 +239,13 @@ const MainContent1 = () => {
                 </Typography>
               </Box>
             </Grid>
-            <Grid item container justifyContent="center">
+            <Grid item container>
               <Box
                 sx={{
                   borderRadius: 2,
                   width: 350,
                   height: 125,
-                  bgcolor: theme.palette.sixth.main,
-                  marginBottom: "50px",
+                  marginBottom: "10px",
                 }}
               >
                 <Typography variant="body2" fontSize="20px">
@@ -259,13 +257,12 @@ const MainContent1 = () => {
                 </Typography>
               </Box>
             </Grid>
-            <Grid item container justifyContent="center">
+            <Grid item container>
               <Box
                 sx={{
                   borderRadius: 2,
                   width: 350,
                   height: 125,
-                  bgcolor: theme.palette.sixth.main,
                   marginBottom: "200px" 
                 }}
               >
