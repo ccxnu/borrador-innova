@@ -4,24 +4,6 @@ const MainContent0 = () => {
   const theme = useTheme();
   return (
     <Box>
-      <Grid
-        container
-        spacing={2}
-        justifyContent="center"
-        sx={{ marginBottom: "150px" }}
-      >
-        <Grid item xs={4}>
-          <img src="/static/ejemplo1.png" width="100%" alt="Imagen 1" />
-        </Grid>
-
-        <Grid item xs={4}>
-          <img src="/static/ejemplo2.png" width="100%" alt="Imagen 2" />
-        </Grid>
-
-        <Grid item xs={4}>
-          <img src="/static/ejemplo3.png" width="100%" alt="Imagen 3" />
-        </Grid>
-      </Grid>
       <Grid container spacing={6}>
         <Grid
           item
@@ -74,14 +56,14 @@ const MainContent0 = () => {
             </Typography>
           </Box>
         </Grid>
-        <Grid item container justifyContent="center" marginBottom="40px">
+        <Grid item container justifyContent="center" marginBottom="50px">
           <Box
             sx={{
               borderRadius: 2,
               bgcolor: theme.palette.primary.main,
               textAlign: "justify",
               width: "100%",
-              maxWidth: "1100px",
+              maxWidth: "1250px",
               padding: 1,
             }}
           >
@@ -96,63 +78,87 @@ const MainContent0 = () => {
           </Box>
         </Grid>
         <Grid container>
-          <Grid item xs={12} md={4} container justifyContent="center" textAlign='center'>
+          <Grid
+            item
+            xs={12}
+            md={4}
+            container
+            justifyContent="center"
+            textAlign="center"
+            paddingInlineStart="100px"
+          >
             <Box
               sx={{
-                borderRadius: 2,
-                width: '100%',
                 maxWidth: 350,
-                height: 150,
                 padding: 2,
-                marginBottom: '50px',
+                boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
+                paddingInline: "20px",
               }}
             >
+              <Grid item container justifyContent="center">
+                <img
+                  src="/static/Colaboracion.png"
+                  width="90px"
+                  height="90px"
+                />
+              </Grid>
               <Typography variant="body2" fontSize="20px">
                 <strong>Colaboración</strong>
               </Typography>
-              <Typography variant="body2" fontSize="20px">
+              <Typography variant="body2" fontSize="16px">
                 Las cooperativas deben comprometerse a colaborar activamente,
                 compartiendo buenas prácticas y experiencias.
               </Typography>
             </Box>
           </Grid>
-          <Grid item xs={12} md={4} container justifyContent="center" textAlign='center'>
+          <Grid
+            item
+            xs={12}
+            md={4}
+            container
+            justifyContent="center"
+            textAlign="center"
+          >
             <Box
               sx={{
-                borderRadius: 2,
-                width: '100%',
                 maxWidth: 350,
-                height: 150,
+                boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
                 padding: 2,
-                marginBottom: '50px',
               }}
             >
+              <img src="/static/Transparencia.png" width="80px" height="80px" />
               <Typography variant="body2" fontSize="20px">
                 <strong>Transparencia</strong>
               </Typography>
-              <Typography variant="body2" fontSize="20px">
-                La información y los avances deben ser transparentes para
-                todos los miembros del cluster.
+              <Typography variant="body2" fontSize="16px">
+                La información y los avances deben ser transparentes para todos
+                los miembros del cluster.
               </Typography>
             </Box>
           </Grid>
-          <Grid item xs={12} md={4} container justifyContent="center" textAlign='center'>
+          <Grid
+            item
+            xs={12}
+            md={3.5}
+            container
+            justifyContent="center"
+            textAlign="center"
+          >
             <Box
               sx={{
-                borderRadius: 2,
-                width: '100%',
+                paddingInlineEnd: "300px",
                 maxWidth: 350,
-                height: 150,
+                boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
                 padding: 2,
-                marginBottom: '150px',
               }}
             >
+              <img src="/static/Inclusion.png" width="80px" height="80px" />
               <Typography variant="body2" color="third" fontSize="20px">
                 <strong>Inclusión</strong>
               </Typography>
-              <Typography variant="body2" color="third" fontSize="20px">
+              <Typography variant="body2" color="third" fontSize="16px">
                 Todas las cooperativas, independientemente de su tamaño o
-                ubicación, pueden participar.
+                ubicación, pueden participar activamente.
               </Typography>
             </Box>
           </Grid>

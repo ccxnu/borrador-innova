@@ -4,7 +4,7 @@ const MainContent1 = () => {
   const theme = useTheme();
   return (
     <Box>
-      <Grid container spacing={6}>
+      <Grid container spacing={6} marginTop='100px'>
         <Grid container justifyContent="center">
           <Typography
             textAlign="center"
@@ -204,17 +204,26 @@ const MainContent1 = () => {
             </Typography>
           </Box>
         </Grid>
-        <Grid item container justifyContent="center">
-          <Typography
-            textAlign="center"
-            variant="body2"
-            fontSize="50px"
-            marginBottom="50px"
-            color="secondary"
-          >
-            <strong>Servicios:</strong>
-          </Typography>
-        </Grid>
+        <Grid item container justifyContent="initial">
+      <Box
+        sx={{
+          padding: 1,
+          borderRadius: '0 2px 2px 2px', 
+          bgcolor: theme.palette.primary.main,
+          textAlign: "center",
+          marginBottom: "40px",
+          width: "20%",
+        }}
+      >
+        <Typography
+          variant="body2"
+          fontSize="30px"
+          color="secondary"
+        >
+          <strong>Servicios</strong>
+        </Typography>
+      </Box>
+    </Grid>
         <Grid container spacing={5}>
           <Grid item container xs={12} md={6} justifyContent="flex-end">
             <img src="/static/servicios.png" width="550px" height="400px" />
@@ -223,10 +232,9 @@ const MainContent1 = () => {
             <Grid item container >
               <Box
                 sx={{
-                  borderRadius: 2,
-                  width: 350,
-                  height: 150,
-                  marginBottom: "10px",
+                  width: 590,
+                  height: 100,
+                  marginBottom: "50px",
                 }}
               >
                 <Typography variant="body2" fontSize="20px">
@@ -243,9 +251,9 @@ const MainContent1 = () => {
               <Box
                 sx={{
                   borderRadius: 2,
-                  width: 350,
+                  width: 590,
                   height: 125,
-                  marginBottom: "10px",
+                  marginBottom: "50px",
                 }}
               >
                 <Typography variant="body2" fontSize="20px">
@@ -260,9 +268,8 @@ const MainContent1 = () => {
             <Grid item container>
               <Box
                 sx={{
-                  borderRadius: 2,
-                  width: 350,
-                  height: 125,
+                  width: 600,
+                  height: 100,
                   marginBottom: "200px" 
                 }}
               >

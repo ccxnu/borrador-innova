@@ -10,15 +10,16 @@ const MainContent = () => {
           <Grid item xs={12} md={8}>
             <Box
               sx={{
-                borderRadius: 2,
                 padding: 2,
                 bgcolor: theme.palette.primary.main,
                 textAlign: "justify",
-                paddingInlineStart: "30px",
+                paddingInlineStart: "95px",
                 marginBottom: "20px",
+                width: "88%",
+                margin: "2 auto",
               }}
             >
-               <Typography
+              <Typography
                 variant="h2"
                 fontWeight="700"
                 fontSize="30px"
@@ -30,9 +31,9 @@ const MainContent = () => {
             <Typography
               variant="body1"
               fontSize="20px"
-              paddingInlineStart="30px"
+              paddingInlineStart="95px"
               color={theme.palette.text.secondary}
-              textAlign="left"
+              textAlign="justify"
               sx={{ marginBottom: "50px" }}
             >
               El Clúster de Innovación Cooperativo en Ecuador está diseñado para
@@ -44,28 +45,30 @@ const MainContent = () => {
             </Typography>
           </Grid>
           <Grid item xs={12} md={1}>
-            <Box
-            sx={{marginInlineStart:'140px'}}>
-            <img
-              src="/static/Logo2.png"
-              width="250px"
-              height="250px"
-              style={{ display: "block", marginBottom: "60px" }} 
-            />
+            <Box sx={{ marginInlineStart: "140px" }}>
+              <img
+                src="/static/Logo2.png"
+                width="250px"
+                height="250px"
+                style={{ display: "block", marginBottom: "60px" }}
+              />
             </Box>
           </Grid>
         </Grid>
       </Box>
       <Box sx={{ marginTop: "50px" }}>
         <Grid container spacing={3}>
-          <Grid item xs={12} md={6} container justifyContent="center" >
-            <img
-              src="/static/objetivos.png"
-              width="600px"
-              height="350px"
-            />
+          <Grid item xs={12} md={6} container justifyContent="center">
+            <img src="/static/objetivos.png" width="650px" height="380px" />
           </Grid>
-          <Grid item xs={12} md={6} container textAlign="left" justifyContent='center'>
+          <Grid
+            item
+            xs={12}
+            md={6}
+            container
+            textAlign="left"
+            justifyContent="center"
+          >
             <Grid item xs={12} container>
               <Box
                 sx={{
@@ -73,13 +76,13 @@ const MainContent = () => {
                   bgcolor: theme.palette.primary.main,
                   textAlign: "justify",
                   width: "100%",
-                  maxWidth: "800px", 
+                  maxWidth: "800px",
                 }}
               >
                 <Typography
                   variant="h3"
                   fontSize="30px"
-                  padding='10px'
+                  padding="10px"
                   color={theme.palette.secondary.main}
                   fontWeight="700"
                 >
@@ -87,28 +90,40 @@ const MainContent = () => {
                 </Typography>
               </Box>
             </Grid>
-            <Grid item container alignItems="center" mb={2}>
+            <Grid
+              item
+              container
+              alignItems="left"
+              mb={2}
+              paddingInlineEnd="70px"
+            >
               <Typography
                 variant="body2"
                 fontSize="20px"
                 color={theme.palette.text.primary}
               >
-                Crear un ecosistema colaborativo donde las cooperativas compartan
-                conocimientos, recursos y soluciones tecnológicas.
+                Crear un ecosistema colaborativo donde las cooperativas
+                compartan conocimientos, recursos y soluciones tecnológicas.
               </Typography>
             </Grid>
-            <Grid item container alignItems="right" mb={2}>
+            <Grid
+              item
+              container
+              alignItems="right"
+              mb={2}
+              paddingInlineEnd="70px"
+            >
               <Typography
                 variant="body2"
                 fontSize="20px"
                 color={theme.palette.text.primary}
               >
                 Facilitar la adopción de tecnologías emergentes, como la
-                inteligencia artificial, la ciberseguridad y la automatización de
-                procesos.
+                inteligencia artificial, la ciberseguridad y la automatización
+                de procesos.
               </Typography>
             </Grid>
-            <Grid item container mb={3}>
+            <Grid item container mb={3} paddingInlineEnd="70px">
               <Typography
                 variant="body2"
                 fontSize="20px"
@@ -118,7 +133,7 @@ const MainContent = () => {
                 digitales y de gestión.
               </Typography>
             </Grid>
-            <Grid item container >
+            <Grid item container paddingInlineEnd="70px" marginBottom="200px">
               <Typography
                 variant="body2"
                 fontSize="20px"
