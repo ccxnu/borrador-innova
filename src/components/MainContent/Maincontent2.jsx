@@ -4,8 +4,8 @@ const MainContent2 = () => {
   const theme = useTheme();
   return (
     <Box>
-      <Grid container spacing={6}>
-        <Grid container justifyContent="center">
+      <Grid container spacing={6} >
+        <Grid container justifyContent="center" >
           <Typography
             textAlign="center"
             variant="body2"

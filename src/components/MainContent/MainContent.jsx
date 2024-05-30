@@ -22,8 +22,8 @@ const MainContent = () => {
               <Typography
                 variant="h2"
                 fontWeight="700"
-                fontSize="30px"
-                color={theme.palette.secondary.main}
+                fontSize="26px"
+                color={theme.palette.fourth.main}
               >
                 Bienvenido a Clúster de Innovación Cooperativa
               </Typography>
@@ -34,7 +34,6 @@ const MainContent = () => {
               paddingInlineStart="95px"
               color={theme.palette.text.secondary}
               textAlign="justify"
-              sx={{ marginBottom: "50px" }}
             >
               El Clúster de Innovación Cooperativo en Ecuador está diseñado para
               fomentar el crecimiento, la innovación y la sostenibilidad de las
@@ -81,9 +80,9 @@ const MainContent = () => {
               >
                 <Typography
                   variant="h3"
-                  fontSize="30px"
+                  fontSize="26px"
                   padding="10px"
-                  color={theme.palette.secondary.main}
+                  color={theme.palette.fourth.main}
                   fontWeight="700"
                 >
                   <strong>Nuestros Objetivos</strong>

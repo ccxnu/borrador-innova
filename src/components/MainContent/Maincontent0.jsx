@@ -10,22 +10,32 @@ const MainContent0 = () => {
           container
           xs={12}
           md={6}
-          justifyContent="center"
-          sx={{ marginBottom: "200px" }}
+          justifyContent="left"
         >
+           <Box
+              sx={{
+                padding: 2,
+                bgcolor: theme.palette.primary.main,
+                textAlign: "right",
+                borderRadius: 2,
+                marginBottom: "20px",
+                width: "88%",
+                margin: "2 auto",
+              }}
+            >
+          <Typography variant="body2" fontSize="20px" color={theme.palette.fourth.main}>
+              <strong>Misión</strong>
+            </Typography>
+            </Box>
           <Box
             sx={{
               borderRadius: 2,
-              width: 350,
+              width: 580,
               height: 230,
               textAlign: "justify",
-              bgcolor: theme.palette.sixth.main,
               padding: 2,
             }}
           >
-            <Typography variant="body2" color="third" fontSize="20px">
-              <strong>Misión</strong>
-            </Typography>
             <Typography variant="body2" color="third" fontSize="20px">
               Nuestra misión es impulsar la innovación y el crecimiento
               sostenible de las cooperativas en Ecuador, fortaleciendo su
@@ -35,19 +45,30 @@ const MainContent0 = () => {
           </Box>
         </Grid>
         <Grid item xs={12} md={6} container justifyContent="center">
+        <Box
+              sx={{
+                padding: 2,
+                bgcolor: theme.palette.primary.main,
+                textAlign: "left",
+                borderRadius: 2,
+                marginBottom: "20px",
+                width: "88%",
+                margin: "2 auto",
+              }}
+            >
+        <Typography variant="body2" fontSize="20px" color={theme.palette.fourth.main}>
+              <strong>Visión</strong>
+            </Typography>
+            </Box>
           <Box
             sx={{
               borderRadius: 1,
-              width: 350,
+              width: 580,
               height: 230,
               textAlign: "justify",
-              bgcolor: theme.palette.sixth.main,
               padding: 2,
             }}
           >
-            <Typography variant="body2" color="third" fontSize="20px">
-              <strong>Visión</strong>
-            </Typography>
             <Typography variant="body2" color="third" fontSize="20px">
               Queremos ser el principal motor de cambio e innovación para las
               cooperativas de ahorro y crédito en Ecuador, promoviendo una
@@ -89,9 +110,9 @@ const MainContent0 = () => {
           >
             <Box
               sx={{
+                boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
                 maxWidth: 350,
                 padding: 2,
-                boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
                 paddingInline: "20px",
               }}
             >
