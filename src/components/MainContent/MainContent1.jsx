@@ -21,11 +21,13 @@ const MainContent1 = () => {
                   borderRadius: 2,
                   marginBottom: "20px",
                   width: "100%",
+                  borderTopLeftRadius: "0px",
+                  borderBottomLeftRadius: "0px",
                 }}
               >
                 <Typography
                   variant="body2"
-                  fontSize="26px"
+                  fontSize="30px"
                   color={theme.palette.fourth.main}
                 >
                   <strong>Beneficios de Pertenecer al Cluster</strong>
@@ -129,14 +131,14 @@ const MainContent1 = () => {
               bgcolor: theme.palette.primary.main,
               textAlign: "justify",
               width: "100%",
-              maxWidth: "1400px",
+              maxWidth: "1800px",
               padding: 1,
             }}
           >
             <Typography
               textAlign="center"
               variant="body2"
-              fontSize="26px"
+              fontSize="30px"
               color={theme.palette.fourth.main}
             >
               <strong>Condiciones de Afiliación</strong>
@@ -187,7 +189,7 @@ const MainContent1 = () => {
           </Grid>
           <Grid item container xs={12} md={4} justifyContent="center">
             <Box>
-            <img src="/static/Condiciones.png" width="400px" height="400px" />
+              <img src="/static/Condiciones.png" width="400px" height="400px" />
             </Box>
           </Grid>
           <Grid item container xs={12} md={4} direction="column" spacing={9}>
@@ -239,14 +241,20 @@ const MainContent1 = () => {
             sx={{
               marginTop: "100px",
               padding: 1,
-              borderRadius: "0",
               textAlign: "center",
               bgcolor: theme.palette.primary.main,
               marginBottom: "40px",
               width: "20%",
+              borderRadius: 2,
+              borderTopLeftRadius: "0px",
+              borderBottomLeftRadius: "0px",
             }}
           >
-            <Typography variant="body2" fontSize="30px" color="secondary">
+            <Typography
+              variant="body2"
+              fontSize="30px"
+              color={theme.palette.fourth.main}
+            >
               <strong>Servicios</strong>
             </Typography>
           </Box>

@@ -22,7 +22,7 @@ const MainContent = () => {
               <Typography
                 variant="h2"
                 fontWeight="700"
-                fontSize="26px"
+                fontSize="30px"
                 color={theme.palette.fourth.main}
               >
                 Bienvenido a Clúster de Innovación Cooperativa
@@ -70,17 +70,20 @@ const MainContent = () => {
           >
             <Grid item xs={12} container>
               <Box
+                marginBottom="40px"
                 sx={{
                   borderRadius: 2,
                   bgcolor: theme.palette.primary.main,
                   textAlign: "justify",
                   width: "100%",
-                  maxWidth: "800px",
+                  maxWidth: "900px",
+                  borderTopRightRadius: "0px", 
+                  borderBottomRightRadius: "0px", 
                 }}
               >
                 <Typography
                   variant="h3"
-                  fontSize="26px"
+                  fontSize="30px"
                   padding="10px"
                   color={theme.palette.fourth.main}
                   fontWeight="700"

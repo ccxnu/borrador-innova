@@ -5,32 +5,32 @@ const MainContent0 = () => {
   return (
     <Box>
       <Grid container spacing={6}>
-        <Grid
-          item
-          container
-          xs={12}
-          md={6}
-          justifyContent="left"
-        >
-           <Box
-              sx={{
-                padding: 2,
-                bgcolor: theme.palette.primary.main,
-                textAlign: "right",
-                borderRadius: 2,
-                marginBottom: "20px",
-                width: "88%",
-                margin: "2 auto",
-              }}
+        <Grid item container xs={12} md={6} justifyContent="left">
+          <Box
+            sx={{
+              padding: 2,
+              bgcolor: theme.palette.primary.main,
+              textAlign: "right",
+              borderRadius: 2,
+              marginBottom: "20px",
+              width: "88%",
+              margin: "2 auto",
+              borderTopLeftRadius: "0px",
+              borderBottomLeftRadius: "0px",
+            }}
+          >
+            <Typography
+              variant="body2"
+              fontSize="30px"
+              color={theme.palette.fourth.main}
             >
-          <Typography variant="body2" fontSize="20px" color={theme.palette.fourth.main}>
               <strong>Misión</strong>
             </Typography>
-            </Box>
+          </Box>
           <Box
             sx={{
               borderRadius: 2,
-              width: 580,
+              width: 710,
               height: 230,
               textAlign: "justify",
               padding: 2,
@@ -44,26 +44,32 @@ const MainContent0 = () => {
             </Typography>
           </Box>
         </Grid>
-        <Grid item xs={12} md={6} container justifyContent="center">
-        <Box
-              sx={{
-                padding: 2,
-                bgcolor: theme.palette.primary.main,
-                textAlign: "left",
-                borderRadius: 2,
-                marginBottom: "20px",
-                width: "88%",
-                margin: "2 auto",
-              }}
-            >
-        <Typography variant="body2" fontSize="20px" color={theme.palette.fourth.main}>
-              <strong>Visión</strong>
-            </Typography>
-            </Box>
+        <Grid item xs={12} md={6} container justifyContent="right">
           <Box
             sx={{
-              borderRadius: 1,
-              width: 580,
+              padding: 2,
+              bgcolor: theme.palette.primary.main,
+              textAlign: "left",
+              borderRadius: 2,
+              marginBottom: "20px",
+              width: "88%",
+              margin: "2 auto",
+              borderTopRightRadius: "0px",
+              borderBottomRightRadius: "0px",
+            }}
+          >
+            <Typography
+              variant="body2"
+              fontSize="30px"
+              color={theme.palette.fourth.main}
+            >
+              <strong>Visión</strong>
+            </Typography>
+          </Box>
+          <Box
+            sx={{
+              borderRadius: 2,
+              width: 710,
               height: 230,
               textAlign: "justify",
               padding: 2,
@@ -82,9 +88,8 @@ const MainContent0 = () => {
             sx={{
               borderRadius: 2,
               bgcolor: theme.palette.primary.main,
-              textAlign: "justify",
-              width: "100%",
-              maxWidth: "1250px",
+              width: "120%",
+              maxWidth: "1500px",
               padding: 1,
             }}
           >
@@ -92,7 +97,7 @@ const MainContent0 = () => {
               textAlign="center"
               variant="body2"
               fontSize="30px"
-              color="secondary"
+              color={theme.palette.fourth.main}
             >
               <strong>Políticas:</strong>
             </Typography>
@@ -106,14 +111,13 @@ const MainContent0 = () => {
             container
             justifyContent="center"
             textAlign="center"
-            paddingInlineStart="100px"
+            paddingInlineStart="180px"
           >
             <Box
               sx={{
-                boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
                 maxWidth: 350,
+                boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
                 padding: 2,
-                paddingInline: "20px",
               }}
             >
               <Grid item container justifyContent="center">
@@ -123,12 +127,12 @@ const MainContent0 = () => {
                   height="90px"
                 />
               </Grid>
-              <Typography variant="body2" fontSize="20px">
+              <Typography variant="body2" fontSize="30px">
                 <strong>Colaboración</strong>
               </Typography>
               <Typography variant="body2" fontSize="16px">
-                Las cooperativas deben comprometerse a colaborar activamente,
-                compartiendo buenas prácticas y experiencias.
+                : Las cooperativas deben comprometerse a colaborar activamente,
+                compartiendo buenas prácticas y experiencias
               </Typography>
             </Box>
           </Grid>
@@ -139,6 +143,7 @@ const MainContent0 = () => {
             container
             justifyContent="center"
             textAlign="center"
+            paddingInlineStart="50px"
           >
             <Box
               sx={{
@@ -148,38 +153,38 @@ const MainContent0 = () => {
               }}
             >
               <img src="/static/Transparencia.png" width="80px" height="80px" />
-              <Typography variant="body2" fontSize="20px">
+              <Typography variant="body2" fontSize="30px">
                 <strong>Transparencia</strong>
               </Typography>
               <Typography variant="body2" fontSize="16px">
                 La información y los avances deben ser transparentes para todos
-                los miembros del cluster.
+                los miembros del clúster.
               </Typography>
             </Box>
           </Grid>
           <Grid
             item
             xs={12}
-            md={3.5}
+            md={4}
             container
             justifyContent="center"
             textAlign="center"
+            paddingInlineEnd="140px"
           >
             <Box
               sx={{
-                paddingInlineEnd: "300px",
                 maxWidth: 350,
                 boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
                 padding: 2,
               }}
             >
               <img src="/static/Inclusion.png" width="80px" height="80px" />
-              <Typography variant="body2" color="third" fontSize="20px">
+              <Typography variant="body2" fontSize="30px">
                 <strong>Inclusión</strong>
               </Typography>
-              <Typography variant="body2" color="third" fontSize="16px">
+              <Typography variant="body2" fontSize="16px">
                 Todas las cooperativas, independientemente de su tamaño o
-                ubicación, pueden participar activamente.
+                ubicación, pueden participar.
               </Typography>
             </Box>
           </Grid>
