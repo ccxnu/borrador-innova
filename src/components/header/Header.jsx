@@ -13,14 +13,7 @@ const Header = () => {
       <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
           <img src="/static/Logo.png" width="190" height="150" alt="Logo" />
-          <Box sx={{ display: 'flex', flexDirection: 'column', marginLeft: '10px' }}>
-            <Box component="span" sx={{ color: theme.palette.primary.main, fontSize: '30px', fontWeight: 'bold' }}>
-              INNOVA
-            </Box>
-            <Box component="span" sx={{ color: theme.palette.secondary.main, fontSize: '20px', textAlign: 'center' }}>
-              COOP
-            </Box>
-          </Box>
+          <img src="/static/Innova.png" width="210" height="80" alt="Logo" />
         </Box>
         <Grid container sx={{ justifyContent: 'space-around', alignItems: 'center', flexGrow: 1 }}>
           <Grid item>

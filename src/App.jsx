@@ -8,14 +8,14 @@ import MainContent2 from "./components/MainContent/Maincontent2";
 
 const App = () => {
   return (
-    <div>
+    <>
       <Header />
       <MainContent />
       <MainContent0 />
       <MainContent1 />
       <MainContent2 />
       <Footer />
-    </div>
+    </>
   );
 };
 

@@ -144,97 +144,76 @@ const MainContent1 = () => {
               <strong>Condiciones de Afiliación</strong>
             </Typography>
           </Box>
-        </Grid>
-        <Grid container spacing={2} alignItems="center" justifyContent="center">
-          <Grid item container xs={12} md={4} direction="column" spacing={9}>
-            <Grid item>
-              <Box
-                sx={{
-                  width: "100%",
-                  height: "auto",
-                  textAlign: "left",
-                  paddingInlineStart: "100px",
-                }}
-              >
-                <Typography variant="body1" color="third" fontSize="20px">
-                  <strong>Ser Una Cooperativa Registrada</strong>
-                </Typography>
-                <Typography variant="body2" color="third" fontSize="18px">
-                  Para ser elegible para unirse al cluster, la organización debe
-                  estar legalmente constituida como una cooperativa en Ecuador.
-                </Typography>
-              </Box>
-            </Grid>
-            <Grid item>
-              <Box
-                sx={{
-                  borderRadius: 2,
-                  width: "100%",
-                  height: "auto",
-                  textAlign: "left",
-                  paddingInlineStart: "100px",
-                }}
-              >
-                <Typography variant="body1" fontSize="20px">
-                  <strong>Participación Activa</strong>
-                  <Typography variant="body1" fontSize="18px">
-                    Se espera que las cooperativas afiliadas participen
-                    activamente en las actividades y eventos del cluster,
-                    contribuyendo con sus ideas, experiencias y recursos para
-                    beneficio de la comunidad en su conjunto.
-                  </Typography>
-                </Typography>
-              </Box>
-            </Grid>
-          </Grid>
-          <Grid item container xs={12} md={4} justifyContent="center">
-            <Box>
-              <img src="/static/Condiciones.png" width="400px" height="400px" />
-            </Box>
-          </Grid>
-          <Grid item container xs={12} md={4} direction="column" spacing={9}>
-            <Grid item>
-              <Box
-                sx={{
-                  width: "100%",
-                  height: "auto",
-                  textAlign: "left",
-                  paddingInlineStart: "35px",
-                }}
-              >
-                <Typography variant="body1" fontSize="20px">
-                  <strong>Compromiso con la Innovación y el Desarrollo</strong>
-                  <Typography variant="body1" fontSize="18px">
-                    Las cooperativas interesadas en unirse al cluster deben
-                    demostrar un compromiso genuino con la innovación, el
-                    desarrollo empresarial y la mejora continua de sus
-                    operaciones.
-                  </Typography>
-                </Typography>
-              </Box>
-            </Grid>
-            <Grid item>
-              <Box
-                sx={{
-                  width: "100%",
-                  height: "auto",
-                  textAlign: "left",
-                  paddingInlineStart: "35px",
-                }}
-              >
-                <Typography variant="body1" fontSize="20px">
-                  <strong>Compromiso con la Innovación y el Desarrollo</strong>
-                  <Typography variant="body1" fontSize="18px">
-                    Las cooperativas interesadas en unirse al cluster deben
-                    demostrar un compromiso genuino con la innovación, el
-                    desarrollo empresarial y la mejora continua de sus
-                    operaciones.
-                  </Typography>
-                </Typography>
-              </Box>
+          <Grid container spacing={6}>
+            <Grid item xs={12}>
+              <Grid container justifyContent={{ xs: "center", md: "space-between" }} px={4} spacing={2}>
+                <Grid item xs={8} md={3}>
+                  <Box
+                    sx={{
+                      width: "100%", height: "auto", textAlign: "left"
+                    }}
+                  >
+                    <Typography variant="body1" color="third" fontSize="20px">
+                      <strong>Ser Una Cooperativa Registrada</strong>
+                    </Typography>
+                    <Typography variant="body2" color="third" fontSize="18px">
+                      Para ser elegible para unirse al cluster, la organización debe
+                      estar legalmente constituida como una cooperativa en Ecuador.
+                    </Typography>
+                  </Box>
+                  <Box sx={{ width: "100%", height: "auto", textAlign: "left" }}>
+                    <Typography variant="body1" fontSize="20px">
+                      <strong>Participación Activa</strong>
+                      <Typography variant="body1" fontSize="18px">
+                        Se espera que las cooperativas afiliadas participen
+                        activamente en las actividades y eventos del cluster,
+                        contribuyendo con sus ideas, experiencias y recursos para
+                        beneficio de la comunidad en su conjunto.
+                      </Typography>
+                    </Typography>
+                  </Box>
+                </Grid>
+                <Grid item xs={12} sm={7} md={5}>
+                  <Box
+                    sx={{
+                      backgroundImage: "url(/static/Condiciones.png)",
+                      backgroundPosition: "center",
+                      backgroundSize: "contain",
+                      backgroundRepeat: "no-repeat",
+                      width: "100%",
+                      height: "100%"
+                    }}>
+                  </Box>
+                </Grid>
+                <Grid item xs={8} md={3}>
+                  <Box sx={{ width: "100%", height: "auto", textAlign: "left" }}>
+                    <Typography variant="body1" fontSize="20px">
+                      <strong>Compromiso con la Innovación y el Desarrollo</strong>
+                      <Typography variant="body1" fontSize="18px">
+                        Las cooperativas interesadas en unirse al cluster deben
+                        demostrar un compromiso genuino con la innovación, el
+                        desarrollo empresarial y la mejora continua de sus
+                        operaciones.
+                      </Typography>
+                    </Typography>
+                  </Box>
+                  <Box sx={{ width: "100%", height: "auto", textAlign: "left" }}>
+                    <Typography variant="body1" fontSize="20px">
+                      <strong>Compromiso con la Innovación y el Desarrollo</strong>
+                      <Typography variant="body1" fontSize="18px">
+                        Las cooperativas interesadas en unirse al cluster deben
+                        demostrar un compromiso genuino con la innovación, el
+                        desarrollo empresarial y la mejora continua de sus
+                        operaciones.
+                      </Typography>
+                    </Typography>
+                  </Box>
+                </Grid>
+              </Grid>
             </Grid>
           </Grid>
         </Grid>
+
 
         <Grid item container justifyContent="initial">
           <Box

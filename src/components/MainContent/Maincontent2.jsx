@@ -7,13 +7,13 @@ const MainContent2 = () => {
       <Grid container spacing={6}>
         <Grid container justifyContent="center">
           <Box
-          marginBottom='40px'
+            marginBottom='40px'
             sx={{
               borderRadius: 0,
               bgcolor: theme.palette.primary.main,
               textAlign: "justify",
               width: "100%",
-              maxWidth: "1800px",
+              maxWidth: "2000px",
               padding: 1,
             }}
           >
@@ -25,11 +25,14 @@ const MainContent2 = () => {
             >
               <strong>Monetización:</strong>
             </Typography>
-          </Box>
+          </Box>´
         </Grid>
-        <Grid container spacing={2} alignItems="center" justifyContent="center">
-          <Grid item container xs={12} md={3} direction="column" spacing={2}>
-            <Grid item>
+
+
+
+        <Grid item xs={12}>
+          <Grid container justifyContent={{xs:"center",md:"space-between"}} px={4} spacing={2}>
+            <Grid item xs={8} md={3}>
               <Box sx={{ width: "100%", height: "auto", textAlign: "left" }}>
                 <Typography variant="body1" fontSize="20px">
                   <strong>Suscripciones Premium</strong>
@@ -40,8 +43,6 @@ const MainContent2 = () => {
                   avanzados, informes de tendencias y casos de estudio.
                 </Typography>
               </Box>
-            </Grid>
-            <Grid item>
               <Box sx={{ width: "100%", height: "auto", textAlign: "left" }}>
                 <Typography variant="body1" fontSize="20px">
                   <strong>Programas de Afiliados</strong>
@@ -53,19 +54,19 @@ const MainContent2 = () => {
                 </Typography>
               </Box>
             </Grid>
-          </Grid>
-
-          <Grid item container xs={12} md={4} justifyContent="center">
-            <Box>
-              <img
-                src="/static/Monetizacion.png"
-                width="500px"
-                height="200px"
-              />
-            </Box>
-          </Grid>
-          <Grid item container xs={12} md={3} direction="column" spacing={2}>
-            <Grid item>
+            <Grid item xs={12} sm={7} md={5}>
+              <Box
+                sx={{
+                  backgroundImage: "url(/static/Monetizacion.png)",
+                  backgroundPosition: "center",
+                  backgroundSize: "contain",
+                  backgroundRepeat: "no-repeat",
+                  width: "100%",
+                  height: "100%"
+                }}>
+              </Box>
+            </Grid>
+            <Grid item xs={8} md={3}>
               <Box sx={{ width: "100%", height: "auto", textAlign: "left" }}>
                 <Typography variant="body1" fontSize="20px">
                   <strong>Consultoría Personalizada:</strong>
@@ -75,8 +76,6 @@ const MainContent2 = () => {
                   las cooperativas. Establece tarifas por hora o por proyecto.
                 </Typography>
               </Box>
-            </Grid>
-            <Grid item>
               <Box sx={{ width: "100%", height: "auto", textAlign: "left" }}>
                 <Typography variant="body1" fontSize="20px">
                   <strong>Venta de Datos Agregados:</strong>
@@ -89,15 +88,24 @@ const MainContent2 = () => {
               </Box>
             </Grid>
           </Grid>
-          <Grid
-            item
-            container
-            xs={12}
-            md={9}
-            spacing={2}
-          >
-            <Grid item xs={12} md={4}>
-              <Box sx={{ width: "100%", height: "auto", textAlign: "left" }}>
+        </Grid>
+
+        <Grid item xs={12}>
+          <Grid container justifyContent={{xs:"center",md:"space-between"}} px={4} spacing={{xs:4,md:2}}>
+            <Grid item xs={8} md={3}>
+            <Box sx={{ width: "100%", height: "auto", textAlign: "left" }}>
+                <Typography variant="body1" fontSize="20px">
+                  <strong>Marketplace de Soluciones Tecnológicas</strong>
+                </Typography>
+                <Typography variant="body2" fontSize="18px">
+                  Crea un mercado en línea donde las cooperativas puedan comprar
+                  soluciones tecnológicas específicas. Obtén una comisión por
+                  cada venta realizada a través del Marketplace.
+                </Typography>
+              </Box>
+            </Grid>
+            <Grid item xs={8} md={3}>
+            <Box sx={{ width: "100%", height: "auto", textAlign: "left" }}>
                 <Typography variant="body1" fontSize="20px">
                   <strong>Alianzas Estratégicas con Fintech:</strong>
                 </Typography>
@@ -108,9 +116,8 @@ const MainContent2 = () => {
                 </Typography>
               </Box>
             </Grid>
-
-            <Grid item xs={12} md={4}>
-              <Box sx={{ width: "100%", height: "auto", textAlign: "left" }}>
+            <Grid item xs={8} md={3}>
+            <Box sx={{ width: "100%", height: "auto", textAlign: "left" }}>
                 <Typography variant="body1" fontSize="20px">
                   <strong>Eventos Patrocinados:</strong>
                 </Typography>
@@ -122,8 +129,13 @@ const MainContent2 = () => {
                 </Typography>
               </Box>
             </Grid>
-            <Grid item xs={12} md={4}>
-              <Box sx={{ width: "100%", height: "auto", textAlign: "left" }}>
+          </Grid>
+        </Grid>
+
+        <Grid item xs={12}>
+          <Grid container justifyContent={{xs:"center",md:"space-between"}} px={4} spacing={{xs:4,md:2}}>
+            <Grid item xs={8} md={3}>
+            <Box sx={{ width: "100%", height: "auto", textAlign: "left" }}>
                 <Typography variant="body1" fontSize="20px">
                   <strong>Programas de Certificación:</strong>
                 </Typography>
@@ -135,16 +147,8 @@ const MainContent2 = () => {
                 </Typography>
               </Box>
             </Grid>
-          </Grid>
-          <Grid
-            item
-            container
-            xs={12}
-            spacing={20}
-            md={9}
-          >
-            <Grid item xs={12} md={4}>
-              <Box sx={{ width: "100%", height: "auto", textAlign: "left" }}>
+            <Grid item xs={8} md={3}>
+            <Box sx={{ width: "100%", height: "auto", textAlign: "left" }}>
                 <Typography variant="body1" fontSize="20px">
                   <strong>Crowdfunding para Proyectos Innovadores:</strong>
                 </Typography>
@@ -155,20 +159,8 @@ const MainContent2 = () => {
                 </Typography>
               </Box>
             </Grid>
-            <Grid item xs={12} md={4}>
-              <Box sx={{ width: "100%", height: "auto", textAlign: "left" }}>
-                <Typography variant="body1" fontSize="20px">
-                  <strong>Marketplace de Soluciones Tecnológicas</strong>
-                </Typography>
-                <Typography variant="body2" fontSize="18px">
-                  Crea un mercado en línea donde las cooperativas puedan comprar
-                  soluciones tecnológicas específicas. Obtén una comisión por
-                  cada venta realizada a través del Marketplace.
-                </Typography>
-              </Box>
-            </Grid>
-            <Grid item xs={12} md={4}>
-              <Box sx={{ width: "100%", height: "auto", textAlign: "left" }}>
+            <Grid item xs={8} md={3}>
+            <Box sx={{ width: "100%", height: "auto", textAlign: "left" }}>
                 <Typography variant="body1" fontSize="20px">
                   <strong>Publicidad en la Plataforma Digital:</strong>
                 </Typography>
