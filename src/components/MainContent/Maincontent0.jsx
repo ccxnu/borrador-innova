@@ -36,7 +36,8 @@ const MainContent0 = () => {
               padding: 2,
             }}
           >
-            <Typography variant="body2" color="third" fontSize="20px">
+            <img src="/static/Check.png" width="40px" height="40px" />
+            <Typography variant="body2" color={theme.palette.octh.main} fontSize="20px">
               Nuestra misión es impulsar la innovación y el crecimiento
               sostenible de las cooperativas en Ecuador, fortaleciendo su
               capacidad para enfrentar los desafíos del mercado y contribuir al
@@ -75,7 +76,8 @@ const MainContent0 = () => {
               padding: 2,
             }}
           >
-            <Typography variant="body2" color="third" fontSize="20px">
+            <img src="/static/Check.png" width="40px" height="40px" />
+            <Typography variant="body2" color={theme.palette.octh.main} fontSize="20px">
               Queremos ser el principal motor de cambio e innovación para las
               cooperativas de ahorro y crédito en Ecuador, promoviendo una
               cultura de colaboración, aprendizaje continuo y excelencia
@@ -127,11 +129,11 @@ const MainContent0 = () => {
                   height="90px"
                 />
               </Grid>
-              <Typography variant="body2" fontSize="30px">
+              <Typography variant="body2" color={theme.palette.eleventh.main} fontSize="30px">
                 <strong>Colaboración</strong>
               </Typography>
-              <Typography variant="body2" fontSize="16px">
-                : Las cooperativas deben comprometerse a colaborar activamente,
+              <Typography variant="body2" fontSize="16px" color={theme.palette.nineth.main}>
+                Las cooperativas deben comprometerse a colaborar activamente,
                 compartiendo buenas prácticas y experiencias
               </Typography>
             </Box>
@@ -153,10 +155,10 @@ const MainContent0 = () => {
               }}
             >
               <img src="/static/Transparencia.png" width="80px" height="80px" />
-              <Typography variant="body2" fontSize="30px">
+              <Typography variant="body2" color={theme.palette.eleventh.main} fontSize="30px">
                 <strong>Transparencia</strong>
               </Typography>
-              <Typography variant="body2" fontSize="16px">
+              <Typography variant="body2" fontSize="16px" color={theme.palette.nineth.main}>
                 La información y los avances deben ser transparentes para todos
                 los miembros del clúster.
               </Typography>
@@ -179,10 +181,10 @@ const MainContent0 = () => {
               }}
             >
               <img src="/static/Inclusion.png" width="80px" height="80px" />
-              <Typography variant="body2" fontSize="30px">
+              <Typography variant="body2" color={theme.palette.eleventh.main} fontSize="30px">
                 <strong>Inclusión</strong>
               </Typography>
-              <Typography variant="body2" fontSize="16px">
+              <Typography variant="body2" fontSize="16px" color={theme.palette.nineth.main}>
                 Todas las cooperativas, independientemente de su tamaño o
                 ubicación, pueden participar.
               </Typography>

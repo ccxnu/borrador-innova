@@ -12,7 +12,7 @@ const MainContent = () => {
               sx={{
                 padding: 2,
                 bgcolor: theme.palette.primary.main,
-                textAlign: "justify",
+                octhAlign: "justify",
                 paddingInlineStart: "95px",
                 marginBottom: "20px",
                 width: "88%",
@@ -32,8 +32,8 @@ const MainContent = () => {
               variant="body1"
               fontSize="20px"
               paddingInlineStart="95px"
-              color={theme.palette.text.secondary}
-              textAlign="justify"
+              color={theme.palette.octh.main}
+              octhAlign="justify"
             >
               El Clúster de Innovación Cooperativo en Ecuador está diseñado para
               fomentar el crecimiento, la innovación y la sostenibilidad de las
@@ -57,15 +57,24 @@ const MainContent = () => {
       </Box>
       <Box sx={{ marginTop: "50px" }}>
         <Grid container spacing={3}>
-          <Grid item xs={12} md={6} container justifyContent="center">
-            <img src="/static/objetivos.png" width="650px" height="380px" />
-          </Grid>
+        <Grid item xs={12} sm={7} md={5}>
+                  <Box
+                    sx={{
+                      backgroundImage: "url(/static/Objetivos.png)",
+                      backgroundPosition: "center",
+                      backgroundSize: "contain",
+                      backgroundRepeat: "no-repeat",
+                      width: "100%",
+                      height: "100%",
+                    }}
+                  ></Box>
+                </Grid>
           <Grid
             item
             xs={12}
             md={6}
             container
-            textAlign="left"
+            octhAlign="left"
             justifyContent="center"
           >
             <Grid item xs={12} container>
@@ -74,7 +83,7 @@ const MainContent = () => {
                 sx={{
                   borderRadius: 2,
                   bgcolor: theme.palette.primary.main,
-                  textAlign: "justify",
+                  octhAlign: "justify",
                   width: "100%",
                   maxWidth: "900px",
                   borderTopRightRadius: "0px", 
@@ -99,11 +108,13 @@ const MainContent = () => {
               mb={2}
               paddingInlineEnd="70px"
             >
+              
               <Typography
                 variant="body2"
                 fontSize="20px"
-                color={theme.palette.text.primary}
+                color={theme.palette.octh.main}
               >
+              <img src="/static/Check.png" width="40px" height="40px" />
                 Crear un ecosistema colaborativo donde las cooperativas
                 compartan conocimientos, recursos y soluciones tecnológicas.
               </Typography>
@@ -118,8 +129,9 @@ const MainContent = () => {
               <Typography
                 variant="body2"
                 fontSize="20px"
-                color={theme.palette.text.primary}
+                color={theme.palette.octh.main}
               >
+                <img src="/static/Check.png" width="40px" height="40px" />
                 Facilitar la adopción de tecnologías emergentes, como la
                 inteligencia artificial, la ciberseguridad y la automatización
                 de procesos.
@@ -129,8 +141,9 @@ const MainContent = () => {
               <Typography
                 variant="body2"
                 fontSize="20px"
-                color={theme.palette.text.primary}
+                color={theme.palette.octh.main}
               >
+                <img src="/static/Check.png" width="40px" height="40px" />
                 Capacitar a los miembros de las cooperativas en habilidades
                 digitales y de gestión.
               </Typography>
@@ -139,8 +152,9 @@ const MainContent = () => {
               <Typography
                 variant="body2"
                 fontSize="20px"
-                color={theme.palette.text.primary}
+                color={theme.palette.octh.main}
               >
+                <img src="/static/Check.png" width="40px" height="40px" />
                 Fomentar la creación de productos y servicios financieros
                 innovadores.
               </Typography>

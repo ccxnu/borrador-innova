@@ -42,10 +42,19 @@ const MainContent1 = () => {
                   textAlign: "justify",
                 }}
               >
-                <Typography variant="body2" color="third" fontSize="20px">
+                <Typography
+                  variant="body2"
+                  color={theme.palette.tenth.main}
+                  fontSize="20px"
+                >
+                  <img src="/static/Check.png" width="40px" height="40px" />
                   <strong>Acceso a Recursos y Conocimientos:</strong>
                 </Typography>
-                <Typography variant="body2" color="third" fontSize="16px">
+                <Typography
+                  variant="body2"
+                  color={theme.palette.octh.main}
+                  fontSize="16px"
+                >
                   Las cooperativas afiliadas tendrán acceso a una amplia gama de
                   recursos y conocimientos, incluyendo programas de
                   capacitación, herramientas de gestión, y asesoramiento experto
@@ -62,10 +71,19 @@ const MainContent1 = () => {
                   textAlign: "justify",
                 }}
               >
-                <Typography variant="body2" color="third" fontSize="20px">
+                <Typography
+                  variant="body2"
+                  color={theme.palette.tenth.main}
+                  fontSize="20px"
+                >
+                  <img src="/static/Check.png" width="40px" height="40px" />
                   <strong>Red de Colaboración:</strong>
                 </Typography>
-                <Typography variant="body2" color="third" fontSize="16px">
+                <Typography
+                  variant="body2"
+                  color={theme.palette.octh.main}
+                  fontSize="16px"
+                >
                   Formar parte del cluster permitirá a las cooperativas
                   conectarse con otras organizaciones similares, facilitando el
                   intercambio de ideas, la colaboración en proyectos conjuntos y
@@ -81,10 +99,19 @@ const MainContent1 = () => {
                   textAlign: "justify",
                 }}
               >
-                <Typography variant="body2" color="third" fontSize="20px">
+                <Typography
+                  variant="body2"
+                  color={theme.palette.tenth.main}
+                  fontSize="20px"
+                >
+                  <img src="/static/Check.png" width="40px" height="40px" />
                   <strong>Visibilidad y Promoción:</strong>
                 </Typography>
-                <Typography variant="body2" color="third" fontSize="16px">
+                <Typography
+                  variant="body2"
+                  color={theme.palette.octh.main}
+                  fontSize="16px"
+                >
                   Ser parte del cluster aumentará la visibilidad de las
                   cooperativas ante potenciales socios, clientes y
                   financiadores, ayudando a fortalecer su marca y su posición en
@@ -100,10 +127,19 @@ const MainContent1 = () => {
                   textAlign: "justify",
                 }}
               >
-                <Typography variant="body2" color="third" fontSize="20px">
+                <Typography
+                  variant="body2"
+                  color={theme.palette.tenth.main}
+                  fontSize="20px"
+                >
+                  <img src="/static/Check.png" width="40px" height="40px" />
                   <strong>Asesoramiento y Mentoring:</strong>
                 </Typography>
-                <Typography variant="body2" color="third" fontSize="16px">
+                <Typography
+                  variant="body2"
+                  color={theme.palette.octh.main}
+                  fontSize="16px"
+                >
                   Se ofrecerá asesoramiento personalizado y mentoring a las
                   cooperativas afiliadas, con el objetivo de apoyar su
                   crecimiento y desarrollo a largo plazo.
@@ -146,30 +182,64 @@ const MainContent1 = () => {
           </Box>
           <Grid container spacing={6}>
             <Grid item xs={12}>
-              <Grid container justifyContent={{ xs: "center", md: "space-between" }} px={4} spacing={2}>
+              <Grid
+                container
+                justifyContent={{ xs: "center", md: "space-between" }}
+                px={4}
+                spacing={2}
+              >
                 <Grid item xs={8} md={3}>
                   <Box
                     sx={{
-                      width: "100%", height: "auto", textAlign: "left"
+                      width: "100%",
+                      height: "auto",
+                      textAlign: "left",
+                      marginBottom: "50px",
                     }}
                   >
-                    <Typography variant="body1" color="third" fontSize="20px">
+                    <Typography
+                      variant="body1"
+                      color={theme.palette.tenth.main}
+                      fontSize="20px"
+                    >
+                      <img src="/static/Check.png" width="40px" height="40px" />
                       <strong>Ser Una Cooperativa Registrada</strong>
                     </Typography>
-                    <Typography variant="body2" color="third" fontSize="18px">
-                      Para ser elegible para unirse al cluster, la organización debe
-                      estar legalmente constituida como una cooperativa en Ecuador.
+                    <Typography
+                      variant="body1"
+                      color={theme.palette.octh.main}
+                      fontSize="18px"
+                    >
+                      Para ser elegible para unirse al cluster, la organización
+                      debe estar legalmente constituida como una cooperativa en
+                      Ecuador.
                     </Typography>
                   </Box>
-                  <Box sx={{ width: "100%", height: "auto", textAlign: "left" }}>
-                    <Typography variant="body1" fontSize="20px">
+                  <Box
+                    sx={{
+                      width: "100%",
+                      height: "auto",
+                      textAlign: "left",
+                      marginBottom: "50px",
+                    }}
+                  >
+                    <Typography
+                      variant="body1"
+                      color={theme.palette.tenth.main}
+                      fontSize="20px"
+                    >
+                      <img src="/static/Check.png" width="40px" height="40px" />
                       <strong>Participación Activa</strong>
-                      <Typography variant="body1" fontSize="18px">
-                        Se espera que las cooperativas afiliadas participen
-                        activamente en las actividades y eventos del cluster,
-                        contribuyendo con sus ideas, experiencias y recursos para
-                        beneficio de la comunidad en su conjunto.
-                      </Typography>
+                    </Typography>
+                    <Typography
+                      variant="body1"
+                      color={theme.palette.octh.main}
+                      fontSize="18px"
+                    >
+                      Se espera que las cooperativas afiliadas participen
+                      activamente en las actividades y eventos del cluster,
+                      contribuyendo con sus ideas, experiencias y recursos para
+                      beneficio de la comunidad en su conjunto.
                     </Typography>
                   </Box>
                 </Grid>
@@ -181,31 +251,64 @@ const MainContent1 = () => {
                       backgroundSize: "contain",
                       backgroundRepeat: "no-repeat",
                       width: "100%",
-                      height: "100%"
-                    }}>
-                  </Box>
+                      height: "100%",
+                    }}
+                  ></Box>
                 </Grid>
                 <Grid item xs={8} md={3}>
-                  <Box sx={{ width: "100%", height: "auto", textAlign: "left" }}>
-                    <Typography variant="body1" fontSize="20px">
-                      <strong>Compromiso con la Innovación y el Desarrollo</strong>
-                      <Typography variant="body1" fontSize="18px">
-                        Las cooperativas interesadas en unirse al cluster deben
-                        demostrar un compromiso genuino con la innovación, el
-                        desarrollo empresarial y la mejora continua de sus
-                        operaciones.
-                      </Typography>
+                  <Box
+                    sx={{
+                      width: "100%",
+                      height: "auto",
+                      textAlign: "left",
+                      marginBottom: "50px",
+                    }}
+                  >
+                    <Typography
+                      variant="body1"
+                      color={theme.palette.tenth.main}
+                      fontSize="20px"
+                    >
+                      <img src="/static/Check.png" width="40px" height="40px" />
+                      <strong>
+                        Compromiso con la Innovación y el Desarrollo
+                      </strong>
+                    </Typography>
+                    <Typography
+                      variant="body1"
+                      color={theme.palette.octh.main}
+                      fontSize="18px"
+                    >
+                      Las cooperativas interesadas en unirse al cluster deben
+                      demostrar un compromiso genuino con la innovación, el
+                      desarrollo empresarial y la mejora continua de sus
+                      operaciones.
                     </Typography>
                   </Box>
-                  <Box sx={{ width: "100%", height: "auto", textAlign: "left" }}>
-                    <Typography variant="body1" fontSize="20px">
-                      <strong>Compromiso con la Innovación y el Desarrollo</strong>
-                      <Typography variant="body1" fontSize="18px">
-                        Las cooperativas interesadas en unirse al cluster deben
-                        demostrar un compromiso genuino con la innovación, el
-                        desarrollo empresarial y la mejora continua de sus
-                        operaciones.
-                      </Typography>
+                  <Box
+                    sx={{ width: "100%", height: "auto", textAlign: "left" }}
+                  >
+                    <Typography
+                      variant="body1"
+                      color={theme.palette.tenth.main}
+                      fontSize="20px"
+                    >
+                      <img src="/static/Check.png" width="40px" height="40px" />
+                      <strong>
+                        Cumplimiento de Normas y Ética Empresarial
+                      </strong>
+                    </Typography>
+                    <Typography
+                      variant="body1"
+                      color={theme.palette.octh.main}
+                      fontSize="18px"
+                    >
+                      Todas las cooperativas afiliadas deberán cumplir con las
+                      normas éticas y empresariales establecidas por el clúster,
+                      incluyendo el respeto a los derechos laborales,
+                      ambientales y sociales. La membresía es gratuita, pero
+                      las cooperativas pueden contribuir monetariamente para
+                      financiar proyectos conjuntos.
                     </Typography>
                   </Box>
                 </Grid>
@@ -213,7 +316,6 @@ const MainContent1 = () => {
             </Grid>
           </Grid>
         </Grid>
-
 
         <Grid item container justifyContent="initial">
           <Box
@@ -251,10 +353,19 @@ const MainContent1 = () => {
                   marginBottom: "50px",
                 }}
               >
-                <Typography variant="body2" fontSize="20px">
+                <Typography
+                  variant="body2"
+                  color={theme.palette.eleventh.main}
+                  fontSize="20px"
+                >
+                  <img src="/static/Check.png" width="40px" height="40px" />
                   <strong>Plataforma Digital Compartida:</strong>
                 </Typography>
-                <Typography variant="body2" fontSize="20px">
+                <Typography
+                  variant="body2"
+                  color={theme.palette.octh.main}
+                  fontSize="20px"
+                >
                   Crear una plataforma en línea donde las cooperativas puedan
                   acceder a herramientas, recursos y soluciones tecnológicas.
                 </Typography>
@@ -269,10 +380,19 @@ const MainContent1 = () => {
                   marginBottom: "50px",
                 }}
               >
-                <Typography variant="body2" fontSize="20px">
+                <Typography
+                  variant="body2"
+                  color={theme.palette.eleventh.main}
+                  fontSize="20px"
+                >
+                  <img src="/static/Check.png" width="40px" height="40px" />
                   <strong>Transparencia</strong>
                 </Typography>
-                <Typography variant="body2" fontSize="20px">
+                <Typography
+                  variant="body2"
+                  color={theme.palette.octh.main}
+                  fontSize="20px"
+                >
                   La información y los avances deben ser transparentes para
                   todos los miembros del cluster.
                 </Typography>
@@ -286,10 +406,19 @@ const MainContent1 = () => {
                   marginBottom: "200px",
                 }}
               >
-                <Typography variant="body2" color="third" fontSize="20px">
+                <Typography
+                  variant="body2"
+                  color={theme.palette.eleventh.main}
+                  fontSize="20px"
+                >
+                  <img src="/static/Check.png" width="40px" height="40px" />
                   <strong>Inclusión</strong>
                 </Typography>
-                <Typography variant="body2" color="third" fontSize="20px">
+                <Typography
+                  variant="body2"
+                  color={theme.palette.octh.main}
+                  fontSize="20px"
+                >
                   Todas las cooperativas, independientemente de su tamaño o
                   ubicación, pueden participar.
                 </Typography>
