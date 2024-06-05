@@ -1,5 +1,4 @@
 import { createTheme } from "@mui/material/styles";
-
 const theme = createTheme({
   palette: {
     primary: {
@@ -46,7 +45,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: "Visby Round CF",  // Cambia "Aleo Variable" por "Visby Round"
+    fontFamily: "Visby Round",  
     h1: {
       fontSize: "2rem",
       fontWeight: "bold",

@@ -3,7 +3,7 @@ import { Box, Typography, Grid, useTheme } from "@mui/material";
 const MainContent2 = () => {
   const theme = useTheme();
   return (
-    <Box>
+    <Box marginTop='150px'>
       <Grid container spacing={6}>
         <Grid container justifyContent="center">
           <Box

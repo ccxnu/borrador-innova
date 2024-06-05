@@ -23,22 +23,27 @@ const Header = () => {
           </Grid>
           <Grid item>
             <Button variant="text" color="fifth" sx={{ fontSize: '20px' }}>
-              AFILIACIÓN
+              OBJETIVOS
             </Button>
           </Grid>
           <Grid item>
             <Button variant="text" color="fifth" sx={{ fontSize: '20px' }}>
-              SERVICIOS
+              MISIÓN/VISIÓN
+            </Button>
+          </Grid>
+          <Grid item>
+            <Button variant="text" color="fifth" sx={{ fontSize: '20px' }}>
+              POLÍTICAS
+            </Button>
+          </Grid>
+          <Grid item>
+            <Button variant="text" color="fifth" sx={{ fontSize: '20px' }}>
+              BENEFICIOS
             </Button>
           </Grid>
           <Grid item>
             <Button variant="text" color="fifth" sx={{ fontSize: '20px' }}>
               MONETIZACIÓN
-            </Button>
-          </Grid>
-          <Grid item>
-            <Button variant="text" color="fifth" sx={{ fontSize: '20px' }}>
-              NOSOTROS
             </Button>
           </Grid>
         </Grid>

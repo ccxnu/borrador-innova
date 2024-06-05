@@ -194,7 +194,7 @@ const MainContent1 = () => {
                       width: "100%",
                       height: "auto",
                       textAlign: "left",
-                      marginBottom: "50px",
+                      marginBottom: "105px",
                     }}
                   >
                     <Typography
@@ -306,9 +306,32 @@ const MainContent1 = () => {
                       Todas las cooperativas afiliadas deberán cumplir con las
                       normas éticas y empresariales establecidas por el clúster,
                       incluyendo el respeto a los derechos laborales,
-                      ambientales y sociales. La membresía es gratuita, pero
-                      las cooperativas pueden contribuir monetariamente para
-                      financiar proyectos conjuntos.
+                      ambientales y sociales.
+                    </Typography>
+                  </Box>
+                </Grid>
+
+
+                <Grid item xs={8} md={3}>
+                  <Box
+                    sx={{ width: "100%", height: "auto", textAlign: "center" }}
+                  >
+                    <img src="/static/Check.png" width="40px" height="40px" />
+                    <Typography
+                      variant="body1"
+                      color={theme.palette.tenth.main}
+                      fontSize="20px"
+                    >
+                      <strong>
+                        Tipo de Membresia
+                      </strong>
+                    </Typography>
+                    <Typography
+                      variant="body1"
+                      color={theme.palette.octh.main}
+                      fontSize="18px"
+                    >
+                      La membresía es gratuita, pero las cooperativas pueden contribuir monetariamente para financiar proyectos conjuntos.
                     </Typography>
                   </Box>
                 </Grid>
@@ -317,7 +340,9 @@ const MainContent1 = () => {
           </Grid>
         </Grid>
 
-        <Grid item container justifyContent="initial">
+
+
+        <Grid item container >
           <Box
             sx={{
               marginTop: "100px",
@@ -340,28 +365,36 @@ const MainContent1 = () => {
             </Typography>
           </Box>
         </Grid>
-        <Grid container spacing={5}>
-          <Grid item container xs={12} md={6} justifyContent="flex-end">
-            <img src="/static/servicios.png" width="550px" height="400px" />
+        <Grid item xs={12} marginTop='80px'>
+        <Grid
+          container
+          justifyContent={{ xs: "center", md: "space-arround" }}
+          px={4}
+          spacing={6}
+        >
+          <Grid item xs={12} sm={7} md={6}>
+            <Box
+              sx={{
+                backgroundImage: "url(/static/Servicios.png)",
+                backgroundPosition: "left",
+                backgroundSize: "contain",
+                backgroundRepeat: "no-repeat",
+                width: "100%",
+                height: "100%",
+              }}
+            ></Box>
           </Grid>
-          <Grid item xs={12} md={6} container justifyContent="flex-start">
-            <Grid item container>
-              <Box
-                sx={{
-                  width: 590,
-                  height: 100,
-                  marginBottom: "50px",
-                }}
-              >
-                <Typography
-                  variant="body2"
-                  color={theme.palette.eleventh.main}
-                  fontSize="20px"
-                >
-                  <img src="/static/Check.png" width="40px" height="40px" />
-                  <strong>Plataforma Digital Compartida:</strong>
-                </Typography>
-                <Typography
+
+          <Grid item xs={12} md={6}>
+            <Box
+              sx={{ width: "100%", height: "auto", textAlign: "left" }}
+              marginBottom="30px"
+            >
+              <Typography variant="body2" color={theme.palette.octh.main} fontSize="18px">
+              <img src="/static/Check.png" width="40px" height="40px" />
+              <strong>Plataforma Digital Compartida</strong>
+              </Typography>
+              <Typography
                   variant="body2"
                   color={theme.palette.octh.main}
                   fontSize="20px"
@@ -369,26 +402,13 @@ const MainContent1 = () => {
                   Crear una plataforma en línea donde las cooperativas puedan
                   acceder a herramientas, recursos y soluciones tecnológicas.
                 </Typography>
-              </Box>
-            </Grid>
-            <Grid item container>
-              <Box
-                sx={{
-                  borderRadius: 2,
-                  width: 590,
-                  height: 125,
-                  marginBottom: "50px",
-                }}
-              >
-                <Typography
-                  variant="body2"
-                  color={theme.palette.eleventh.main}
-                  fontSize="20px"
-                >
-                  <img src="/static/Check.png" width="40px" height="40px" />
-                  <strong>Transparencia</strong>
-                </Typography>
-                <Typography
+            </Box>
+            <Box sx={{ width: "100%", height: "auto", textAlign: "left" }} marginBottom="30px">
+              <Typography variant="body2" color={theme.palette.octh.main} fontSize="18px">
+              <img src="/static/Check.png" width="40px" height="40px" />
+              <strong>Transparencia</strong>
+              </Typography>
+              <Typography
                   variant="body2"
                   color={theme.palette.octh.main}
                   fontSize="20px"
@@ -396,25 +416,13 @@ const MainContent1 = () => {
                   La información y los avances deben ser transparentes para
                   todos los miembros del cluster.
                 </Typography>
-              </Box>
-            </Grid>
-            <Grid item container>
-              <Box
-                sx={{
-                  width: 600,
-                  height: 100,
-                  marginBottom: "200px",
-                }}
-              >
-                <Typography
-                  variant="body2"
-                  color={theme.palette.eleventh.main}
-                  fontSize="20px"
-                >
-                  <img src="/static/Check.png" width="40px" height="40px" />
-                  <strong>Inclusión</strong>
-                </Typography>
-                <Typography
+            </Box>
+            <Box sx={{ width: "100%", height: "auto", textAlign: "left" }} marginBottom="30px">
+              <Typography variant="body2" color={theme.palette.octh.main} fontSize="18px">
+              <img src="/static/Check.png" width="40px" height="40px" />
+              <strong>Inclusión</strong>
+              </Typography>
+              <Typography
                   variant="body2"
                   color={theme.palette.octh.main}
                   fontSize="20px"
@@ -422,10 +430,11 @@ const MainContent1 = () => {
                   Todas las cooperativas, independientemente de su tamaño o
                   ubicación, pueden participar.
                 </Typography>
-              </Box>
-            </Grid>
+            </Box>
+            
           </Grid>
         </Grid>
+      </Grid>
       </Grid>
     </Box>
   );

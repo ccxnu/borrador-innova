@@ -3,7 +3,7 @@ import { Box, Typography, Grid, useTheme } from "@mui/material";
 const MainContent0 = () => {
   const theme = useTheme();
   return (
-    <Box>
+    <Box marginTop='80px'>
       <Grid container spacing={6}>
         <Grid item container xs={12} md={6} justifyContent="left">
           <Box
@@ -36,12 +36,9 @@ const MainContent0 = () => {
               padding: 2,
             }}
           >
-            <img src="/static/Check.png" width="40px" height="40px" />
             <Typography variant="body2" color={theme.palette.octh.main} fontSize="20px">
-              Nuestra misión es impulsar la innovación y el crecimiento
-              sostenible de las cooperativas en Ecuador, fortaleciendo su
-              capacidad para enfrentar los desafíos del mercado y contribuir al
-              bienestar de sus miembros y comunidades.
+            <img src="/static/Check.png" width="40px" height="40px" />
+            Nuestra misión es impulsar la innovación y el crecimiento sostenible de las cooperativas en Ecuador, fortaleciendo su capacidad para enfrentar los desafíos del mercado y contribuir al bienestar de sus miembros y comunidades.
             </Typography>
           </Box>
         </Grid>
@@ -70,18 +67,15 @@ const MainContent0 = () => {
           <Box
             sx={{
               borderRadius: 2,
-              width: 710,
+              width: 720,
               height: 230,
               textAlign: "justify",
               padding: 2,
             }}
           >
-            <img src="/static/Check.png" width="40px" height="40px" />
             <Typography variant="body2" color={theme.palette.octh.main} fontSize="20px">
-              Queremos ser el principal motor de cambio e innovación para las
-              cooperativas de ahorro y crédito en Ecuador, promoviendo una
-              cultura de colaboración, aprendizaje continuo y excelencia
-              empresarial.
+            <img src="/static/Check.png" width="40px" height="40px" />
+            Queremos ser el principal motor de cambio e innovación para las cooperativas de ahorro y crédito en Ecuador, promoviendo una cultura de colaboración, aprendizaje continuo y excelencia empresarial.
             </Typography>
           </Box>
         </Grid>
@@ -105,7 +99,7 @@ const MainContent0 = () => {
             </Typography>
           </Box>
         </Grid>
-        <Grid container>
+        <Grid container px={12}>
           <Grid
             item
             xs={12}
@@ -113,7 +107,6 @@ const MainContent0 = () => {
             container
             justifyContent="center"
             textAlign="center"
-            paddingInlineStart="180px"
           >
             <Box
               sx={{
@@ -129,12 +122,11 @@ const MainContent0 = () => {
                   height="90px"
                 />
               </Grid>
-              <Typography variant="body2" color={theme.palette.eleventh.main} fontSize="30px">
+              <Typography variant="body1" color={theme.palette.eleventh.main} fontSize="30px">
                 <strong>Colaboración</strong>
               </Typography>
               <Typography variant="body2" fontSize="16px" color={theme.palette.nineth.main}>
-                Las cooperativas deben comprometerse a colaborar activamente,
-                compartiendo buenas prácticas y experiencias
+              Las cooperativas deben comprometerse a colaborar activamente, compartiendo buenas prácticas y experiencias.
               </Typography>
             </Box>
           </Grid>
@@ -159,8 +151,7 @@ const MainContent0 = () => {
                 <strong>Transparencia</strong>
               </Typography>
               <Typography variant="body2" fontSize="16px" color={theme.palette.nineth.main}>
-                La información y los avances deben ser transparentes para todos
-                los miembros del clúster.
+              La información y los avances deben ser transparentes para todos los miembros del clúster.
               </Typography>
             </Box>
           </Grid>
@@ -171,7 +162,6 @@ const MainContent0 = () => {
             container
             justifyContent="center"
             textAlign="center"
-            paddingInlineEnd="140px"
           >
             <Box
               sx={{
@@ -185,8 +175,7 @@ const MainContent0 = () => {
                 <strong>Inclusión</strong>
               </Typography>
               <Typography variant="body2" fontSize="16px" color={theme.palette.nineth.main}>
-                Todas las cooperativas, independientemente de su tamaño o
-                ubicación, pueden participar.
+              Todas las cooperativas, independientemente de su tamaño o ubicación, pueden participar.
               </Typography>
             </Box>
           </Grid>
