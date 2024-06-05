@@ -349,7 +349,6 @@ const MainContent1 = () => {
               padding: 1,
               textAlign: "center",
               bgcolor: theme.palette.primary.main,
-              marginBottom: "40px",
               width: "20%",
               borderRadius: 2,
               borderTopLeftRadius: "0px",
