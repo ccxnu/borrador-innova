@@ -3,83 +3,93 @@ import { Box, Typography, Grid, useTheme } from "@mui/material";
 const MainContent0 = () => {
   const theme = useTheme();
   return (
-    <Box marginTop='80px'>
+    <Box marginTop="80px">
       <Grid container spacing={6}>
-        <Grid item container xs={12} md={6} justifyContent="left">
-          <Box
-            sx={{
-              padding: 2,
-              bgcolor: theme.palette.primary.main,
-              textAlign: "right",
-              borderRadius: 2,
-              marginBottom: "20px",
-              width: "88%",
-              margin: "2 auto",
-              borderTopLeftRadius: "0px",
-              borderBottomLeftRadius: "0px",
-            }}
+        <Grid item xs={12} marginTop="100px" id="mision-vision">
+          <Grid
+            container
+            justifyContent={{ xs: "center", md: "space-between" }}
+            spacing={2}
           >
-            <Typography
-              variant="body2"
-              fontSize="30px"
-              color={theme.palette.fourth.main}
-            >
-              <strong>Misión</strong>
-            </Typography>
-          </Box>
-          <Box
-            sx={{
-              borderRadius: 2,
-              width: 710,
-              height: 230,
-              textAlign: "justify",
-              padding: 2,
-            }}
-          >
-            <Typography variant="body2" color={theme.palette.octh.main} fontSize="20px">
-            <img src="/static/Check.png" width="40px" height="40px" />
-            Nuestra misión es impulsar la innovación y el crecimiento sostenible de las cooperativas en Ecuador, fortaleciendo su capacidad para enfrentar los desafíos del mercado y contribuir al bienestar de sus miembros y comunidades.
-            </Typography>
-          </Box>
+            <Grid item xs={8} md={5}>
+              <Box
+                sx={{
+                  padding: 1,
+                  borderRadius: 2,
+                  bgcolor: theme.palette.primary.main,
+                  width: "100%",
+                  height: "auto",
+                  textAlign: "left",
+                }}
+                marginBottom="30px"
+              >
+                <Typography
+                  variant="body2"
+                  fontSize="30px"
+                  textAlign="right"
+                  color={theme.palette.fourth.main}
+                >
+                  <strong>Misión</strong>
+                </Typography>
+              </Box>
+              <Box
+                sx={{ width: "100%", height: "auto", textAlign: "left" }}
+                marginBottom="30px"
+              >
+                <Typography
+                  variant="body2"
+                  color={theme.palette.octh.main}
+                  fontSize="20px"
+                >
+                  <img src="/static/Check.png" width="40px" height="40px" />
+                  Nuestra misión es impulsar la innovación y el crecimiento
+                  sostenible de las cooperativas en Ecuador, fortaleciendo su
+                  capacidad para enfrentar los desafíos del mercado y contribuir
+                  al bienestar de sus miembros y comunidades.
+                </Typography>
+              </Box>
+            </Grid>
+            <Grid item xs={8} md={5}>
+              <Box
+                sx={{
+                  padding: 1,
+                  borderRadius: 2,
+                  bgcolor: theme.palette.primary.main,
+                  width: "100%",
+                  height: "auto",
+                  textAlign: "left",
+                }}
+                marginBottom="30px"
+              >
+                <Typography
+                  variant="body2"
+                  color={theme.palette.fourth.main}
+                  fontSize="30px"
+                >
+                  <strong>Visión</strong>
+                </Typography>
+              </Box>
+              <Box
+                sx={{ width: "100%", height: "auto", textAlign: "left" }}
+                marginBottom="30px"
+              >
+                <Typography
+                  variant="body2"
+                  color={theme.palette.octh.main}
+                  fontSize="20px"
+                >
+                  <img src="/static/Check.png" width="40px" height="40px" />
+                  Queremos ser el principal motor de cambio e innovación para
+                  las cooperativas de ahorro y crédito en Ecuador, promoviendo
+                  una cultura de colaboración, aprendizaje continuo y excelencia
+                  empresarial.
+                </Typography>
+              </Box>
+            </Grid>
+          </Grid>
         </Grid>
-        <Grid item xs={12} md={6} container justifyContent="right">
-          <Box
-            sx={{
-              padding: 2,
-              bgcolor: theme.palette.primary.main,
-              textAlign: "left",
-              borderRadius: 2,
-              marginBottom: "20px",
-              width: "88%",
-              margin: "2 auto",
-              borderTopRightRadius: "0px",
-              borderBottomRightRadius: "0px",
-            }}
-          >
-            <Typography
-              variant="body2"
-              fontSize="30px"
-              color={theme.palette.fourth.main}
-            >
-              <strong>Visión</strong>
-            </Typography>
-          </Box>
-          <Box
-            sx={{
-              borderRadius: 2,
-              width: 720,
-              height: 230,
-              textAlign: "justify",
-              padding: 2,
-            }}
-          >
-            <Typography variant="body2" color={theme.palette.octh.main} fontSize="20px">
-            <img src="/static/Check.png" width="40px" height="40px" />
-            Queremos ser el principal motor de cambio e innovación para las cooperativas de ahorro y crédito en Ecuador, promoviendo una cultura de colaboración, aprendizaje continuo y excelencia empresarial.
-            </Typography>
-          </Box>
-        </Grid>
-        <Grid item container justifyContent="center" marginBottom="50px">
+
+        <Grid item container justifyContent="center" marginTop='100px' marginBottom="50px" id="politicas">
           <Box
             sx={{
               borderRadius: 2,
@@ -122,11 +132,20 @@ const MainContent0 = () => {
                   height="90px"
                 />
               </Grid>
-              <Typography variant="body1" color={theme.palette.eleventh.main} fontSize="30px">
+              <Typography
+                variant="body1"
+                color={theme.palette.eleventh.main}
+                fontSize="30px"
+              >
                 <strong>Colaboración</strong>
               </Typography>
-              <Typography variant="body2" fontSize="16px" color={theme.palette.nineth.main}>
-              Las cooperativas deben comprometerse a colaborar activamente, compartiendo buenas prácticas y experiencias.
+              <Typography
+                variant="body2"
+                fontSize="16px"
+                color={theme.palette.nineth.main}
+              >
+                LLas cooperativas deben comprometerse a colaborar activamente,
+                compartiendo buenas prácticas y experiencias.
               </Typography>
             </Box>
           </Grid>
@@ -147,11 +166,20 @@ const MainContent0 = () => {
               }}
             >
               <img src="/static/Transparencia.png" width="80px" height="80px" />
-              <Typography variant="body2" color={theme.palette.eleventh.main} fontSize="30px">
+              <Typography
+                variant="body2"
+                color={theme.palette.eleventh.main}
+                fontSize="30px"
+              >
                 <strong>Transparencia</strong>
               </Typography>
-              <Typography variant="body2" fontSize="16px" color={theme.palette.nineth.main}>
-              La información y los avances deben ser transparentes para todos los miembros del clúster.
+              <Typography
+                variant="body2"
+                fontSize="16px"
+                color={theme.palette.nineth.main}
+              >
+                La información y los avances deben ser transparentes para todos
+                los miembros del clúster.
               </Typography>
             </Box>
           </Grid>
@@ -171,11 +199,20 @@ const MainContent0 = () => {
               }}
             >
               <img src="/static/Inclusion.png" width="80px" height="80px" />
-              <Typography variant="body2" color={theme.palette.eleventh.main} fontSize="30px">
+              <Typography
+                variant="body2"
+                color={theme.palette.eleventh.main}
+                fontSize="30px"
+              >
                 <strong>Inclusión</strong>
               </Typography>
-              <Typography variant="body2" fontSize="16px" color={theme.palette.nineth.main}>
-              Todas las cooperativas, independientemente de su tamaño o ubicación, pueden participar.
+              <Typography
+                variant="body2"
+                fontSize="16px"
+                color={theme.palette.nineth.main}
+              >
+                Todas las cooperativas, independientemente de su tamaño o
+                ubicación, pueden participar.
               </Typography>
             </Box>
           </Grid>
