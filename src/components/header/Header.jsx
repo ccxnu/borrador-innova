@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { AppBar, Toolbar, Button, Box, Grid, useTheme, useMediaQuery, Drawer, List, ListItem, ListItemText } from "@mui/material";
+import { AppBar, Toolbar, Button, Box, Grid, useTheme, useMediaQuery, Drawer, List, ListItem, ListItemText, IconButton } from "@mui/material";
+import MenuIcon from '@mui/icons-material/Menu';
 
 const Header = () => {
   const theme = useTheme();
@@ -40,7 +41,16 @@ const Header = () => {
         }}
       >
         <Toolbar sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
-          <Box sx={{ flexGrow: 1, display: 'flex', flexDirection: isMd ? 'row' : 'column', alignItems: 'center' }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: 'flex',
+              flexDirection: isMd ? 'row' : 'column',
+              alignItems: 'center',
+              width: isMd ? 'auto' : '5px', // Adjust the width for mobile screens
+              overflow: 'hidden' // Ensure content does not overflow the box
+            }}
+          >
             <img src="/static/Logo.png" width="190px" height="150px" alt="Logo" />
             <img src="/static/Innova.png" width="300px" height="80" alt="Innova" style={{ marginTop: isMd ? 0 : '10px' }} />
           </Box>
@@ -68,9 +78,13 @@ const Header = () => {
               </Grid>
             </Grid>
           ) : (
-            <Button variant="text" color="fifth" onClick={toggleDrawer(true)}>
-              Menú
-            </Button>
+            <IconButton
+              color="fifth"
+              onClick={toggleDrawer(true)}
+              sx={{ fontSize: '50px' }} // 
+            >
+              <MenuIcon sx={{ fontSize: '50px' }} /> 
+            </IconButton>
           )}
         </Toolbar>
       </AppBar>
