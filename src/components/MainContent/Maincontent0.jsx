@@ -15,9 +15,7 @@ const MainContent0 = () => {
               <Box
                 sx={{
                   padding: 1,
-                  borderRadius: 2,
                   bgcolor: theme.palette.primary.main,
-                  width: "100%",
                   height: "auto",
                   textAlign: "left",
                 }}
@@ -33,13 +31,14 @@ const MainContent0 = () => {
                 </Typography>
               </Box>
               <Box
-                sx={{ width: "100%", height: "auto", textAlign: "left" }}
+                sx={{  height: "auto", textAlign: "left" }}
                 marginBottom="30px"
               >
                 <Typography
                   variant="body2"
                   color={theme.palette.octh.main}
                   fontSize="20px"
+                  display='flex'
                 >
                   <img src="/static/Check.png" width="40px" height="40px" />
                   Nuestra misión es impulsar la innovación y el crecimiento
@@ -53,9 +52,7 @@ const MainContent0 = () => {
               <Box
                 sx={{
                   padding: 1,
-                  borderRadius: 2,
                   bgcolor: theme.palette.primary.main,
-                  width: "100%",
                   height: "auto",
                   textAlign: "left",
                 }}
@@ -70,13 +67,14 @@ const MainContent0 = () => {
                 </Typography>
               </Box>
               <Box
-                sx={{ width: "100%", height: "auto", textAlign: "left" }}
+                sx={{ height: "auto", textAlign: "left" }}
                 marginBottom="30px"
               >
                 <Typography
                   variant="body2"
                   color={theme.palette.octh.main}
                   fontSize="20px"
+                  display='flex'
                 >
                   <img src="/static/Check.png" width="40px" height="40px" />
                   Queremos ser el principal motor de cambio e innovación para
@@ -92,10 +90,7 @@ const MainContent0 = () => {
         <Grid item container justifyContent="center" marginTop='100px' marginBottom="50px" id="politicas">
           <Box
             sx={{
-              borderRadius: 2,
               bgcolor: theme.palette.primary.main,
-              width: "120%",
-              maxWidth: "1500px",
               padding: 1,
             }}
           >
@@ -105,7 +100,7 @@ const MainContent0 = () => {
               fontSize="30px"
               color={theme.palette.fourth.main}
             >
-              <strong>Políticas:</strong>
+              <strong>Políticas</strong>
             </Typography>
           </Box>
         </Grid>
@@ -120,9 +115,8 @@ const MainContent0 = () => {
           >
             <Box
               sx={{
-                maxWidth: 350,
                 boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
-                padding: 2,
+                
               }}
             >
               <Grid item container justifyContent="center">
@@ -144,7 +138,7 @@ const MainContent0 = () => {
                 fontSize="16px"
                 color={theme.palette.nineth.main}
               >
-                LLas cooperativas deben comprometerse a colaborar activamente,
+                Las cooperativas deben comprometerse a colaborar activamente,
                 compartiendo buenas prácticas y experiencias.
               </Typography>
             </Box>
@@ -156,13 +150,11 @@ const MainContent0 = () => {
             container
             justifyContent="center"
             textAlign="center"
-            paddingInlineStart="50px"
           >
             <Box
               sx={{
-                maxWidth: 350,
                 boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
-                padding: 2,
+                
               }}
             >
               <img src="/static/Transparencia.png" width="80px" height="80px" />
@@ -193,9 +185,8 @@ const MainContent0 = () => {
           >
             <Box
               sx={{
-                maxWidth: 350,
                 boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
-                padding: 2,
+                
               }}
             >
               <img src="/static/Inclusion.png" width="80px" height="80px" />

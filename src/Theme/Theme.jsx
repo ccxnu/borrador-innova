@@ -45,7 +45,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: "Visby Round",  
+    fontFamily: "Visby Round CF",  
     h1: {
       fontSize: "2rem",
       fontWeight: "bold",

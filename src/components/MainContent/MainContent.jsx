@@ -20,10 +20,6 @@ const MainContent = () => {
                       padding: 2,
                       textAlign: "center",
                       bgcolor: theme.palette.primary.main,
-                      width: "100%",
-                      borderRadius: 2,
-                      borderTopLeftRadius: "0px",
-                      borderBottomLeftRadius: "0px",
                     }}
                   >
                     <Typography
@@ -38,7 +34,7 @@ const MainContent = () => {
                     </Typography>
                   </Box>
                   <Box
-                    sx={{ width: "100%", height: "auto", textAlign: "left" }}
+                    sx={{ height: "auto", textAlign: "left" }}
                     marginBottom="30px"
                   >
                     <Typography
@@ -98,9 +94,7 @@ const MainContent = () => {
             <Box
               sx={{
                 padding: 1,
-                borderRadius: 2,
                 bgcolor: theme.palette.primary.main,
-                width: "100%",
                 height: "auto",
                 textAlign: "left",
               }}
@@ -114,14 +108,15 @@ const MainContent = () => {
                 <strong>Nuestros Objetivos</strong>
               </Typography>
             </Box>
-            <Box
-              sx={{ width: "100%", height: "auto", textAlign: "left" }}
+            <Box 
+              sx={{ height: "auto", textAlign: "left" }}
               marginBottom="30px"
             >
               <Typography
                 variant="body2"
                 color={theme.palette.octh.main}
                 fontSize="18px"
+                display='flex'
               >
                 <img src="/static/Check.png" width="40px" height="40px" />
                 Fomentar la innovación y la transformación en las cooperativas
@@ -130,13 +125,14 @@ const MainContent = () => {
               </Typography>
             </Box>
             <Box
-              sx={{ width: "100%", height: "auto", textAlign: "left" }}
+              sx={{ height: "auto", textAlign: "left" }}
               marginBottom="30px"
             >
               <Typography
                 variant="body2"
                 color={theme.palette.octh.main}
                 fontSize="18px"
+                display='flex'
               >
                 <img src="/static/Check.png" width="40px" height="40px" />
                 Crear un ecosistema colaborativo donde las cooperativas
@@ -144,13 +140,14 @@ const MainContent = () => {
               </Typography>
             </Box>
             <Box
-              sx={{ width: "100%", height: "auto", textAlign: "left" }}
+              sx={{ height: "auto", textAlign: "left" }}
               marginBottom="30px"
             >
               <Typography
                 variant="body2"
                 color={theme.palette.octh.main}
                 fontSize="18px"
+                display='flex'
               >
                 <img src="/static/Check.png" width="40px" height="40px" />
                 Facilitar la adopción de tecnologías emergentes, como la
@@ -159,24 +156,26 @@ const MainContent = () => {
               </Typography>
             </Box>
             <Box
-              sx={{ width: "100%", height: "auto", textAlign: "left" }}
+              sx={{  height: "auto", textAlign: "left" }}
               marginBottom="30px"
             >
               <Typography
                 variant="body2"
                 color={theme.palette.octh.main}
                 fontSize="18px"
+                display='flex'
               >
                 <img src="/static/Check.png" width="40px" height="40px" />
                 Capacitar a los miembros de las cooperativas en habilidades
                 digitales y de gestión.
               </Typography>
             </Box>
-            <Box sx={{ width: "100%", height: "auto", textAlign: "left" }}>
+            <Box sx={{ height: "auto", textAlign: "left" }}>
               <Typography
                 variant="body2"
                 color={theme.palette.octh.main}
                 fontSize="18px"
+                display='flex'
               >
                 <img src="/static/Check.png" width="40px" height="40px" />
                 Fomentar la creación de productos y servicios financieros
