@@ -106,7 +106,7 @@ const Header = () => {
             }}
           >
             <img
-              src="/static/Logo.png."
+              src="./static/Logo.png"
               width={isMd ? "200px" : "150px"}
               height={isMd ? "auto" : "auto"}
             />
