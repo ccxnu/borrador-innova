@@ -9,7 +9,6 @@ const Header = () => {
   const [appBarHeight, setAppBarHeight] = useState(0);
 
   useEffect(() => {
-    // Calcula la altura del AppBar dinámicamente
     const appBarElement = document.getElementById('app-bar');
     if (appBarElement) {
       setAppBarHeight(appBarElement.offsetHeight);
@@ -74,7 +73,7 @@ const Header = () => {
           backgroundImage: `linear-gradient(to right, ${theme.palette.third.main}, ${theme.palette.primary.main})`,
         }}
       >
-        <Toolbar sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
+        <Toolbar sx={{ justifyContent: 'space-between', alignItems: 'center', padding:'20px' }}>
           <Box
             sx={{
               flexGrow: 1,
@@ -105,18 +104,18 @@ const Header = () => {
                 </Button>
               </Grid>
               <Grid item>
-                <Button variant="text" color="fifth" sx={{ fontSize: '20px' }} onClick={handleMenuItemClick("#objetivos")}>
-                <strong>OBJETIVOS</strong>
-                </Button>
-              </Grid>
-              <Grid item>
                 <Button variant="text" color="fifth" sx={{ fontSize: '20px' }} onClick={handleMenuItemClick("#mision-vision")}>
                 <strong>MISIÓN/VISIÓN</strong>
                 </Button>
               </Grid>
               <Grid item>
-                <Button variant="text" color="fifth" sx={{ fontSize: '20px' }} onClick={handleMenuItemClick("#politicas")}>
-                <strong>POLÍTICAS</strong>
+                <Button variant="text" color="fifth" sx={{ fontSize: '20px' }} onClick={handleMenuItemClick("#beneficios")}>
+                <strong>BENEFICIOS</strong>
+                </Button>
+              </Grid>
+              <Grid item>
+                <Button variant="text" color="fifth" sx={{ fontSize: '20px' }} onClick={handleMenuItemClick("#monetizacion")}>
+                <strong>MONETIZACIÓN</strong>
                 </Button>
               </Grid>
             </Grid>
