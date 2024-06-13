@@ -7,7 +7,7 @@ const MisionVision = () => {
   const isMd = useMediaQuery(theme.breakpoints.up("md"));
 
   return (
-    <Box id="mision-vision" pt={isMd ? 8 : 4}>
+    <Box id="mision-vision" pt={isMd ? "4rem" : "2rem"}>
       <Grid container>
         <Grid item xs={12} md={6}>
           <Grid container>

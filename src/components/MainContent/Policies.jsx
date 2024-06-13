@@ -7,7 +7,7 @@ const Policies = () => {
   const isMd = useMediaQuery(theme.breakpoints.up("md"));
 
   return (
-    <Box id="politicas" p={isMd ? "8rem 0rem" : "2rem 2rem"}>
+    <Box id="politicas" p={isMd ? "4rem 0rem" : "2rem 2rem"}>
       <Grid container justifyContent="center">
         <Grid item xs={10} md={10}>
           <TitleBox
