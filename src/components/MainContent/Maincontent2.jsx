@@ -3,21 +3,20 @@ import { Box, Typography, Grid, useTheme } from "@mui/material";
 const MainContent2 = () => {
   const theme = useTheme();
   return (
-    <Box marginTop="150px" id="monetizacion">
+    <Box marginTop="100px" id="monetizacion">
       <Grid container spacing={6}>
         <Grid container justifyContent="center">
           <Box
-            marginBottom="40px"
             sx={{
               bgcolor: theme.palette.primary.main,
               textAlign: "justify",
-              padding: 1,
+              flex: 1,
             }}
           >
             <Typography
               textAlign="center"
               variant="body1"
-              fontSize="30px"
+              fontSize="32px"
               color={theme.palette.fourth.main}
             >
               <strong>Monetización</strong>
@@ -27,26 +26,30 @@ const MainContent2 = () => {
         <Grid item xs={12}>
           <Grid
             container
-            justifyContent={{ xs: "center", md: "space-between" }}
+            justifyContent={{ xs: "center", md: "space-arround" }}
             px={4}
             spacing={2}
           >
-            <Grid item xs={8} md={3}>
+            <Grid item xs={12} md={3}>
               <Box
                 sx={{
                   display: "flex",
-                  height: "auto", textAlign: "left"
+                  height: "auto",
+                  textAlign: "left",
                 }}
                 marginBottom="30px"
-
               >
-                <img src="/static/Check.png" width="40px" height="40px" />
+                <img
+                  src="/static/Check.png"
+                  width="40px"
+                  height="40px"
+                  style={{ marginRight: "10px" }}
+                />
                 <Box>
                   <Typography
                     variant="body1"
                     color={theme.palette.tenth.main}
                     fontSize="20px"
-
                   >
                     <strong>Suscripciones Premium</strong>
                   </Typography>
@@ -64,19 +67,22 @@ const MainContent2 = () => {
               <Box
                 sx={{
                   display: "flex",
-                  height: "auto", textAlign: "left"
+                  height: "auto",
+                  textAlign: "left",
                 }}
                 marginBottom="30px"
-
               >
-                <img src="/static/Check.png" width="40px" height="40px" />
+                <img
+                  src="/static/Check.png"
+                  width="40px"
+                  height="40px"
+                  style={{ marginRight: "10px" }}
+                />
                 <Box>
-
                   <Typography
                     variant="body1"
                     color={theme.palette.tenth.main}
                     fontSize="20px"
-
                   >
                     <strong>Programas de Afiliados</strong>
                   </Typography>
@@ -93,13 +99,13 @@ const MainContent2 = () => {
                     color={theme.palette.octh.main}
                     fontSize="18px"
                   >
-                    2. Ganar comisiones por cada cliente referido que adquiera sus
-                    productos o servicios.
+                    2. Ganar comisiones por cada cliente referido que adquiera
+                    sus productos o servicios.
                   </Typography>
                 </Box>
               </Box>
             </Grid>
-            <Grid item xs={12} sm={7} md={5}>
+            <Grid item xs={12} sm={7} md={6}>
               <Box
                 sx={{
                   backgroundImage: "url(/static/Monetizacion.png)",
@@ -108,26 +114,30 @@ const MainContent2 = () => {
                   backgroundRepeat: "no-repeat",
                   width: "100%",
                   height: "100%",
+                  minHeight: "200px", 
                 }}
               ></Box>
             </Grid>
-            <Grid item xs={8} md={3}>
+            <Grid item xs={12} md={3}>
               <Box
                 sx={{
                   display: "flex",
-                  height: "auto", textAlign: "left"
+                  height: "auto",
+                  textAlign: "left",
                 }}
-                marginBottom="30px"
-
+                marginBottom="80px"
               >
-                <img src="/static/Check.png" width="40px" height="40px" />
+                <img
+                  src="/static/Check.png"
+                  width="40px"
+                  height="40px"
+                  style={{ marginRight: "10px" }}
+                />
                 <Box>
-
                   <Typography
                     variant="body1"
                     color={theme.palette.tenth.main}
                     fontSize="20px"
-
                   >
                     <strong>Consultoría Personalizada:</strong>
                   </Typography>
@@ -136,8 +146,8 @@ const MainContent2 = () => {
                     color={theme.palette.octh.main}
                     fontSize="18px"
                   >
-                    1. Ofrecer servicios de consultoría estratégica y tecnológica
-                    a las cooperativas.
+                    1. Ofrecer servicios de consultoría estratégica y
+                    tecnológica a las cooperativas.
                   </Typography>
                   <Typography
                     variant="body2"
@@ -151,19 +161,21 @@ const MainContent2 = () => {
               <Box
                 sx={{
                   display: "flex",
-                  height: "auto", textAlign: "left"
+                  height: "auto",
+                  textAlign: "left",
                 }}
-                marginBottom="30px"
-
               >
-                <img src="/static/Check.png" width="40px" height="40px" />
+                <img
+                  src="/static/Check.png"
+                  width="40px"
+                  height="40px"
+                  style={{ marginRight: "10px" }}
+                />
                 <Box>
-
                   <Typography
                     variant="body1"
                     color={theme.palette.tenth.main}
                     fontSize="20px"
-
                   >
                     <strong>Venta de Datos Agregados:</strong>
                   </Typography>
@@ -172,15 +184,16 @@ const MainContent2 = () => {
                     color={theme.palette.octh.main}
                     fontSize="18px"
                   >
-                    1. Anonimizar y agrupar datos relevantes de las cooperativas.
+                    1. Anonimizar y agrupar datos relevantes de las
+                    cooperativas.
                   </Typography>
                   <Typography
                     variant="body2"
                     color={theme.palette.octh.main}
                     fontSize="18px"
                   >
-                    2. Vender estos datos agregados a instituciones financieras o
-                    investigadores interesados.
+                    2. Vender estos datos agregados a instituciones financieras
+                    o investigadores interesados.
                   </Typography>
                 </Box>
               </Box>
@@ -191,26 +204,28 @@ const MainContent2 = () => {
           <Grid
             container
             justifyContent={{ xs: "center", md: "space-between" }}
-            px={4}
+            px={6}
             spacing={{ xs: 4, md: 2 }}
           >
-            <Grid item xs={8} md={3}>
+            <Grid item xs={12} md={3}>
               <Box
                 sx={{
                   display: "flex",
-                  height: "auto", textAlign: "left"
+                  height: "auto",
+                  textAlign: "left",
                 }}
-                marginBottom="30px"
-
               >
-                <img src="/static/Check.png" width="40px" height="40px" />
+                <img
+                  src="/static/Check.png"
+                  width="40px"
+                  height="40px"
+                  style={{ marginRight: "10px" }}
+                />
                 <Box>
-
                   <Typography
                     variant="body1"
                     color={theme.palette.tenth.main}
                     fontSize="20px"
-
                   >
                     <strong>Marketplace de Soluciones Tecnológicas</strong>
                   </Typography>
@@ -227,29 +242,32 @@ const MainContent2 = () => {
                     color={theme.palette.octh.main}
                     fontSize="18px"
                   >
-                    2. Obtener una comisión por cada venta realizada a través del
-                    Marketplace.
+                    2. Obtener una comisión por cada venta realizada a través
+                    del Marketplace.
                   </Typography>
                 </Box>
               </Box>
             </Grid>
-            <Grid item xs={8} md={3}>
+            <Grid item xs={12} md={3}>
               <Box
                 sx={{
                   display: "flex",
-                  height: "auto", textAlign: "left"
+                  height: "auto",
+                  textAlign: "left",
                 }}
                 marginBottom="30px"
-
               >
-                <img src="/static/Check.png" width="40px" height="40px" />
+                <img
+                  src="/static/Check.png"
+                  width="40px"
+                  height="40px"
+                  style={{ marginRight: "10px" }}
+                />
                 <Box>
-
                   <Typography
                     variant="body1"
                     color={theme.palette.tenth.main}
                     fontSize="20px"
-
                   >
                     <strong>Alianzas Estratégicas con Fintech:</strong>
                   </Typography>
@@ -272,23 +290,26 @@ const MainContent2 = () => {
                 </Box>
               </Box>
             </Grid>
-            <Grid item xs={8} md={3}>
+            <Grid item xs={12} md={3}>
               <Box
                 sx={{
                   display: "flex",
-                  height: "auto", textAlign: "left"
+                  height: "auto",
+                  textAlign: "left",
                 }}
-                marginBottom="30px"
-
+                
               >
-                <img src="/static/Check.png" width="40px" height="40px" />
+                <img
+                  src="/static/Check.png"
+                  width="40px"
+                  height="40px"
+                  style={{ marginRight: "10px" }}
+                />
                 <Box>
-
                   <Typography
                     variant="body1"
                     color={theme.palette.tenth.main}
                     fontSize="20px"
-
                   >
                     <strong>Eventos Patrocinados:</strong>
                   </Typography>
@@ -306,7 +327,8 @@ const MainContent2 = () => {
                     fontSize="18px"
                   >
                     2. Las empresas tecnológicas y financieras pueden pagar por
-                    ser patrocinadores y tener visibilidad ante las cooperativas.
+                    ser patrocinadores y tener visibilidad ante las
+                    cooperativas.
                   </Typography>
                 </Box>
               </Box>
@@ -321,23 +343,26 @@ const MainContent2 = () => {
             px={4}
             spacing={{ xs: 4, md: 2 }}
           >
-            <Grid item xs={8} md={3}>
+            <Grid item xs={12} md={3}>
               <Box
                 sx={{
                   display: "flex",
-                  height: "auto", textAlign: "left"
+                  height: "auto",
+                  textAlign: "left",
                 }}
                 marginBottom="30px"
-
               >
-                <img src="/static/Check.png" width="40px" height="40px" />
+                <img
+                  src="/static/Check.png"
+                  width="40px"
+                  height="40px"
+                  style={{ marginRight: "10px" }}
+                />
                 <Box>
-
                   <Typography
                     variant="body1"
                     color={theme.palette.tenth.main}
                     fontSize="20px"
-
                   >
                     <strong>Programas de Certificación:</strong>
                   </Typography>
@@ -359,23 +384,26 @@ const MainContent2 = () => {
                 </Box>
               </Box>
             </Grid>
-            <Grid item xs={8} md={3}>
+            <Grid item xs={12} md={3}>
               <Box
                 sx={{
                   display: "flex",
-                  height: "auto", textAlign: "left"
+                  height: "auto",
+                  textAlign: "left",
                 }}
                 marginBottom="30px"
-
               >
-                <img src="/static/Check.png" width="40px" height="40px" />
+                <img
+                  src="/static/Check.png"
+                  width="40px"
+                  height="40px"
+                  style={{ marginRight: "10px" }}
+                />
                 <Box>
-
                   <Typography
                     variant="body1"
                     color={theme.palette.tenth.main}
                     fontSize="20px"
-
                   >
                     <strong>Crowdfunding para Proyectos Innovadores:</strong>
                   </Typography>
@@ -384,35 +412,40 @@ const MainContent2 = () => {
                     color={theme.palette.octh.main}
                     fontSize="18px"
                   >
-                    1. Permitir que las cooperativas presenten proyectos innovadores en la plataforma.
+                    1. Permitir que las cooperativas presenten proyectos
+                    innovadores en la plataforma.
                   </Typography>
                   <Typography
                     variant="body2"
                     color={theme.palette.octh.main}
                     fontSize="18px"
                   >
-                    2. Los miembros del clúster pueden invertir en estos proyectos a través de crowdfunding.
+                    2. Los miembros del clúster pueden invertir en estos
+                    proyectos a través de crowdfunding.
                   </Typography>
                 </Box>
               </Box>
             </Grid>
-            <Grid item xs={8} md={3}>
+            <Grid item xs={12} md={3}>
               <Box
                 sx={{
                   display: "flex",
-                  height: "auto", textAlign: "left"
+                  height: "auto",
+                  textAlign: "left",
                 }}
                 marginBottom="30px"
-
               >
-                <img src="/static/Check.png" width="40px" height="40px" />
+                <img
+                  src="/static/Check.png"
+                  width="40px"
+                  height="40px"
+                  style={{ marginRight: "10px" }}
+                />
                 <Box>
-
                   <Typography
                     variant="body1"
                     color={theme.palette.tenth.main}
                     fontSize="20px"
-
                   >
                     <strong>Publicidad en la Plataforma Digital</strong>
                   </Typography>
@@ -428,7 +461,8 @@ const MainContent2 = () => {
                     color={theme.palette.octh.main}
                     fontSize="18px"
                   >
-                    2. Las empresas interesadas pueden pagar por anuncios dirigidos a las cooperativas.
+                    2. Las empresas interesadas pueden pagar por anuncios
+                    dirigidos a las cooperativas.
                   </Typography>
                 </Box>
               </Box>

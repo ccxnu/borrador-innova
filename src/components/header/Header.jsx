@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { AppBar, Toolbar, Button, Box, Grid, useTheme, useMediaQuery, Drawer, List, ListItem, ListItemText, IconButton } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 
@@ -6,6 +6,15 @@ const Header = () => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up("md"));
   const [open, setOpen] = useState(false);
+  const [appBarHeight, setAppBarHeight] = useState(0);
+
+  useEffect(() => {
+    // Calcula la altura del AppBar dinámicamente
+    const appBarElement = document.getElementById('app-bar');
+    if (appBarElement) {
+      setAppBarHeight(appBarElement.offsetHeight);
+    }
+  }, []);
 
   const toggleDrawer = (open) => (event) => {
     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
@@ -14,19 +23,43 @@ const Header = () => {
     setOpen(open);
   };
 
+  const handleMenuItemClick = (href) => (event) => {
+    setOpen(false);
+    const targetElement = document.querySelector(href);
+    if (targetElement) {
+      const offsetPosition = targetElement.offsetTop - appBarHeight;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
+    }
+  };
+
   const MobileMenu = (
     <List>
-      <ListItem button component="a" href="#inicio">
+      <ListItem button onClick={handleMenuItemClick("#inicio")}>
         <ListItemText primary="INICIO" />
       </ListItem>
-      <ListItem button component="a" href="#objetivos">
+      <ListItem button onClick={handleMenuItemClick("#objetivos")}>
         <ListItemText primary="OBJETIVOS" />
       </ListItem>
-      <ListItem button component="a" href="#mision-vision">
+      <ListItem button onClick={handleMenuItemClick("#mision-vision")}>
         <ListItemText primary="MISIÓN/VISIÓN" />
       </ListItem>
-      <ListItem button component="a" href="#politicas">
+      <ListItem button onClick={handleMenuItemClick("#politicas")}>
         <ListItemText primary="POLÍTICAS" />
+      </ListItem>
+      <ListItem button onClick={handleMenuItemClick("#beneficios")}>
+        <ListItemText primary="BENEFICIOS" />
+      </ListItem>
+      <ListItem button onClick={handleMenuItemClick("#condiciones")}>
+        <ListItemText primary="CONDICIONES" />
+      </ListItem>
+      <ListItem button onClick={handleMenuItemClick("#servicios")}>
+        <ListItemText primary="SERVICIOS" />
+      </ListItem>
+      <ListItem button onClick={handleMenuItemClick("#monetizacion")}>
+        <ListItemText primary="MONETIZACIÓN" />
       </ListItem>
     </List>
   );
@@ -34,10 +67,11 @@ const Header = () => {
   return (
     <>
       <AppBar
-        position="relative"
+        id="app-bar"
+        position="sticky"
         sx={{
+          top: 0,
           backgroundImage: `linear-gradient(to right, ${theme.palette.third.main}, ${theme.palette.primary.main})`,
-          padding: '20px',
         }}
       >
         <Toolbar sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
@@ -47,33 +81,42 @@ const Header = () => {
               display: 'flex',
               flexDirection: isMd ? 'row' : 'column',
               alignItems: 'center',
-              width: isMd ? 'auto' : '5px', // Adjust the width for mobile screens
-              overflow: 'hidden' // Ensure content does not overflow the box
             }}
           >
-            <img src="/static/Logo.png" width="190px" height="150px" alt="Logo" />
-            <img src="/static/Innova.png" width="300px" height="80" alt="Innova" style={{ marginTop: isMd ? 0 : '10px' }} />
+            <img 
+              src="/static/Logo.png" 
+              width={isMd ? '200px' : '150px'} 
+              height={isMd ? 'auto' : 'auto'} 
+              alt="Logo" 
+            />
+            <img 
+              src="/static/Innova.png" 
+              width={isMd ? '200px' : '150px'} 
+              height={isMd ? 'auto' : 'auto'} 
+              alt="Innova" 
+              style={{ marginTop: isMd ? 0 : '10px' }} 
+            />
           </Box>
           {isMd ? (
             <Grid container sx={{ justifyContent: 'space-around', alignItems: 'center' }}>
               <Grid item>
-                <Button variant="text" color="fifth" sx={{ fontSize: '20px' }} href="#inicio">
-                  INICIO
+                <Button variant="text" color="fifth" sx={{ fontSize: '20px' }} onClick={handleMenuItemClick("#inicio")}>
+                  <strong>INICIO</strong>
                 </Button>
               </Grid>
               <Grid item>
-                <Button variant="text" color="fifth" sx={{ fontSize: '20px' }} href="#objetivos">
-                  OBJETIVOS
+                <Button variant="text" color="fifth" sx={{ fontSize: '20px' }} onClick={handleMenuItemClick("#objetivos")}>
+                <strong>OBJETIVOS</strong>
                 </Button>
               </Grid>
               <Grid item>
-                <Button variant="text" color="fifth" sx={{ fontSize: '20px' }} href="#mision-vision">
-                  MISIÓN/VISIÓN
+                <Button variant="text" color="fifth" sx={{ fontSize: '20px' }} onClick={handleMenuItemClick("#mision-vision")}>
+                <strong>MISIÓN/VISIÓN</strong>
                 </Button>
               </Grid>
               <Grid item>
-                <Button variant="text" color="fifth" sx={{ fontSize: '20px' }} href="#politicas">
-                  POLÍTICAS
+                <Button variant="text" color="fifth" sx={{ fontSize: '20px' }} onClick={handleMenuItemClick("#politicas")}>
+                <strong>POLÍTICAS</strong>
                 </Button>
               </Grid>
             </Grid>
@@ -81,9 +124,9 @@ const Header = () => {
             <IconButton
               color="fifth"
               onClick={toggleDrawer(true)}
-              sx={{ fontSize: '50px' }} // 
+              sx={{ fontSize: '50px' }}
             >
-              <MenuIcon sx={{ fontSize: '50px' }} /> 
+              <MenuIcon sx={{ fontSize: '50px' }} />
             </IconButton>
           )}
         </Toolbar>

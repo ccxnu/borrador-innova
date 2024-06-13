@@ -16,11 +16,11 @@ const Footer = () => {
       <Box>
         <Grid container justifyContent="center" >
           <Box>
-            <Typography variant="body1" color={theme.palette.fifth.main} fontSize='25px'>
+            <Typography variant="body1" color={theme.palette.fifth.main} fontSize='32px'>
               <strong>{currentYear} INNOVA COOP</strong>
             </Typography>
             <Box>
-              <Typography variant="body2" color={theme.palette.fifth.main}>Ecuador | Loja</Typography>
+              <Typography variant="body2" color={theme.palette.fifth.main}fontSize='20px'>Ecuador | Loja</Typography>
             </Box>
           </Box>
         </Grid>

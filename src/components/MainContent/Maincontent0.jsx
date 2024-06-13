@@ -3,7 +3,7 @@ import { Box, Typography, Grid, useTheme } from "@mui/material";
 const MainContent0 = () => {
   const theme = useTheme();
   return (
-    <Box marginTop="80px">
+    <Box marginTop="10px">
       <Grid container spacing={6}>
         <Grid item xs={12} marginTop="100px" id="mision-vision">
           <Grid
@@ -11,19 +11,20 @@ const MainContent0 = () => {
             justifyContent={{ xs: "center", md: "space-between" }}
             spacing={2}
           >
-            <Grid item xs={8} md={5}>
+            <Grid item xs={11} md={5}>
               <Box
                 sx={{
                   padding: 1,
                   bgcolor: theme.palette.primary.main,
                   height: "auto",
                   textAlign: "left",
+                  borderRadius:'0px 10px 10px 0px'
                 }}
-                marginBottom="30px"
+                marginBottom="40px"
               >
                 <Typography
                   variant="body2"
-                  fontSize="30px"
+                  fontSize="32px"
                   textAlign="right"
                   color={theme.palette.fourth.main}
                 >
@@ -31,7 +32,8 @@ const MainContent0 = () => {
                 </Typography>
               </Box>
               <Box
-                sx={{  height: "auto", textAlign: "left" }}
+                sx={{ height: "auto", textAlign: "left" }}
+                marginInlineStart='50px'
                 marginBottom="30px"
               >
                 <Typography
@@ -40,7 +42,7 @@ const MainContent0 = () => {
                   fontSize="20px"
                   display='flex'
                 >
-                  <img src="/static/Check.png" width="40px" height="40px" />
+                  <img src="/static/Check.png" width="40px" height="40px" style={{ marginRight: "10px" }} />
                   Nuestra misión es impulsar la innovación y el crecimiento
                   sostenible de las cooperativas en Ecuador, fortaleciendo su
                   capacidad para enfrentar los desafíos del mercado y contribuir
@@ -48,20 +50,21 @@ const MainContent0 = () => {
                 </Typography>
               </Box>
             </Grid>
-            <Grid item xs={8} md={5}>
+            <Grid item xs={11} md={5}>
               <Box
                 sx={{
                   padding: 1,
                   bgcolor: theme.palette.primary.main,
                   height: "auto",
                   textAlign: "left",
+                  borderRadius:'10px 0px 0px 10px'
                 }}
-                marginBottom="30px"
+                marginBottom="40px"
               >
                 <Typography
                   variant="body2"
                   color={theme.palette.fourth.main}
-                  fontSize="30px"
+                  fontSize="32px"
                 >
                   <strong>Visión</strong>
                 </Typography>
@@ -76,7 +79,7 @@ const MainContent0 = () => {
                   fontSize="20px"
                   display='flex'
                 >
-                  <img src="/static/Check.png" width="40px" height="40px" />
+                  <img src="/static/Check.png" width="40px" height="40px" style={{ marginRight: "10px" }} />
                   Queremos ser el principal motor de cambio e innovación para
                   las cooperativas de ahorro y crédito en Ecuador, promoviendo
                   una cultura de colaboración, aprendizaje continuo y excelencia
@@ -87,28 +90,30 @@ const MainContent0 = () => {
           </Grid>
         </Grid>
 
-        <Grid item container justifyContent="center" marginTop='100px' marginBottom="50px" id="politicas">
+        <Grid item container justifyContent="center" marginTop='50px' marginBottom="40px" id="politicas" marginInline='50px'>
           <Box
             sx={{
               bgcolor: theme.palette.primary.main,
               padding: 1,
+              flex: 1,
+              borderRadius:'10px 10px 10px 10px'
             }}
           >
             <Typography
               textAlign="center"
               variant="body2"
-              fontSize="30px"
+              fontSize="32px"
               color={theme.palette.fourth.main}
             >
               <strong>Políticas</strong>
             </Typography>
           </Box>
         </Grid>
-        <Grid container px={12}>
+        <Grid container px={12} spacing={7} justifyContent="center">
           <Grid
             item
             xs={12}
-            md={4}
+            md={3}
             container
             justifyContent="center"
             textAlign="center"
@@ -119,15 +124,9 @@ const MainContent0 = () => {
                 
               }}
             >
-              <Grid item container justifyContent="center">
-                <img
-                  src="/static/Colaboracion.png"
-                  width="90px"
-                  height="90px"
-                />
-              </Grid>
+              <img src="/static/Transparencia.png" width="80px" height="80px" />
               <Typography
-                variant="body1"
+                variant="body2"
                 color={theme.palette.eleventh.main}
                 fontSize="30px"
               >
@@ -138,15 +137,15 @@ const MainContent0 = () => {
                 fontSize="16px"
                 color={theme.palette.nineth.main}
               >
-                Las cooperativas deben comprometerse a colaborar activamente,
-                compartiendo buenas prácticas y experiencias.
+                Las cooperativas deben comprometerse a colaborar activamente, compartiendo buenas prácticas y experiencias.
+
               </Typography>
             </Box>
           </Grid>
           <Grid
             item
             xs={12}
-            md={4}
+            md={3}
             container
             justifyContent="center"
             textAlign="center"
@@ -154,7 +153,7 @@ const MainContent0 = () => {
             <Box
               sx={{
                 boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
-                
+
               }}
             >
               <img src="/static/Transparencia.png" width="80px" height="80px" />
@@ -178,7 +177,7 @@ const MainContent0 = () => {
           <Grid
             item
             xs={12}
-            md={4}
+            md={3}
             container
             justifyContent="center"
             textAlign="center"
@@ -186,7 +185,7 @@ const MainContent0 = () => {
             <Box
               sx={{
                 boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
-                
+
               }}
             >
               <img src="/static/Inclusion.png" width="80px" height="80px" />

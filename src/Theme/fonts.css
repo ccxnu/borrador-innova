@@ -1,19 +1,27 @@
 @font-face {
     font-family: 'Visby Round CF';
-    src: url('/public/Fonts/Letra/OTF/VisbyRoundCF-Bold.otf') format('woff2'),
-         url('/public/Fonts/Letra/OTF/VisbyRoundCF-DemiBold.otf') format('woff'),
-         url('/public/Fonts/Letra/OTF/VisbyRoundCF-ExtraBold.otf') format('truetype'),
-         url('/public/Fonts/Letra/OTF/VisbyRoundCF-Heavy.otf') format('opentype'); 
-    font-weight: normal;
+    src: url('/public/Fonts/Letra/OTF/VisbyRoundCF-Bold.otf') format('opentype');
+    font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Visby Round CF';
-    src: url('/public/Fonts/Letra/OTF/VisbyRoundCF-Light.otf') format('woff2'),
-         url('/public/Fonts/Letra/OTF/VisbyRoundCF-Medium.otf') format('woff'),
-         url('/public/Fonts/Letra/OTF/VisbyRoundCF-Regular.otf') format('truetype');
-         
-    font-weight: bold;
+    src: url('/public/Fonts/Letra/OTF/VisbyRoundCF-DemiBold.otf') format('opentype');
+    font-weight: 600;
     font-style: normal;
+}
+
+
+strong,
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Visby Round CF';
+    font-weight: bold;
+}
+
+body,
+p,
+.typography {
+    font-family: 'Visby Round CF';
+    font-weight: 600;
 }
