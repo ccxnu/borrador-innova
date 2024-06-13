@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import {
   AppBar,
   Toolbar,
@@ -101,18 +101,17 @@ const Header = () => {
             sx={{
               flexGrow: 1,
               display: "flex",
-              flexDirection: isMd ? "row" : "column",
               alignItems: "center",
             }}
           >
             <img
               src="./static/Logo.png"
-              width={isMd ? "200px" : "150px"}
+              width={isMd ? "200px" : "120px"}
               height={isMd ? "auto" : "auto"}
             />
             <img
               src="/static/Innova.png"
-              width={isMd ? "200px" : "150px"}
+              width={isMd ? "200px" : "120px"}
               height={isMd ? "auto" : "auto"}
               alt="Innova"
               style={{ marginTop: isMd ? 0 : "10px" }}
