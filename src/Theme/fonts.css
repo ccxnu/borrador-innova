@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Visby Round CF';
-    src: url('/public/Fonts/Letra/OTF/VisbyRoundCF-Bold.otf') format('opentype');
+    src: url('Fonts/Letra/OTF/VisbyRoundCF-Bold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Visby Round CF';
-    src: url('/public/Fonts/Letra/OTF/VisbyRoundCF-DemiBold.otf') format('opentype');
+    src: url('Fonts/Letra/OTF/VisbyRoundCF-DemiBold.otf') format('opentype');
     font-weight: 600;
     font-style: normal;
 }

@@ -1,12 +1,12 @@
 import { Box, Typography, Grid, useTheme } from "@mui/material";
 
-const MainContent1 = () => {
+const Benefits = () => {
   const theme = useTheme();
   return (
     <Box>
       <Grid container marginTop="100px" id="beneficios">
-        <Grid container justifyContent="center" >
-          <Grid item container >
+        <Grid container justifyContent="center">
+          <Grid item container>
             <Grid
               container
               justifyContent={{ xs: "center", md: "space-between" }}
@@ -19,7 +19,7 @@ const MainContent1 = () => {
                     bgcolor: theme.palette.primary.main,
                     height: "auto",
                     textAlign: "left",
-                    borderRadius: '0px 10px 10px 0px'
+                    borderRadius: "0px 10px 10px 0px",
                   }}
                   marginBottom="40px"
                 >
@@ -45,18 +45,22 @@ const MainContent1 = () => {
                   <Box
                     sx={{
                       display: "flex",
-                      height: "auto", textAlign: "left"
+                      height: "auto",
+                      textAlign: "left",
                     }}
                     marginBottom="30px"
-
                   >
-                    <img src="/static/Check.png" width="40px" height="40px" style={{ marginRight: "10px" }} />
+                    <img
+                      src="/static/Check.png"
+                      width="40px"
+                      height="40px"
+                      style={{ marginRight: "10px" }}
+                    />
                     <Box>
                       <Typography
                         variant="body1"
                         color={theme.palette.tenth.main}
                         fontSize="20px"
-
                       >
                         <strong>Acceso a Recursos y Conocimientos</strong>
                       </Typography>
@@ -66,8 +70,8 @@ const MainContent1 = () => {
                         fontSize="20px"
                       >
                         Las cooperativas afiliadas tendrán acceso a una amplia
-                        gama de recursos y conocimientos, incluyendo programas de
-                        capacitación, herramientas de gestión y asesoramiento
+                        gama de recursos y conocimientos, incluyendo programas
+                        de capacitación, herramientas de gestión y asesoramiento
                         experto en áreas clave como tecnología, procesos,
                         marketing y finanzas.
                       </Typography>
@@ -76,18 +80,22 @@ const MainContent1 = () => {
                   <Box
                     sx={{
                       display: "flex",
-                      height: "auto", textAlign: "left"
+                      height: "auto",
+                      textAlign: "left",
                     }}
                     marginBottom="30px"
-
                   >
-                    <img src="/static/Check.png" width="40px" height="40px" style={{ marginRight: "10px" }} />
+                    <img
+                      src="/static/Check.png"
+                      width="40px"
+                      height="40px"
+                      style={{ marginRight: "10px" }}
+                    />
                     <Box>
                       <Typography
                         variant="body1"
                         color={theme.palette.tenth.main}
                         fontSize="20px"
-
                       >
                         <strong>Red de Colaboración</strong>
                       </Typography>
@@ -97,27 +105,32 @@ const MainContent1 = () => {
                         fontSize="20px"
                       >
                         Formar parte del clúster permitirá a las cooperativas
-                        conectarse con otras organizaciones similares, facilitando
-                        el intercambio de ideas, la colaboración en proyectos
-                        conjuntos y el establecimiento de alianzas
+                        conectarse con otras organizaciones similares,
+                        facilitando el intercambio de ideas, la colaboración en
+                        proyectos conjuntos y el establecimiento de alianzas
                       </Typography>
                     </Box>
                   </Box>
                   <Box
                     sx={{
                       display: "flex",
-                      width: "100%", height: "auto", textAlign: "left"
+                      width: "100%",
+                      height: "auto",
+                      textAlign: "left",
                     }}
                     marginBottom="30px"
-
                   >
-                    <img src="/static/Check.png" width="40px" height="40px" style={{ marginRight: "10px" }} />
+                    <img
+                      src="/static/Check.png"
+                      width="40px"
+                      height="40px"
+                      style={{ marginRight: "10px" }}
+                    />
                     <Box>
                       <Typography
                         variant="body1"
                         color={theme.palette.tenth.main}
                         fontSize="20px"
-
                       >
                         <strong>Visibilidad y Promoción</strong>
                       </Typography>
@@ -136,18 +149,22 @@ const MainContent1 = () => {
                   <Box
                     sx={{
                       display: "flex",
-                      height: "auto", textAlign: "left"
+                      height: "auto",
+                      textAlign: "left",
                     }}
                     marginBottom="30px"
-
                   >
-                    <img src="/static/Check.png" width="40px" height="40px" style={{ marginRight: "10px" }} />
+                    <img
+                      src="/static/Check.png"
+                      width="40px"
+                      height="40px"
+                      style={{ marginRight: "10px" }}
+                    />
                     <Box>
                       <Typography
                         variant="body1"
                         color={theme.palette.tenth.main}
                         fontSize="20px"
-
                       >
                         <strong>Asesoramiento y Mentoring</strong>
                       </Typography>
@@ -156,8 +173,8 @@ const MainContent1 = () => {
                         color={theme.palette.octh.main}
                         fontSize="20px"
                       >
-                        Se ofrecerá asesoramiento personalizado y mentoring a las
-                        cooperativas afiliadas, con el objetivo de apoyar su
+                        Se ofrecerá asesoramiento personalizado y mentoring a
+                        las cooperativas afiliadas, con el objetivo de apoyar su
                         crecimiento y desarrollo a largo plazo.
                       </Typography>
                     </Box>
@@ -172,7 +189,7 @@ const MainContent1 = () => {
                       backgroundRepeat: "no-repeat",
                       width: "100%",
                       height: "100%",
-                      minHeight: "200px", 
+                      minHeight: "200px",
                     }}
                   ></Box>
                 </Grid>
@@ -181,7 +198,12 @@ const MainContent1 = () => {
           </Grid>
         </Grid>
 
-        <Grid container justifyContent="center" marginTop="100px" id="condiciones">
+        <Grid
+          container
+          justifyContent="center"
+          marginTop="100px"
+          id="condiciones"
+        >
           <Box
             marginBottom="40px"
             sx={{
@@ -189,7 +211,7 @@ const MainContent1 = () => {
               bgcolor: theme.palette.primary.main,
               textAlign: "justify",
               padding: 1,
-              flex: 1
+              flex: 1,
             }}
           >
             <Typography
@@ -213,18 +235,22 @@ const MainContent1 = () => {
                   <Box
                     sx={{
                       display: "flex",
-                      height: "auto", textAlign: "left"
+                      height: "auto",
+                      textAlign: "left",
                     }}
                     marginBottom="30px"
-
                   >
-                    <img src="/static/Check.png" width="40px" height="40px" style={{ marginRight: "10px" }} />
+                    <img
+                      src="/static/Check.png"
+                      width="40px"
+                      height="40px"
+                      style={{ marginRight: "10px" }}
+                    />
                     <Box>
                       <Typography
                         variant="body1"
                         color={theme.palette.tenth.main}
                         fontSize="20px"
-
                       >
                         <strong>Ser Una Cooperativa Registrada</strong>
                       </Typography>
@@ -233,27 +259,31 @@ const MainContent1 = () => {
                         color={theme.palette.octh.main}
                         fontSize="20px"
                       >
-                        Para ser elegible para unirse al clúster, la organización
-                        debe estar legalmente constituida como una cooperativa en
-                        Ecuador.
+                        Para ser elegible para unirse al clúster, la
+                        organización debe estar legalmente constituida como una
+                        cooperativa en Ecuador.
                       </Typography>
                     </Box>
                   </Box>
                   <Box
                     sx={{
                       display: "flex",
-                      height: "auto", textAlign: "left"
+                      height: "auto",
+                      textAlign: "left",
                     }}
                     marginBottom="30px"
-
                   >
-                    <img src="/static/Check.png" width="40px" height="40px" style={{ marginRight: "10px" }} />
+                    <img
+                      src="/static/Check.png"
+                      width="40px"
+                      height="40px"
+                      style={{ marginRight: "10px" }}
+                    />
                     <Box>
                       <Typography
                         variant="body1"
                         color={theme.palette.tenth.main}
                         fontSize="20px"
-
                       >
                         <strong>Participación Activa</strong>
                       </Typography>
@@ -264,8 +294,8 @@ const MainContent1 = () => {
                       >
                         Se espera que las cooperativas afiliadas participen
                         activamente en las actividades y eventos del clúster,
-                        contribuyendo con sus ideas, experiencias y recursos para
-                        beneficio de la comunidad en su conjunto.
+                        contribuyendo con sus ideas, experiencias y recursos
+                        para beneficio de la comunidad en su conjunto.
                       </Typography>
                     </Box>
                   </Box>
@@ -279,7 +309,7 @@ const MainContent1 = () => {
                       backgroundRepeat: "no-repeat",
                       width: "100%",
                       height: "100%",
-                      minHeight: "200px", 
+                      minHeight: "200px",
                     }}
                   ></Box>
                 </Grid>
@@ -287,18 +317,22 @@ const MainContent1 = () => {
                   <Box
                     sx={{
                       display: "flex",
-                      height: "auto", textAlign: "left"
+                      height: "auto",
+                      textAlign: "left",
                     }}
                     marginBottom="30px"
-
                   >
-                    <img src="/static/Check.png" width="40px" height="40px" style={{ marginRight: "10px" }} />
+                    <img
+                      src="/static/Check.png"
+                      width="40px"
+                      height="40px"
+                      style={{ marginRight: "10px" }}
+                    />
                     <Box>
                       <Typography
                         variant="body1"
                         color={theme.palette.tenth.main}
                         fontSize="20px"
-
                       >
                         <strong>
                           Compromiso con la Innovación y el Desarrollo
@@ -319,18 +353,23 @@ const MainContent1 = () => {
                   <Box
                     sx={{
                       display: "flex",
-                      width: "100%", height: "auto", textAlign: "left"
+                      width: "100%",
+                      height: "auto",
+                      textAlign: "left",
                     }}
                     marginBottom="30px"
-
                   >
-                    <img src="/static/Check.png" width="40px" height="40px" style={{ marginRight: "10px" }} />
+                    <img
+                      src="/static/Check.png"
+                      width="40px"
+                      height="40px"
+                      style={{ marginRight: "10px" }}
+                    />
                     <Box>
                       <Typography
                         variant="body1"
                         color={theme.palette.tenth.main}
                         fontSize="20px"
-
                       >
                         <strong>
                           Cumplimiento de Normas y Ética Empresarial
@@ -342,8 +381,8 @@ const MainContent1 = () => {
                         fontSize="20px"
                       >
                         Todas las cooperativas afiliadas deberán cumplir con las
-                        normas éticas y empresariales establecidas por el clúster,
-                        incluyendo el respeto a los derechos laborales,
+                        normas éticas y empresariales establecidas por el
+                        clúster, incluyendo el respeto a los derechos laborales,
                         ambientales y sociales.
                       </Typography>
                     </Box>
@@ -354,7 +393,7 @@ const MainContent1 = () => {
                   <Box
                     sx={{
                       height: "auto",
-                      textAlign: "center" 
+                      textAlign: "center",
                     }}
                   >
                     <img src="/static/Check.png" width="40px" height="40px" />
@@ -389,7 +428,7 @@ const MainContent1 = () => {
               paddingInlineStart: 15,
               textAlign: "center",
               bgcolor: theme.palette.primary.main,
-              borderRadius: '0px 10px 10px 0px'
+              borderRadius: "0px 10px 10px 0px",
             }}
           >
             <Typography
@@ -417,7 +456,7 @@ const MainContent1 = () => {
                   backgroundRepeat: "no-repeat",
                   width: "100%",
                   height: "100%",
-                  minHeight: "200px", 
+                  minHeight: "200px",
                 }}
               ></Box>
             </Grid>
@@ -426,18 +465,22 @@ const MainContent1 = () => {
               <Box
                 sx={{
                   display: "flex",
-                  height: "auto", textAlign: "left"
+                  height: "auto",
+                  textAlign: "left",
                 }}
                 marginBottom="30px"
-
               >
-                <img src="/static/Check.png" width="40px" height="40px" style={{ marginRight: "10px" }} />
+                <img
+                  src="/static/Check.png"
+                  width="40px"
+                  height="40px"
+                  style={{ marginRight: "10px" }}
+                />
                 <Box>
                   <Typography
                     variant="body1"
                     color={theme.palette.tenth.main}
                     fontSize="26px"
-
                   >
                     <strong>Plataforma Digital Compartida</strong>
                   </Typography>
@@ -454,18 +497,22 @@ const MainContent1 = () => {
               <Box
                 sx={{
                   display: "flex",
-                  height: "auto", textAlign: "left"
+                  height: "auto",
+                  textAlign: "left",
                 }}
                 marginBottom="30px"
-
               >
-                <img src="/static/Check.png" width="40px" height="40px" style={{ marginRight: "10px" }} />
+                <img
+                  src="/static/Check.png"
+                  width="40px"
+                  height="40px"
+                  style={{ marginRight: "10px" }}
+                />
                 <Box>
                   <Typography
                     variant="body1"
                     color={theme.palette.tenth.main}
                     fontSize="26px"
-
                   >
                     <strong>Capacitación y Talleres</strong>
                   </Typography>
@@ -474,26 +521,30 @@ const MainContent1 = () => {
                     color={theme.palette.octh.main}
                     fontSize="18px"
                   >
-                    Ofrecer programas de formación continua en nuevas tecnologías
-                    emergentes, innovación, gestión, liderazgo, etc.
+                    Ofrecer programas de formación continua en nuevas
+                    tecnologías emergentes, innovación, gestión, liderazgo, etc.
                   </Typography>
                 </Box>
               </Box>
               <Box
                 sx={{
                   display: "flex",
-                  height: "auto", textAlign: "left"
+                  height: "auto",
+                  textAlign: "left",
                 }}
                 marginBottom="30px"
-
               >
-                <img src="/static/Check.png" width="40px" height="40px" style={{ marginRight: "10px" }} />
+                <img
+                  src="/static/Check.png"
+                  width="40px"
+                  height="40px"
+                  style={{ marginRight: "10px" }}
+                />
                 <Box>
                   <Typography
                     variant="body1"
                     color={theme.palette.tenth.main}
                     fontSize="26px"
-
                   >
                     <strong>Asesoría Personalizada</strong>
                   </Typography>
@@ -502,8 +553,8 @@ const MainContent1 = () => {
                     color={theme.palette.octh.main}
                     fontSize="18px"
                   >
-                    Proporcionar asesoramiento específico para cada cooperativa en
-                    su camino hacia la innovación.
+                    Proporcionar asesoramiento específico para cada cooperativa
+                    en su camino hacia la innovación.
                   </Typography>
                 </Box>
               </Box>
@@ -515,4 +566,4 @@ const MainContent1 = () => {
   );
 };
 
-export default MainContent1;
+export default Benefits;

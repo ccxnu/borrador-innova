@@ -1,6 +1,19 @@
-import React, { useState, useEffect } from 'react';
-import { AppBar, Toolbar, Button, Box, Grid, useTheme, useMediaQuery, Drawer, List, ListItem, ListItemText, IconButton } from "@mui/material";
-import MenuIcon from '@mui/icons-material/Menu';
+import React, { useState, useEffect } from "react";
+import {
+  AppBar,
+  Toolbar,
+  Button,
+  Box,
+  Grid,
+  useTheme,
+  useMediaQuery,
+  Drawer,
+  List,
+  ListItem,
+  ListItemText,
+  IconButton,
+} from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const Header = () => {
   const theme = useTheme();
@@ -9,14 +22,17 @@ const Header = () => {
   const [appBarHeight, setAppBarHeight] = useState(0);
 
   useEffect(() => {
-    const appBarElement = document.getElementById('app-bar');
+    const appBarElement = document.getElementById("app-bar");
     if (appBarElement) {
       setAppBarHeight(appBarElement.offsetHeight);
     }
   }, []);
 
   const toggleDrawer = (open) => (event) => {
-    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+    if (
+      event.type === "keydown" &&
+      (event.key === "Tab" || event.key === "Shift")
+    ) {
       return;
     }
     setOpen(open);
@@ -29,9 +45,10 @@ const Header = () => {
       const offsetPosition = targetElement.offsetTop - appBarHeight;
       window.scrollTo({
         top: offsetPosition,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
     }
+    event.target.blur();
   };
 
   const MobileMenu = (
@@ -73,49 +90,112 @@ const Header = () => {
           backgroundImage: `linear-gradient(to right, ${theme.palette.third.main}, ${theme.palette.primary.main})`,
         }}
       >
-        <Toolbar sx={{ justifyContent: 'space-between', alignItems: 'center', padding:'20px' }}>
+        <Toolbar
+          sx={{
+            justifyContent: "space-between",
+            alignItems: "center",
+            padding: isMd ? "20px" : "5px",
+          }}
+        >
           <Box
             sx={{
               flexGrow: 1,
-              display: 'flex',
-              flexDirection: isMd ? 'row' : 'column',
-              alignItems: 'center',
+              display: "flex",
+              flexDirection: isMd ? "row" : "column",
+              alignItems: "center",
             }}
           >
-            <img 
-              src="/static/Logo.png" 
-              width={isMd ? '200px' : '150px'} 
-              height={isMd ? 'auto' : 'auto'} 
-              alt="Logo" 
+            <img
+              src="/static/Logo.png."
+              width={isMd ? "200px" : "150px"}
+              height={isMd ? "auto" : "auto"}
             />
-            <img 
-              src="/static/Innova.png" 
-              width={isMd ? '200px' : '150px'} 
-              height={isMd ? 'auto' : 'auto'} 
-              alt="Innova" 
-              style={{ marginTop: isMd ? 0 : '10px' }} 
+            <img
+              src="/static/Innova.png"
+              width={isMd ? "200px" : "150px"}
+              height={isMd ? "auto" : "auto"}
+              alt="Innova"
+              style={{ marginTop: isMd ? 0 : "10px" }}
             />
           </Box>
           {isMd ? (
-            <Grid container sx={{ justifyContent: 'space-around', alignItems: 'center' }}>
+            <Grid
+              container
+              sx={{ justifyContent: "space-around", alignItems: "center" }}
+            >
               <Grid item>
-                <Button variant="text" color="fifth" sx={{ fontSize: '20px' }} onClick={handleMenuItemClick("#inicio")}>
+                <Button
+                  variant="text"
+                  color="fifth"
+                  sx={{
+                    fontSize: "20px",
+                    "&:focus": {
+                      outline: "none",
+                    },
+                  }}
+                  onClick={handleMenuItemClick("#inicio")}
+                >
                   <strong>INICIO</strong>
                 </Button>
               </Grid>
               <Grid item>
-                <Button variant="text" color="fifth" sx={{ fontSize: '20px' }} onClick={handleMenuItemClick("#mision-vision")}>
-                <strong>MISIÓN/VISIÓN</strong>
+                <Button
+                  variant="text"
+                  color="fifth"
+                  sx={{
+                    fontSize: "20px",
+                    "&:focus": {
+                      outline: "none",
+                    },
+                  }}
+                  onClick={handleMenuItemClick("#mision-vision")}
+                >
+                  <strong>MISIÓN/VISIÓN</strong>
                 </Button>
               </Grid>
               <Grid item>
-                <Button variant="text" color="fifth" sx={{ fontSize: '20px' }} onClick={handleMenuItemClick("#beneficios")}>
-                <strong>BENEFICIOS</strong>
+                <Button
+                  variant="text"
+                  color="fifth"
+                  sx={{
+                    fontSize: "20px",
+                    "&:focus": {
+                      outline: "none",
+                    },
+                  }}
+                  onClick={handleMenuItemClick("#beneficios")}
+                >
+                  <strong>BENEFICIOS</strong>
                 </Button>
               </Grid>
               <Grid item>
-                <Button variant="text" color="fifth" sx={{ fontSize: '20px' }} onClick={handleMenuItemClick("#monetizacion")}>
-                <strong>MONETIZACIÓN</strong>
+                <Button
+                  variant="text"
+                  color="fifth"
+                  sx={{
+                    fontSize: "20px",
+                    "&:focus": {
+                      outline: "none",
+                    },
+                  }}
+                  onClick={handleMenuItemClick("#condiciones")}
+                >
+                  <strong>AFILIACIÓN</strong>
+                </Button>
+              </Grid>
+              <Grid item>
+                <Button
+                  variant="text"
+                  color="fifth"
+                  sx={{
+                    fontSize: "20px",
+                    "&:focus": {
+                      outline: "none",
+                    },
+                  }}
+                  onClick={handleMenuItemClick("#monetizacion")}
+                >
+                  <strong>MONETIZACIÓN</strong>
                 </Button>
               </Grid>
             </Grid>
@@ -123,9 +203,9 @@ const Header = () => {
             <IconButton
               color="fifth"
               onClick={toggleDrawer(true)}
-              sx={{ fontSize: '50px' }}
+              sx={{ fontSize: "50px" }}
             >
-              <MenuIcon sx={{ fontSize: '50px' }} />
+              <MenuIcon sx={{ fontSize: "50px" }} />
             </IconButton>
           )}
         </Toolbar>

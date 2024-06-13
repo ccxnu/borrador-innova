@@ -1,19 +1,19 @@
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
-import MainContent from "./components/MainContent/MainContent";
-import MainContent0 from "./components/MainContent/Maincontent0";
-import MainContent1 from "./components/MainContent/MainContent1";
-import MainContent2 from "./components/MainContent/Maincontent2";
+import Home from "./components/MainContent/Home";
+import Policies from "./components/MainContent/Policies";
+import Benefits from "./components/MainContent/Benefits";
+import Monetization from "./components/MainContent/Monetization";
 
 
 const App = () => {
   return (
     <>
       <Header />
-      <MainContent />
-      <MainContent0 />
-      <MainContent1 />
-      <MainContent2 />
+      <Home />
+      <Policies/>
+      <Benefits />
+      <Monetization />
       <Footer />
     </>
   );

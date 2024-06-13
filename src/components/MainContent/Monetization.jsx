@@ -1,6 +1,6 @@
 import { Box, Typography, Grid, useTheme } from "@mui/material";
 
-const MainContent2 = () => {
+const Monetization = () => {
   const theme = useTheme();
   return (
     <Box marginTop="100px" id="monetizacion">
@@ -114,7 +114,7 @@ const MainContent2 = () => {
                   backgroundRepeat: "no-repeat",
                   width: "100%",
                   height: "100%",
-                  minHeight: "200px", 
+                  minHeight: "200px",
                 }}
               ></Box>
             </Grid>
@@ -297,7 +297,6 @@ const MainContent2 = () => {
                   height: "auto",
                   textAlign: "left",
                 }}
-                
               >
                 <img
                   src="/static/Check.png"
@@ -474,4 +473,4 @@ const MainContent2 = () => {
   );
 };
 
-export default MainContent2;
+export default Monetization;

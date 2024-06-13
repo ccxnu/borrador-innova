@@ -1,6 +1,6 @@
 import { Box, Typography, Grid, useTheme } from "@mui/material";
 
-const MainContent0 = () => {
+const Policies = () => {
   const theme = useTheme();
   return (
     <Box marginTop="10px">
@@ -18,7 +18,7 @@ const MainContent0 = () => {
                   bgcolor: theme.palette.primary.main,
                   height: "auto",
                   textAlign: "left",
-                  borderRadius:'0px 10px 10px 0px'
+                  borderRadius: "0px 10px 10px 0px",
                 }}
                 marginBottom="40px"
               >
@@ -33,16 +33,21 @@ const MainContent0 = () => {
               </Box>
               <Box
                 sx={{ height: "auto", textAlign: "left" }}
-                marginInlineStart='50px'
+                marginInlineStart="50px"
                 marginBottom="30px"
               >
                 <Typography
                   variant="body2"
                   color={theme.palette.octh.main}
                   fontSize="20px"
-                  display='flex'
+                  display="flex"
                 >
-                  <img src="/static/Check.png" width="40px" height="40px" style={{ marginRight: "10px" }} />
+                  <img
+                    src="/static/Check.png"
+                    width="40px"
+                    height="40px"
+                    style={{ marginRight: "10px" }}
+                  />
                   Nuestra misión es impulsar la innovación y el crecimiento
                   sostenible de las cooperativas en Ecuador, fortaleciendo su
                   capacidad para enfrentar los desafíos del mercado y contribuir
@@ -57,7 +62,7 @@ const MainContent0 = () => {
                   bgcolor: theme.palette.primary.main,
                   height: "auto",
                   textAlign: "left",
-                  borderRadius:'10px 0px 0px 10px'
+                  borderRadius: "10px 0px 0px 10px",
                 }}
                 marginBottom="40px"
               >
@@ -77,9 +82,14 @@ const MainContent0 = () => {
                   variant="body2"
                   color={theme.palette.octh.main}
                   fontSize="20px"
-                  display='flex'
+                  display="flex"
                 >
-                  <img src="/static/Check.png" width="40px" height="40px" style={{ marginRight: "10px" }} />
+                  <img
+                    src="/static/Check.png"
+                    width="40px"
+                    height="40px"
+                    style={{ marginRight: "10px" }}
+                  />
                   Queremos ser el principal motor de cambio e innovación para
                   las cooperativas de ahorro y crédito en Ecuador, promoviendo
                   una cultura de colaboración, aprendizaje continuo y excelencia
@@ -90,13 +100,21 @@ const MainContent0 = () => {
           </Grid>
         </Grid>
 
-        <Grid item container justifyContent="center" marginTop='50px' marginBottom="40px" id="politicas" marginInline='50px'>
+        <Grid
+          item
+          container
+          justifyContent="center"
+          marginTop="50px"
+          marginBottom="40px"
+          id="politicas"
+          marginInline="50px"
+        >
           <Box
             sx={{
               bgcolor: theme.palette.primary.main,
               padding: 1,
               flex: 1,
-              borderRadius:'10px 10px 10px 10px'
+              borderRadius: "10px 10px 10px 10px",
             }}
           >
             <Typography
@@ -121,7 +139,6 @@ const MainContent0 = () => {
             <Box
               sx={{
                 boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
-                
               }}
             >
               <img src="/static/Transparencia.png" width="80px" height="80px" />
@@ -137,8 +154,8 @@ const MainContent0 = () => {
                 fontSize="16px"
                 color={theme.palette.nineth.main}
               >
-                Las cooperativas deben comprometerse a colaborar activamente, compartiendo buenas prácticas y experiencias.
-
+                Las cooperativas deben comprometerse a colaborar activamente,
+                compartiendo buenas prácticas y experiencias.
               </Typography>
             </Box>
           </Grid>
@@ -153,7 +170,6 @@ const MainContent0 = () => {
             <Box
               sx={{
                 boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
-
               }}
             >
               <img src="/static/Transparencia.png" width="80px" height="80px" />
@@ -185,7 +201,6 @@ const MainContent0 = () => {
             <Box
               sx={{
                 boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)",
-
               }}
             >
               <img src="/static/Inclusion.png" width="80px" height="80px" />
@@ -212,4 +227,4 @@ const MainContent0 = () => {
   );
 };
 
-export default MainContent0;
+export default Policies;
