@@ -87,14 +87,15 @@ const Header = () => {
         position="sticky"
         sx={{
           top: 0,
-          backgroundImage: `linear-gradient(to right, ${theme.palette.third.main}, ${theme.palette.primary.main})`,
+          background: `linear-gradient(to right, ${theme.palette.third.main}, ${theme.palette.primary.main})`,
         }}
       >
         <Toolbar
+          disableGutters
           sx={{
             justifyContent: "space-between",
             alignItems: "center",
-            padding: isMd ? "20px" : "5px",
+            padding: "1rem",
           }}
         >
           <Box
@@ -105,7 +106,7 @@ const Header = () => {
             }}
           >
             <img
-              src="./static/Logo.png"
+              src="/static/Logo.png"
               width={isMd ? "200px" : "120px"}
               height={isMd ? "auto" : "auto"}
             />
@@ -200,9 +201,13 @@ const Header = () => {
             </Grid>
           ) : (
             <IconButton
+              sx={{
+                "&:focus": {
+                  outline: "none",
+                },
+              }}
               color="fifth"
               onClick={toggleDrawer(true)}
-              sx={{ fontSize: "50px" }}
             >
               <MenuIcon sx={{ fontSize: "50px" }} />
             </IconButton>
