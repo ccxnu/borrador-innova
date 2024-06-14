@@ -6,6 +6,8 @@ import Benefits from "./components/MainContent/Benefits";
 import Monetization from "./components/MainContent/Monetization";
 import Objetivos from "./components/MainContent/Objetivos";
 import MisionVision from "./components/MainContent/MisionVision";
+import Condiciones from "./components/MainContent/Condiciones";
+import Servicios from "./components/MainContent/Servicios";
 
 const App = () => {
   return (
@@ -16,6 +18,8 @@ const App = () => {
       <MisionVision />
       <Policies />
       <Benefits />
+      <Condiciones />
+      <Servicios />
       <Monetization />
       <Footer />
     </>
