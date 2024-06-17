@@ -4,22 +4,25 @@ import Home from "./components/MainContent/Home";
 import Policies from "./components/MainContent/Policies";
 import Benefits from "./components/MainContent/Benefits";
 import Monetization from "./components/MainContent/Monetization";
-import Objetivos from "./components/MainContent/Objetivos";
+import Objectives from "./components/MainContent/Objectives";
 import MisionVision from "./components/MainContent/MisionVision";
-import Condiciones from "./components/MainContent/Condiciones";
-import Servicios from "./components/MainContent/Servicios";
+import Conditions from "./components/MainContent/Conditions";
+import Services from "./components/MainContent/Services";
+
+
+
 
 const App = () => {
   return (
     <>
       <Header />
       <Home />
-      <Objetivos />
+      <Objectives />
       <MisionVision />
       <Policies />
       <Benefits />
-      <Condiciones />
-      <Servicios />
+      <Conditions />
+      <Services />
       <Monetization />
       <Footer />
     </>

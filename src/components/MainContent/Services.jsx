@@ -1,6 +1,6 @@
 import { Box, Typography, Grid, useTheme, useMediaQuery } from "@mui/material";
 
-const Servicios = () => {
+const Services= () => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up("md"));
   return (
@@ -8,7 +8,7 @@ const Servicios = () => {
       <Grid item container>
         <Box
           sx={{
-            marginTop: "100px",
+            marginTop: "20px",
             padding: 1,
             paddingInlineStart: 15,
             textAlign: "center",
@@ -150,4 +150,4 @@ const Servicios = () => {
   );
 };
 
-export default Servicios;
+export default Services;

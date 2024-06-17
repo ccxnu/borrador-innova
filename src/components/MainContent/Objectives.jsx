@@ -2,7 +2,7 @@ import { Box, Grid, useTheme, useMediaQuery } from "@mui/material";
 import TitleBox from "../lib/TitleBox";
 import OpcionesLista from "../lib/OpcionesLista";
 
-const Objetivos = () => {
+const Objectives= () => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up("md"));
 
@@ -48,4 +48,4 @@ const Objetivos = () => {
   );
 };
 
-export default Objetivos;
+export default Objectives;

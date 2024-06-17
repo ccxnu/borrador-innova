@@ -1,10 +1,22 @@
-import { Box, Grid, useTheme, useMediaQuery } from "@mui/material";
+import React, { useState } from 'react';
+import { Box, Grid, Button, useTheme, useMediaQuery, Dialog, DialogTitle, DialogContent, DialogActions } from "@mui/material";
 import TitleBox from "../lib/TitleBox";
 import ItemListaVariante from "../lib/ItemListaVariante";
+import User from '/src/components/Information/User.jsx'; // Asegúrate de tener la ruta correcta a tu componente User
 
-const Condiciones = () => {
+const Conditions = () => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up("md"));
+  const [openDialog, setOpenDialog] = useState(false);
+
+  const handleOpenDialog = () => {
+    setOpenDialog(true);
+  };
+
+  const handleCloseDialog = () => {
+    setOpenDialog(false);
+  };
+
   return (
     <Box id="condiciones" pt={isMd ? "8rem" : "2rem"}>
       <Grid container>
@@ -30,6 +42,7 @@ const Condiciones = () => {
           </Grid>
 
           <Grid item xs={12} md={4} pb={4}>
+            {/* Aquí puedes poner cualquier otro contenido o imagen */}
             <Box
               sx={{
                 backgroundImage: "url(/static/Condiciones.png)",
@@ -54,26 +67,8 @@ const Condiciones = () => {
             />
           </Grid>
 
-          <Grid item xs={12} md={4} p={4}
-          sx={{
-          "& .MuiBox-root":{
-            flexDirection:{
-              xs:"row",
-              md:"column"
-            },
-            alignItems:{
-              xs:"flex-start",
-              md:"center"
-            }
-          },
-          "& .MuiTypography-root":{
-            textAlign:{
-              xs:"flex-start",
-              md:"center"
-            }
-
-          }
-          }}>
+          <Grid item xs={12} md={4} p={4}>
+            {/* Otro contenido o item */}
             <ItemListaVariante
               title="Tipo de Membresia"
               descripcion="La membresía es gratuita, pero las cooperativas pueden contribuir monetariamente para financiar proyectos conjuntos."
@@ -81,8 +76,33 @@ const Condiciones = () => {
           </Grid>
         </Grid>
       </Grid>
+
+      <Grid container sx={{ justifyContent: 'center', mt: 4 }}>
+        <Button
+          variant="contained"
+          color='primary'
+          size="large"
+          onClick={handleOpenDialog}
+          sx={{ fontSize: '30px', color: theme.palette.secondary.main }}
+        >
+          <strong>Solicitar Información</strong>
+        </Button>
+      </Grid>
+
+      <Dialog
+        open={openDialog}
+        onClose={handleCloseDialog}
+        fullWidth
+        maxWidth="sm"
+      >
+        <DialogTitle>Solicitar Información</DialogTitle>
+        <DialogContent dividers>
+          {/* Contenido del dialogo, en este caso renderizamos el componente User */}
+          <User onClose={handleCloseDialog} />
+        </DialogContent>
+      </Dialog>
     </Box>
   );
 };
 
-export default Condiciones;
+export default Conditions;
