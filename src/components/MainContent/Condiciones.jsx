@@ -38,7 +38,6 @@ const Condiciones = () => {
                 backgroundRepeat: "no-repeat",
                 width: "100%",
                 height: "100%",
-                minHeight: "250px",
               }}
             ></Box>
           </Grid>
@@ -55,7 +54,26 @@ const Condiciones = () => {
             />
           </Grid>
 
-          <Grid item xs={12} md={4} p={4}>
+          <Grid item xs={12} md={4} p={4}
+          sx={{
+          "& .MuiBox-root":{
+            flexDirection:{
+              xs:"row",
+              md:"column"
+            },
+            alignItems:{
+              xs:"flex-start",
+              md:"center"
+            }
+          },
+          "& .MuiTypography-root":{
+            textAlign:{
+              xs:"flex-start",
+              md:"center"
+            }
+
+          }
+          }}>
             <ItemListaVariante
               title="Tipo de Membresia"
               descripcion="La membresía es gratuita, pero las cooperativas pueden contribuir monetariamente para financiar proyectos conjuntos."

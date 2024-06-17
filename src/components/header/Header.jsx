@@ -52,30 +52,24 @@ const Header = () => {
   };
 
   const MobileMenu = (
-    <List>
-      <ListItem button onClick={handleMenuItemClick("#inicio")}>
-        <ListItemText primary="INICIO" />
+    <List sx={{ width: '80vw', maxWidth: 250 }}>
+      <ListItem button onClick={handleMenuItemClick("#inicio")}  sx={{ padding: '20px 45px' }}>
+        <ListItemText primary="INICIO" primaryTypographyProps={{ fontSize: '20px', fontWeight: 'bold' }} />
       </ListItem>
-      <ListItem button onClick={handleMenuItemClick("#objetivos")}>
-        <ListItemText primary="OBJETIVOS" />
+      <ListItem button onClick={handleMenuItemClick("#objetivos")} sx={{ padding: '20px 45px' }}>
+        <ListItemText primary="OBJETIVOS" primaryTypographyProps={{ fontSize: '20px', fontWeight: 'bold' }} />
       </ListItem>
-      <ListItem button onClick={handleMenuItemClick("#mision-vision")}>
-        <ListItemText primary="MISIÓN/VISIÓN" />
+      <ListItem button onClick={handleMenuItemClick("#mision-vision")} sx={{ padding: '20px 45px' }}>
+        <ListItemText primary="MISIÓN Y VISIÓN" primaryTypographyProps={{ fontSize: '20px', fontWeight: 'bold' }} />
       </ListItem>
-      <ListItem button onClick={handleMenuItemClick("#politicas")}>
-        <ListItemText primary="POLÍTICAS" />
+      <ListItem button onClick={handleMenuItemClick("#politicas")} sx={{ padding: '20px 45px' }}>
+        <ListItemText primary="POLÍTICAS" primaryTypographyProps={{ fontSize: '20px', fontWeight: 'bold' }} />
       </ListItem>
-      <ListItem button onClick={handleMenuItemClick("#beneficios")}>
-        <ListItemText primary="BENEFICIOS" />
+      <ListItem button onClick={handleMenuItemClick("#beneficios")} sx={{ padding: '20px 45px' }}>
+        <ListItemText primary="BENEFICIOS" primaryTypographyProps={{ fontSize: '20px', fontWeight: 'bold' }} />
       </ListItem>
-      <ListItem button onClick={handleMenuItemClick("#condiciones")}>
-        <ListItemText primary="CONDICIONES" />
-      </ListItem>
-      <ListItem button onClick={handleMenuItemClick("#servicios")}>
-        <ListItemText primary="SERVICIOS" />
-      </ListItem>
-      <ListItem button onClick={handleMenuItemClick("#monetizacion")}>
-        <ListItemText primary="MONETIZACIÓN" />
+      <ListItem button onClick={handleMenuItemClick("#condiciones")} sx={{ padding: '20px 45px' }}>
+        <ListItemText primary="AFILIACIÓN" primaryTypographyProps={{ fontSize: '20px', fontWeight: 'bold' }} />
       </ListItem>
     </List>
   );
@@ -121,7 +115,7 @@ const Header = () => {
           {isMd ? (
             <Grid
               container
-              sx={{ justifyContent: "space-around", alignItems: "center" }}
+              sx={{ justifyContent:'right',paddingRight:'100px', gap:'10%' }}
             >
               <Grid item>
                 <Button
@@ -150,7 +144,7 @@ const Header = () => {
                   }}
                   onClick={handleMenuItemClick("#mision-vision")}
                 >
-                  <strong>MISIÓN/VISIÓN</strong>
+                  <strong>MISIÓN Y VISIÓN</strong>
                 </Button>
               </Grid>
               <Grid item>
@@ -183,21 +177,6 @@ const Header = () => {
                   <strong>AFILIACIÓN</strong>
                 </Button>
               </Grid>
-              <Grid item>
-                <Button
-                  variant="text"
-                  color="fifth"
-                  sx={{
-                    fontSize: "20px",
-                    "&:focus": {
-                      outline: "none",
-                    },
-                  }}
-                  onClick={handleMenuItemClick("#monetizacion")}
-                >
-                  <strong>MONETIZACIÓN</strong>
-                </Button>
-              </Grid>
             </Grid>
           ) : (
             <IconButton
@@ -214,7 +193,7 @@ const Header = () => {
           )}
         </Toolbar>
       </AppBar>
-      <Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>
+      <Drawer anchor="left" open={open} onClose={toggleDrawer(false)}>
         {MobileMenu}
       </Drawer>
     </>
