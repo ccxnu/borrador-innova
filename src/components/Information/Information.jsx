@@ -1,14 +1,25 @@
 import React, { useState } from 'react';
-import { Box, Grid, TextField, Button, Typography, Modal, Backdrop, Fade, useTheme, useMediaQuery } from '@mui/material';
+import {
+  Box,
+  Grid,
+  TextField,
+  Button,
+  Typography,
+  Modal,
+  Fade,
+  useTheme,
+  useMediaQuery,
+} from '@mui/material';
 
-const User = () => {
+const Information = () => {
   const theme = useTheme();
-  const isMd = useMediaQuery(theme.breakpoints.up("md"));
+  const isMd = useMediaQuery(theme.breakpoints.up('md'));
 
   const [firstNameError, setFirstNameError] = useState(false);
   const [lastNameError, setLastNameError] = useState(false);
   const [emailError, setEmailError] = useState(false);
   const [phoneNumberError, setPhoneNumberError] = useState(false);
+  const [phoneNumber, setPhoneNumber] = useState('');
   const [openModal, setOpenModal] = useState(false);
 
   const handleOpenModal = () => {
@@ -19,6 +30,11 @@ const User = () => {
     setOpenModal(false);
   };
 
+  const handlePhoneNumberChange = (event) => {
+    const inputPhoneNumber = event.target.value.replace(/\D/g, ''); // Solo permite números
+    setPhoneNumber(inputPhoneNumber);
+  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -26,8 +42,8 @@ const User = () => {
       firstName: data.get('firstName'),
       lastName: data.get('lastName'),
       email: data.get('email'),
-      phoneNumber: data.get('phoneNumber'),
-      message: data.get('message')
+      phoneNumber: phoneNumber,
+      message: data.get('message'),
     };
 
     let formIsValid = true;
@@ -64,7 +80,9 @@ const User = () => {
       console.log(formData);
       handleOpenModal();
     } else {
-      console.log('Formulario inválido. Por favor completa todos los campos requeridos.');
+      console.log(
+        'Formulario inválido. Por favor completa todos los campos requeridos.'
+      );
     }
   };
 
@@ -74,16 +92,16 @@ const User = () => {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        minHeight: '80vh', // Ajustamos la altura mínima del contenedor principal
+        minHeight: '80vh',
         justifyContent: 'center',
         background: `linear-gradient(to bottom, ${theme.palette.third.main}, ${theme.palette.twelveth.main}, ${theme.palette.primary.main})`,
-        padding: '20px',
+        padding: '40px',
       }}
     >
       <img
         src="/static/Logo.png"
-        width={isMd ? "200px" : "120px"}
-        height={isMd ? "auto" : "auto"}
+        width={isMd ? '200px' : '120px'}
+        height={isMd ? 'auto' : 'auto'}
         alt="Logo"
       />
       <Box
@@ -91,13 +109,18 @@ const User = () => {
           backgroundColor: theme.palette.fifth.main,
           borderRadius: '20px',
           boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.1)',
-          p: 4,
+          p: 2,
           width: '100%',
-          maxWidth: '500px',
+          maxWidth: '600px',
         }}
       >
-        <Typography variant="h5" component="div" gutterBottom sx={{ textAlign: 'center', mb: 3, color: theme.palette.fourth.main }}>
-          Solicitar Información
+        <Typography
+          variant="h5"
+          component="div"
+          gutterBottom
+          sx={{ textAlign: 'center', mb: 3, color: theme.palette.fourth.main }}
+        >
+          <strong>Solicitar Información</strong>
         </Typography>
         <Grid container spacing={2}>
           <Grid item xs={12}>
@@ -111,7 +134,7 @@ const User = () => {
               variant="outlined"
               placeholder="Ingresa tu nombre"
               error={firstNameError}
-              helperText={firstNameError ? "Campo obligatorio" : ""}
+              helperText={firstNameError ? 'Campo obligatorio' : ''}
               inputProps={{ maxLength: 50 }}
               onBlur={(event) => {
                 if (event.target.value.trim() === '') {
@@ -132,7 +155,7 @@ const User = () => {
               variant="outlined"
               placeholder="Ingresa tu apellido"
               error={lastNameError}
-              helperText={lastNameError ? "Campo obligatorio" : ""}
+              helperText={lastNameError ? 'Campo obligatorio' : ''}
               inputProps={{ maxLength: 50 }}
               onBlur={(event) => {
                 if (event.target.value.trim() === '') {
@@ -153,7 +176,7 @@ const User = () => {
               variant="outlined"
               placeholder="Ingresa tu correo electrónico"
               error={emailError}
-              helperText={emailError ? "Campo obligatorio" : ""}
+              helperText={emailError ? 'Campo obligatorio' : ''}
               onBlur={(event) => {
                 if (event.target.value.trim() === '') {
                   setEmailError(true);
@@ -170,12 +193,14 @@ const User = () => {
               label="Número de Celular"
               name="phoneNumber"
               type="tel"
+              value={phoneNumber}
+              onChange={handlePhoneNumberChange}
               inputProps={{ maxLength: 10 }}
               autoComplete="tel"
               variant="outlined"
               placeholder="Ingresa tu número de celular"
               error={phoneNumberError}
-              helperText={phoneNumberError ? "Campo obligatorio" : ""}
+              helperText={phoneNumberError ? 'Campo obligatorio' : ''}
               onBlur={(event) => {
                 if (event.target.value.trim() === '') {
                   setPhoneNumberError(true);
@@ -196,15 +221,21 @@ const User = () => {
               placeholder="Escribe tu comentario"
             />
           </Grid>
-          <Grid item xs={12}>
-            <Button
-              type="submit"
-              fullWidth
-              variant="contained"
-              sx={{ fontSize: '16px', color: theme.palette.fourth.main }}
-            >
-              Enviar
-            </Button>
+          <Grid container>
+            <Grid item xs={12} textAlign="center">
+              <Button
+                type="submit"
+                variant="contained"
+                color='nineth'
+                sx={{ fontSize: '24px', 
+                color: theme.palette.fifth.main, 
+                marginTop: '10px',
+                width:'200px'
+               }}
+              >
+                <strong>Enviar</strong>
+              </Button>
+            </Grid>
           </Grid>
         </Grid>
       </Box>
@@ -215,15 +246,11 @@ const User = () => {
         aria-labelledby="modal-title"
         aria-describedby="modal-description"
         closeAfterTransition
-        BackdropComponent={Backdrop}
-        BackdropProps={{
-          timeout: 500,
-        }}
       >
         <Fade in={openModal}>
           <Box
             sx={{
-              backgroundColor: '#fff',
+              backgroundColor: theme.palette.primary.main,
               boxShadow: 24,
               p: 4,
               borderRadius: 8,
@@ -248,4 +275,4 @@ const User = () => {
   );
 };
 
-export default User;
+export default Information;

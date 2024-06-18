@@ -12,16 +12,18 @@
     font-style: normal;
 }
 
-
 strong,
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Visby Round CF';
-    font-weight: bold;
-}
-
+h1, h2, h3, h4, h5, h6,
 body,
 p,
 .typography {
-    font-family: 'Visby Round CF';
-    font-weight: 600;
+    font-family: 'Visby Round CF', sans-serif;
+    font-weight: 600; 
+}
+
+input[type="text"].MuiInputBase-input,
+input[type="password"].MuiInputBase-input,
+textarea.MuiInputBase-input {
+    font-family: 'Visby Round CF', sans-serif;
+    font-weight: 600; 
 }

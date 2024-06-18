@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Box, Grid, useTheme, useMediaQuery, Button, Dialog,} from "@mui/material";
 import TitleBox from "../lib/TitleBox";
 import ItemListaVariante from "../lib/ItemListaVariante";
-import User from '/src/components/Information/User.jsx'; 
+import Information from '../Information/Information';
 
 const Conditions = () => {
   const theme = useTheme();
@@ -75,12 +75,15 @@ const Conditions = () => {
         </Grid>
       </Grid>
 
-      <Grid container sx={{ justifyContent: 'center', mt: 3 }}>
+      <Grid container sx={{ justifyContent: 'center', }}>
         <Button
           variant="contained"
           color='primary'
           onClick={handleOpenDialog}
-          sx={{ fontSize: '30px', color: theme.palette.fourth.main }}
+          sx={{ fontSize: '24px', 
+          color: theme.palette.fourth.main,
+          borderRadius: "10px 10px 10px 10px",
+         }}
         >
           <strong>Solicitar Información</strong>
         </Button>
@@ -92,7 +95,7 @@ const Conditions = () => {
         aria-labelledby="dialog-title"
         aria-describedby="dialog-description"
       >
-          <User /> 
+          <Information /> 
       </Dialog>
     </Box>
   );
