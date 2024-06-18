@@ -74,17 +74,18 @@ const User = () => {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        minHeight: '100vh',
+        minHeight: '80vh', // Ajustamos la altura mínima del contenedor principal
         justifyContent: 'center',
         background: `linear-gradient(to bottom, ${theme.palette.third.main}, ${theme.palette.twelveth.main}, ${theme.palette.primary.main})`,
         padding: '20px',
       }}
     >
       <img
-              src="/static/Logo.png"
-              width={isMd ? "200px" : "120px"}
-              height={isMd ? "auto" : "auto"}
-            />
+        src="/static/Logo.png"
+        width={isMd ? "200px" : "120px"}
+        height={isMd ? "auto" : "auto"}
+        alt="Logo"
+      />
       <Box
         sx={{
           backgroundColor: theme.palette.fifth.main,
@@ -95,7 +96,6 @@ const User = () => {
           maxWidth: '500px',
         }}
       >
-        
         <Typography variant="h5" component="div" gutterBottom sx={{ textAlign: 'center', mb: 3, color: theme.palette.fourth.main }}>
           Solicitar Información
         </Typography>
@@ -197,7 +197,12 @@ const User = () => {
             />
           </Grid>
           <Grid item xs={12}>
-            <Button type="submit" fullWidth variant="contained" color='primary'>
+            <Button
+              type="submit"
+              fullWidth
+              variant="contained"
+              sx={{ fontSize: '16px', color: theme.palette.fourth.main }}
+            >
               Enviar
             </Button>
           </Grid>
