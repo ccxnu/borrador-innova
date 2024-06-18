@@ -76,27 +76,29 @@ const User = () => {
         alignItems: 'center',
         minHeight: '100vh',
         justifyContent: 'center',
-        background: `linear-gradient(to bottom, ${theme.palette.third.main}, ${theme.palette.primary.main})`,
+        background: `linear-gradient(to bottom, ${theme.palette.third.main}, ${theme.palette.twelveth.main}, ${theme.palette.primary.main})`,
+        padding: '20px',
       }}
     >
+      <img
+              src="/static/Logo.png"
+              width={isMd ? "200px" : "120px"}
+              height={isMd ? "auto" : "auto"}
+            />
       <Box
-        component="form"
-        onSubmit={handleSubmit}
-        noValidate
         sx={{
-          backgroundColor: '#fff',
-          borderRadius: '10px',
+          backgroundColor: theme.palette.fifth.main,
+          borderRadius: '20px',
           boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.1)',
           p: 4,
           width: '100%',
           maxWidth: '500px',
         }}
       >
-        <Box sx={{ textAlign: 'center', mb: 3 }}>
-          <Typography variant="h5" component="div" gutterBottom>
-            Solicitar Información
-          </Typography>
-        </Box>
+        
+        <Typography variant="h5" component="div" gutterBottom sx={{ textAlign: 'center', mb: 3, color: theme.palette.fourth.main }}>
+          Solicitar Información
+        </Typography>
         <Grid container spacing={2}>
           <Grid item xs={12}>
             <TextField
@@ -195,8 +197,7 @@ const User = () => {
             />
           </Grid>
           <Grid item xs={12}>
-            <Button type="submit" fullWidth variant="contained" color='primary'
-              sx={{ fontSize: '16px', color: theme.palette.secondary.main }}>
+            <Button type="submit" fullWidth variant="contained" color='primary'>
               Enviar
             </Button>
           </Grid>

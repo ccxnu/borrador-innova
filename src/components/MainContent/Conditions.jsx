@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { Box, Grid, Button, useTheme, useMediaQuery, Dialog, DialogTitle, DialogContent, DialogActions } from "@mui/material";
+import { Box, Grid, useTheme, useMediaQuery, Button, Dialog,} from "@mui/material";
 import TitleBox from "../lib/TitleBox";
 import ItemListaVariante from "../lib/ItemListaVariante";
-import User from '/src/components/Information/User.jsx'; // Asegúrate de tener la ruta correcta a tu componente User
+import User from '/src/components/Information/User.jsx'; 
 
 const Conditions = () => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up("md"));
-  const [openDialog, setOpenDialog] = useState(false);
+  const [openDialog, setOpenDialog] = useState(false); 
 
   const handleOpenDialog = () => {
     setOpenDialog(true);
@@ -42,7 +42,6 @@ const Conditions = () => {
           </Grid>
 
           <Grid item xs={12} md={4} pb={4}>
-            {/* Aquí puedes poner cualquier otro contenido o imagen */}
             <Box
               sx={{
                 backgroundImage: "url(/static/Condiciones.png)",
@@ -68,7 +67,6 @@ const Conditions = () => {
           </Grid>
 
           <Grid item xs={12} md={4} p={4}>
-            {/* Otro contenido o item */}
             <ItemListaVariante
               title="Tipo de Membresia"
               descripcion="La membresía es gratuita, pero las cooperativas pueden contribuir monetariamente para financiar proyectos conjuntos."
@@ -77,13 +75,12 @@ const Conditions = () => {
         </Grid>
       </Grid>
 
-      <Grid container sx={{ justifyContent: 'center', mt: 4 }}>
+      <Grid container sx={{ justifyContent: 'center', mt: 3 }}>
         <Button
           variant="contained"
           color='primary'
-          size="large"
           onClick={handleOpenDialog}
-          sx={{ fontSize: '30px', color: theme.palette.secondary.main }}
+          sx={{ fontSize: '30px', color: theme.palette.fourth.main }}
         >
           <strong>Solicitar Información</strong>
         </Button>
@@ -92,14 +89,10 @@ const Conditions = () => {
       <Dialog
         open={openDialog}
         onClose={handleCloseDialog}
-        fullWidth
-        maxWidth="sm"
+        aria-labelledby="dialog-title"
+        aria-describedby="dialog-description"
       >
-        <DialogTitle>Solicitar Información</DialogTitle>
-        <DialogContent dividers>
-          {/* Contenido del dialogo, en este caso renderizamos el componente User */}
-          <User onClose={handleCloseDialog} />
-        </DialogContent>
+          <User /> 
       </Dialog>
     </Box>
   );

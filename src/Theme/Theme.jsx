@@ -34,6 +34,9 @@ const theme = createTheme({
     eleventh: {
       main: "#13353C",
     },
+    twelveth: {
+      main: "#4CAEB1",
+    },
 
     background: {
       default: "#ffffff",
