@@ -55,7 +55,7 @@ const Information = () => {
     }
 
     try {
-      // Aquí se hace el envío del formulario a Formspree
+      // Aquí se hace el envío del formulario a Formspree**
       const response = await fetch('https://formspree.io/f/mwkgggew', {
         method: 'POST',
         body: formData,
