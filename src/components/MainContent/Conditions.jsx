@@ -1,21 +1,12 @@
-import React, { useState } from 'react';
-import { Box, Grid, useTheme, useMediaQuery, Button, Dialog,} from "@mui/material";
+import React, { useState } from "react";
+import { Box, Grid, useTheme, useMediaQuery } from "@mui/material";
 import TitleBox from "../lib/TitleBox";
 import ItemListaVariante from "../lib/ItemListaVariante";
-import Information from '../Information/Information';
+import BottonInformacion from "../lib/BotonInformacion";
 
 const Conditions = () => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up("md"));
-  const [openDialog, setOpenDialog] = useState(false); 
-
-  const handleOpenDialog = () => {
-    setOpenDialog(true);
-  };
-
-  const handleCloseDialog = () => {
-    setOpenDialog(false);
-  };
 
   return (
     <Box id="condiciones" pt={isMd ? "8rem" : "2rem"}>
@@ -66,26 +57,31 @@ const Conditions = () => {
             />
           </Grid>
 
-          <Grid item xs={12} md={4} p={4}
-          sx={{
-            ".MuiBox-root":{
-              flexDirection:{
-                xs:"row",
-                md: "column",
+          <Grid
+            item
+            xs={12}
+            md={4}
+            p={4}
+            sx={{
+              ".MuiBox-root": {
+                flexDirection: {
+                  xs: "row",
+                  md: "column",
+                },
+
+                alignItems: {
+                  xs: "flex-start",
+                  md: "center",
+                },
               },
-              
-              alignItems:{
-                xs:"flex-start",
-                md: "center",
-              }
-            },
-            ".MuiTypography-root":{
-              textAlign:{
-                xs:"left",
-                md: "center",
-              }
-            }
-          }}>
+              ".MuiTypography-root": {
+                textAlign: {
+                  xs: "left",
+                  md: "center",
+                },
+              },
+            }}
+          >
             <ItemListaVariante
               title="Tipo de Membresia"
               descripcion="La membresía es gratuita, pero las cooperativas pueden contribuir monetariamente para financiar proyectos conjuntos."
@@ -94,28 +90,9 @@ const Conditions = () => {
         </Grid>
       </Grid>
 
-      <Grid container sx={{ justifyContent: 'center', }}>
-        <Button
-          variant="contained"
-          color='primary'
-          onClick={handleOpenDialog}
-          sx={{ fontSize: '24px', 
-          color: theme.palette.fourth.main,
-          borderRadius: "10px 10px 10px 10px",
-         }}
-        >
-          <strong>Solicitar Información</strong>
-        </Button>
+      <Grid container sx={{ justifyContent: "center" }}>
+        <BottonInformacion />
       </Grid>
-
-      <Dialog
-        open={openDialog}
-        onClose={handleCloseDialog}
-        aria-labelledby="dialog-title"
-        aria-describedby="dialog-description"
-      >
-          <Information /> 
-      </Dialog>
     </Box>
   );
 };

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from "react";
 import {
   Box,
   Grid,
@@ -9,17 +9,17 @@ import {
   Fade,
   useTheme,
   useMediaQuery,
-} from '@mui/material';
+} from "@mui/material";
 
-const Information = () => {
+const Information = ({ handleCloseDialog }) => {
   const theme = useTheme();
-  const isMd = useMediaQuery(theme.breakpoints.up('md'));
+  const isMd = useMediaQuery(theme.breakpoints.up("md"));
 
   const [firstNameError, setFirstNameError] = useState(false);
   const [lastNameError, setLastNameError] = useState(false);
   const [emailError, setEmailError] = useState(false);
   const [phoneNumberError, setPhoneNumberError] = useState(false);
-  const [phoneNumber, setPhoneNumber] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState("");
   const [openModal, setOpenModal] = useState(false);
 
   const handleOpenModal = () => {
@@ -29,10 +29,11 @@ const Information = () => {
   const handleCloseModal = () => {
     setOpenModal(false);
     resetForm();
+    handleCloseDialog();
   };
 
   const handlePhoneNumberChange = (event) => {
-    const inputPhoneNumber = event.target.value.replace(/[^\d+]/g, '');
+    const inputPhoneNumber = event.target.value.replace(/[^\d+]/g, "");
     setPhoneNumber(inputPhoneNumber);
   };
 
@@ -45,7 +46,7 @@ const Information = () => {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
 
-    const email = formData.get('email');
+    const email = formData.get("email");
 
     if (!validateEmail(email)) {
       setEmailError(true);
@@ -55,23 +56,22 @@ const Information = () => {
     }
 
     try {
-      // Aquí se hace el envío del formulario a Formspree**
-      const response = await fetch('https://formspree.io/f/mwkgggew', {
-        method: 'POST',
+      const response = await fetch("https://formspree.io/f/mwkgggew", {
+        method: "POST",
         body: formData,
         headers: {
-          'Accept': 'application/json'
-        }
+          Accept: "application/json",
+        },
       });
 
       if (response.ok) {
         handleOpenModal();
         resetForm();
       } else {
-        console.error('Error en el envío del formulario');
+        console.error("Error en el envío del formulario");
       }
     } catch (error) {
-      console.error('Error en el envío del formulario:', error);
+      console.error("Error en el envío del formulario:", error);
     }
   };
 
@@ -80,40 +80,41 @@ const Information = () => {
     setLastNameError(false);
     setEmailError(false);
     setPhoneNumberError(false);
-    document.getElementById('firstName').value = '';
-    document.getElementById('lastName').value = '';
-    document.getElementById('email').value = '';
-    document.getElementById('phoneNumber').value = '';
-    document.getElementById('message').value = '';
-    setPhoneNumber('');
+    document.getElementById("firstName").value = "";
+    document.getElementById("lastName").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("phoneNumber").value = "";
+    document.getElementById("message").value = "";
+    setPhoneNumber("");
   };
 
   return (
     <Box
       sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        minHeight: '80vh',
-        justifyContent: 'center',
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        minHeight: "80vh",
+        justifyContent: "center",
         background: `linear-gradient(to bottom, ${theme.palette.third.main}, ${theme.palette.twelveth.main}, ${theme.palette.primary.main})`,
-        padding: '40px',
+        padding: isMd ? "40px" : "15px",
       }}
     >
       <img
         src="/static/Logo.png"
-        width={isMd ? '200px' : '120px'}
-        height={isMd ? 'auto' : 'auto'}
+        width={isMd ? "200px" : "120px"}
+        height={isMd ? "auto" : "auto"}
         alt="Logo"
       />
       <Box
+        mt={4}
         sx={{
           backgroundColor: theme.palette.fifth.main,
-          borderRadius: '20px',
-          boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.1)',
+          borderRadius: "20px",
+          boxShadow: "0px 0px 20px rgba(0, 0, 0, 0.1)",
           p: 2,
-          width: '100%',
-          maxWidth: '600px',
+          width: "100%",
+          maxWidth: "600px",
         }}
       >
         <Box
@@ -121,14 +122,18 @@ const Information = () => {
             textAlign: "center",
             bgcolor: theme.palette.primary.main,
             borderRadius: "10px 10px 0 0",
-            pt: 2,
+            padding: "8px",
+            mb: 2,
           }}
         >
           <Typography
             variant="h5"
             component="div"
             gutterBottom
-            sx={{ textAlign: 'center', mb: 3, color: theme.palette.fourth.main }}
+            sx={{
+              textAlign: "center",
+              color: theme.palette.fourth.main,
+            }}
           >
             <strong>Solicitar Información</strong>
           </Typography>
@@ -146,10 +151,10 @@ const Information = () => {
                 variant="outlined"
                 placeholder="Ingresa tu nombre"
                 error={firstNameError}
-                helperText={firstNameError ? 'Campo obligatorio' : ''}
+                helperText={firstNameError ? "Campo obligatorio" : ""}
                 inputProps={{ maxLength: 50 }}
                 onBlur={(event) => {
-                  if (event.target.value.trim() === '') {
+                  if (event.target.value.trim() === "") {
                     setFirstNameError(true);
                   } else {
                     setFirstNameError(false);
@@ -168,10 +173,10 @@ const Information = () => {
                 variant="outlined"
                 placeholder="Ingresa tu apellido"
                 error={lastNameError}
-                helperText={lastNameError ? 'Campo obligatorio' : ''}
+                helperText={lastNameError ? "Campo obligatorio" : ""}
                 inputProps={{ maxLength: 50 }}
                 onBlur={(event) => {
-                  if (event.target.value.trim() === '') {
+                  if (event.target.value.trim() === "") {
                     setLastNameError(true);
                   } else {
                     setLastNameError(false);
@@ -190,7 +195,7 @@ const Information = () => {
                 variant="outlined"
                 placeholder="Ingresa tu correo electrónico"
                 error={emailError}
-                helperText={emailError ? 'Correo electrónico inválido' : ''}
+                helperText={emailError ? "Correo electrónico inválido" : ""}
                 onBlur={(event) => {
                   const email = event.target.value.trim();
                   setEmailError(!validateEmail(email));
@@ -213,9 +218,9 @@ const Information = () => {
                 variant="outlined"
                 placeholder="Ingresa tu número de celular"
                 error={phoneNumberError}
-                helperText={phoneNumberError ? 'Campo obligatorio' : ''}
+                helperText={phoneNumberError ? "Campo obligatorio" : ""}
                 onBlur={(event) => {
-                  if (event.target.value.trim() === '') {
+                  if (event.target.value.trim() === "") {
                     setPhoneNumberError(true);
                   } else {
                     setPhoneNumberError(false);
@@ -241,7 +246,11 @@ const Information = () => {
                   type="submit"
                   variant="contained"
                   color="nineth"
-                  sx={{ mt: 2, width: '200px', color: theme.palette.fifth.main }}
+                  sx={{
+                    mt: 2,
+                    width: "200px",
+                    color: theme.palette.fifth.main,
+                  }}
                 >
                   <strong>Enviar</strong>
                 </Button>
@@ -261,25 +270,31 @@ const Information = () => {
         <Fade in={openModal}>
           <Box
             sx={{
-              position: 'fixed',
-              top: '50%',
-              left: '50%',
-              transform: 'translate(-50%, -50%)',
+              position: "fixed",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
               backgroundColor: theme.palette.primary.main,
               boxShadow: 24,
               p: 4,
               borderRadius: 8,
-              maxWidth: '80%',
-              textAlign: 'center',
+              maxWidth: "80%",
+              textAlign: "center",
             }}
           >
             <Typography variant="h6" id="modal-title" gutterBottom>
               ¡Solicitud de Información Enviada!
             </Typography>
             <Typography variant="body1" id="modal-description">
-              Gracias por completar el formulario. Nos pondremos en contacto contigo pronto.
+              Gracias por completar el formulario. Nos pondremos en contacto
+              contigo pronto.
             </Typography>
-            <Button onClick={handleCloseModal} variant="contained" color="fourth" sx={{ mt: 2, color: theme.palette.fifth.main }}>
+            <Button
+              onClick={handleCloseModal}
+              variant="contained"
+              color="fourth"
+              sx={{ mt: 2, color: theme.palette.fifth.main }}
+            >
               Cerrar
             </Button>
           </Box>
